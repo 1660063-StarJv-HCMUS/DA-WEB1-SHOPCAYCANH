@@ -7,6 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-
+    <div id="container">
+        <div id="contact">
+            
+        </div>
+        <div id="header">
+        
+        </div>
+        <div id="nav"></div>
+        <div id="content"></div>
+        <div id="footer"></div>
+    </div>
 </body>
 </html>

@@ -5,26 +5,25 @@
  * Date: 11/29/2018
  * Time: 2:02 PM
  */
+class DB{
+    var $hostname = 'localhost';
+    var $username = 'root';
+    var $password = '';
+    var $dbname = 'quanlycaycanhstore';
+    var $connect = null;
 
-class DB
-{
-    //cac bien thong tin ket noi
-    private $hostname = 'localhost',
-        $username = 'root',
-        $password = '',
-        $dbname = 'quanlycaycanhstore';
-    //bien luu tru ket noi
-    public $cn = null;
-    //ham ket noi
-    public function connect()
-    {
-        $this->cn = mysqli_connect($this->hostname, $this->username, $this->password, $this->dbname);
-        var_dump($this->cn);
+    public function Connect(){
+        $this->connect = new mysqli($this->hostname, $this->username, $this->password, $this->dbname);
+        //var_dump($this->connect);
+        return $this->connect;
     }
-    //ham ngat ket noi
-    public function close(){
-        if($this->cn){
-            mysqli_close($this->cn);
-        }
+
+    public function Select(){
+        $query = mysqli_query($this->connect,'select * from taikhoan');
+        var_dump($query);
+    }
+
+    public function  disconnectDB(){
+        mysqli_close($this->connect);
     }
 }

@@ -10,20 +10,26 @@ class DB{
     var $username = 'root';
     var $password = '';
     var $dbname = 'quanlycaycanhstore';
-    var $connect = null;
+    var $ketNoi = null;
 
-    public function Connect(){
+    public function KetNoiCSDL(){
         $this->connect = new mysqli($this->hostname, $this->username, $this->password, $this->dbname);
         //var_dump($this->connect);
-        return $this->connect;
+        return $this->ketNoioi;
     }
 
     public function Select(){
         $query = mysqli_query($this->connect,'select * from taikhoan');
         var_dump($query);
+        return $query;
     }
 
-    public function  disconnectDB(){
+    public function Insert($cauTruyVan){
+        $query = mysqli_query($this->ketNoi, $cauTruyVan);
+        return $query;
+    }
+
+    public function  NgatKetNoiDB(){
         mysqli_close($this->connect);
     }
 }

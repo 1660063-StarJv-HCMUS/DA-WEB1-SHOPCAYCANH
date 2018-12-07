@@ -2,7 +2,7 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8"/>
-    <title>Newspage Administration</title>
+    <title>Administration</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
     <link rel="stylesheet" href="./GUI/bootstrap/css/bootstrap.css"/>
     <link rel="stylesheet" href="./GUI/font-awesome/css/font-awesome.css">
@@ -10,7 +10,7 @@
 </head>
 <body>
     <?php
-        if(true)//chưa đăng nhập
+        if(false)//chưa đăng nhập
         {
             include './GUI/pDangNhap.php';
         }

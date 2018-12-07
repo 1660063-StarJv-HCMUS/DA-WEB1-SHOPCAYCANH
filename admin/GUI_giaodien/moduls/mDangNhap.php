@@ -1,6 +1,8 @@
 <div class="container">
     <div class="row">
         <div class="col-md-4 col-md-offset-4">
+            <h3 align="center">Shop cây cảnh online</h3>
+            <h4 align="center">Đăng nhập vào ban quản trị</h4>
             <div class="login-panel panel panel-default">
                 <div class="panel-heading">
                     <h3 class="panel-title">Mời đăng nhập</h3>
@@ -19,7 +21,7 @@
                                     <input name="remember" type="checkbox" value="Ghi nhớ đăng nhập"> Ghi nhớ đăng nhập
                                 </label>                          
                             </div>
-                            <a href="../GUI/pIndex.php" class="btn btn-lg btn-success btn-block">Login</a>
+                            <a href="./index.php" class="btn btn-lg btn-success btn-block">Đăng nhập</a>
                         </fieldset>
                     </form>
                 </div>

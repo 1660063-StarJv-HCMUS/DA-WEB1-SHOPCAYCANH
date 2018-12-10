@@ -2,17 +2,87 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60a66cda-ef4f-40e1-8896-c1972c235766" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/GUI/pDanhSachHangSanPham.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/GUI/pDanhSachLoaiSanPham.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/GUI/pDanhSahHangSanPham.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/GUI/pQuanLyDonHang.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/admin/DAO/DB.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/admin/DAO/Function.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/admin/DAO/Session.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/admin/DAO/init.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/admin/DTO/TaiKhoan.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/DAO/DB.php" afterPath="$PROJECT_DIR$/DAO/DB.php" />
-      <change beforePath="$PROJECT_DIR$/admin/DAO/DB.php" afterPath="$PROJECT_DIR$/admin/DAO/DB.php" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/css/admin.css" afterPath="$PROJECT_DIR$/admin/GUI/css/admin.css" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/pDangNhap.php" afterPath="$PROJECT_DIR$/admin/GUI/pDangNhap.php" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/pHeader.php" afterPath="$PROJECT_DIR$/admin/GUI/pHeader.php" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/pIndex.php" afterPath="$PROJECT_DIR$/admin/GUI/pIndex.php" />
+      <change beforePath="$PROJECT_DIR$/admin/DAO_xuly/DB.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/DAO_xuly/ThemSanPham.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/DTO_dulieu/SanPham.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/bootstrap/css/bootstrap-theme.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/bootstrap/css/bootstrap-theme.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/bootstrap/css/bootstrap-theme.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/bootstrap/css/bootstrap-theme.min.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/bootstrap/css/bootstrap.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/bootstrap/css/bootstrap.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/bootstrap/css/bootstrap.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/bootstrap/css/bootstrap.min.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/bootstrap/js/bootstrap.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/bootstrap/js/bootstrap.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/bootstrap/js/jquery-3.3.1.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/bootstrap/js/npm.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/css/admin.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/font-awesome/HELP-US-OUT.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/font-awesome/css/font-awesome.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/font-awesome/css/font-awesome.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/font-awesome/css/font-awesome.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/font-awesome/fonts/FontAwesome.otf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/font-awesome/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/font-awesome/fonts/fontawesome-webfont.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/font-awesome/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/font-awesome/fonts/fontawesome-webfont.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/font-awesome/less/animated.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/font-awesome/less/bordered-pulled.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/font-awesome/less/core.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/font-awesome/less/extras.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/font-awesome/less/fixed-width.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/font-awesome/less/font-awesome.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/font-awesome/less/icons.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/font-awesome/less/larger.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/font-awesome/less/list.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/font-awesome/less/mixins.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/font-awesome/less/path.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/font-awesome/less/rotated-flipped.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/font-awesome/less/screen-reader.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/font-awesome/less/spinning.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/font-awesome/less/stacked.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/font-awesome/less/variables.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/font-awesome/scss/_animated.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/font-awesome/scss/_bordered-pulled.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/font-awesome/scss/_core.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/font-awesome/scss/_extras.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/font-awesome/scss/_fixed-width.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/font-awesome/scss/_icons.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/font-awesome/scss/_larger.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/font-awesome/scss/_list.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/font-awesome/scss/_mixins.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/font-awesome/scss/_path.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/font-awesome/scss/_rotated-flipped.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/font-awesome/scss/_screen-reader.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/font-awesome/scss/_spinning.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/font-awesome/scss/_stacked.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/font-awesome/scss/_variables.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/font-awesome/scss/font-awesome.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/moduls/mContent.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/moduls/mDangNhap.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/moduls/mHeader.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/moduls/mMenu.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/pages/pDanhSachHangSanPham.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/pages/pDanhSachLoaiSanPham.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/pages/pDanhSachSanPham.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/pages/pDanhSachTaiKhoan.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/pages/pDashboard.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/pages/pError.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/pages/pIndex.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI_giaodien/pages/pQuanLyDonHang.php" afterPath="" />
       <change beforePath="$PROJECT_DIR$/admin/index.php" afterPath="$PROJECT_DIR$/admin/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,88 +94,68 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/pages/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="8874">
+              <caret line="522" column="41" lean-forward="false" selection-start-line="522" selection-start-column="41" selection-end-line="522" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DB.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/DAO/DB.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1819">
+              <caret line="112" column="2" lean-forward="false" selection-start-line="112" selection-start-column="2" selection-end-line="112" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Session.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/DAO/Session.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="42" column="2" lean-forward="false" selection-start-line="42" selection-start-column="2" selection-end-line="42" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Function.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/DAO/Function.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="17" column="2" lean-forward="false" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="init.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/DAO/init.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="34" column="1" lean-forward="false" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ThemSanPham.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Admin/DAO/ThemSanPham.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="34" column="36" lean-forward="true" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
-              <folding>
-                <element signature="e#4604#4610#1#HTML" expanded="true" />
-                <element signature="e#4785#4791#1#HTML" expanded="true" />
-                <element signature="e#6662#6668#1#HTML" expanded="true" />
-                <element signature="e#7149#7155#1#HTML" expanded="true" />
-                <element signature="e#7167#7173#1#HTML" expanded="true" />
-                <marker date="1544153009319" expanded="true" signature="86:206" ph="INSERT INTO sanpham... " />
-                <marker date="1544153009319" expanded="true" signature="86:225" ph="INSERT INTO sanpham... " />
-                <marker date="1544153009319" expanded="true" signature="86:456" ph="INSERT INTO sanpham... " />
-                <marker date="1544153009319" expanded="true" signature="2299:2329" ph="delete from sach... " />
-                <marker date="1544153009319" expanded="true" signature="2646:2780" ph="update sach... " />
-                <marker date="1544153009319" expanded="true" signature="2920:2999" ph="select * fro... nxb" />
-                <marker date="1544153009319" expanded="true" signature="3543:3678" ph="insert into sach... " />
-                <marker date="1544153009319" expanded="true" signature="4035:4100" ph="select * fro... nxb" />
-                <marker date="1544153009319" expanded="true" signature="5714:5731" ph="select * fro... nxb" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="238">
-                <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Admin/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="37" lean-forward="false" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pIndex.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Admin/GUI/pIndex.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pHeader.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Admin/GUI/pHeader.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="19" column="35" lean-forward="false" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
-              <folding>
-                <element signature="n#style#0;n#nav#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../demoNDH/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="43" column="21" lean-forward="false" selection-start-line="28" selection-start-column="12" selection-end-line="47" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pQuanLyDonHang.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Admin/GUI/pQuanLyDonHang.php">
+        <entry file="file://$PROJECT_DIR$/admin/DAO/ThemSanPham.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -114,31 +164,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pDanhSachHangSanPham.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Admin/GUI/pDanhSachHangSanPham.php">
+      <file leaf-file-name="SanPham.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/DTO/SanPham.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="102">
+              <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pDanhSachLoaiSanPham.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Admin/GUI/pDanhSachLoaiSanPham.php">
+      <file leaf-file-name="TaiKhoan.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/DTO/TaiKhoan.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="238">
+              <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
+      <file leaf-file-name="icons.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/pages/icons.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -167,13 +217,25 @@
         <option value="$PROJECT_DIR$/admin/index.php" />
         <option value="$PROJECT_DIR$/Admin/GUI/css/admin.css" />
         <option value="$PROJECT_DIR$/Admin/GUI/pDangNhap.php" />
-        <option value="$PROJECT_DIR$/Admin/index.php" />
         <option value="$PROJECT_DIR$/DAO/DB.php" />
-        <option value="$PROJECT_DIR$/Admin/DAO/DB.php" />
         <option value="$PROJECT_DIR$/Admin/DTO/SanPham.php" />
         <option value="$PROJECT_DIR$/Admin/DAO/ThemSanPham.php" />
         <option value="$PROJECT_DIR$/Admin/GUI/pIndex.php" />
         <option value="$PROJECT_DIR$/Admin/GUI/pHeader.php" />
+        <option value="$PROJECT_DIR$/Admin/GUI_giaodien/moduls/mHeader.php" />
+        <option value="$PROJECT_DIR$/Admin/GUI_giaodien/moduls/mContent.php" />
+        <option value="$PROJECT_DIR$/Admin/GUI_giaodien/pages/pIndex.php" />
+        <option value="$PROJECT_DIR$/Admin/DAO_xuly/DBConnection.php" />
+        <option value="$PROJECT_DIR$/Admin/DAO_xuly/models/TaiKhoan.php" />
+        <option value="$PROJECT_DIR$/Admin/DAO/models/TaiKhoan.php" />
+        <option value="$PROJECT_DIR$/Admin/DTO/TaiKhoan.php" />
+        <option value="$PROJECT_DIR$/Admin/DAO/bootstrap.php" />
+        <option value="$PROJECT_DIR$/Admin/DAO/DBConnection.php" />
+        <option value="$PROJECT_DIR$/Admin/DAO/DB.php" />
+        <option value="$PROJECT_DIR$/Admin/DAO/Session.php" />
+        <option value="$PROJECT_DIR$/Admin/DAO/Function.php" />
+        <option value="$PROJECT_DIR$/Admin/DAO/init.php" />
+        <option value="$PROJECT_DIR$/Admin/index.php" />
       </list>
     </option>
   </component>
@@ -189,7 +251,7 @@
     </servers>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="775" />
@@ -219,41 +281,18 @@
               <item name="DA-WEB1-SHOPCAYCANH" type="b2602c69:ProjectViewProjectNode" />
               <item name="DA-WEB1-SHOPCAYCANH" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="DA-WEB1-SHOPCAYCANH" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DA-WEB1-SHOPCAYCANH" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="DA-WEB1-SHOPCAYCANH" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DA-WEB1-SHOPCAYCANH" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="DAO" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="DA-WEB1-SHOPCAYCANH" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DA-WEB1-SHOPCAYCANH" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="DTO" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="DA-WEB1-SHOPCAYCANH" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DA-WEB1-SHOPCAYCANH" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="GUI" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Admin/Do AN" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RunDashboard">
@@ -294,15 +333,20 @@
       <workItem from="1543822451442" duration="1067000" />
       <workItem from="1543823601073" duration="772000" />
       <workItem from="1543989873228" duration="3950000" />
-      <workItem from="1544152294760" duration="2213000" />
+      <workItem from="1544152294760" duration="3993000" />
+      <workItem from="1544171314778" duration="924000" />
+      <workItem from="1544359578225" duration="1547000" />
+      <workItem from="1544361169329" duration="412000" />
+      <workItem from="1544361615182" duration="5423000" />
+      <workItem from="1544428922755" duration="256000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22667000" />
+    <option name="totallyTimeSpent" value="33009000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28916544" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -336,221 +380,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Admin/GUI/pHeader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-          <folding>
-            <element signature="n#style#0;n#nav#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="54" lean-forward="true" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/GUI/pIndex.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/GUI/pHeader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="42" lean-forward="true" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
-          <folding>
-            <element signature="n#style#0;n#nav#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/GUI/pDangNhap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="39" lean-forward="false" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/GUI/pHeader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#nav#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/GUI/pIndex.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/GUI/pDangNhap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="54" lean-forward="false" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="8" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/GUI/pDangNhap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DTO/LoaiSanPham.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DTO/HangSanXuat.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="21" column="1" lean-forward="false" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DAO/DB.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="5" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="20" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/DAO/DB.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="20" column="101" lean-forward="false" selection-start-line="20" selection-start-column="101" selection-end-line="20" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DTO/LoaiSanPham.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DTO/HangSanXuat.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DAO/DB.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" column="34" lean-forward="false" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DTO/LoaiSanPham.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DTO/HangSanXuat.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DAO/DB.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="34" lean-forward="false" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -560,13 +389,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin.php" />
     <entry file="file://$PROJECT_DIR$/admin/DAO/DB" />
-    <entry file="file://$PROJECT_DIR$/Admin/GUI/css/admin.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/GUI/css/admin.css" />
     <entry file="file://$PROJECT_DIR$/DAO/DB.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -588,135 +411,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/DTO/SanPham.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/GUI/pDangNhap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="38" lean-forward="false" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/DAO/DB.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="22" lean-forward="false" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
-          <folding>
-            <marker date="1543994019698" expanded="true" signature="538:560" ph="select * fro... taikhoan" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/GUI/pDangNhap.php" />
+    <entry file="file://$PROJECT_DIR$/Admin/GUI/Dashboard.php" />
+    <entry file="file://$PROJECT_DIR$/Admin/GUI/Danh sách tài khoản.php" />
+    <entry file="file://$PROJECT_DIR$/Admin/GUI/pDanhSachLoaiSanPham.php" />
+    <entry file="file://$PROJECT_DIR$/Admin/GUI/pDanhSachHangSanPham.php" />
+    <entry file="file://$PROJECT_DIR$/Admin/GUI/pQuanLyDonHang.php" />
+    <entry file="file://$PROJECT_DIR$/Admin/GUI/pDanhSahHangSanPham.php" />
+    <entry file="file://$PROJECT_DIR$/Admin/GUI/pIndex.php" />
+    <entry file="file://$PROJECT_DIR$/Admin/GUI/pHeader.php" />
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/DAO/ThemSanPham.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="34" column="36" lean-forward="true" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
-          <folding>
-            <element signature="e#4604#4610#1#HTML" expanded="true" />
-            <element signature="e#4785#4791#1#HTML" expanded="true" />
-            <element signature="e#6662#6668#1#HTML" expanded="true" />
-            <element signature="e#7149#7155#1#HTML" expanded="true" />
-            <element signature="e#7167#7173#1#HTML" expanded="true" />
-            <marker date="1544153009319" expanded="true" signature="86:206" ph="INSERT INTO sanpham... " />
-            <marker date="1544153009319" expanded="true" signature="86:225" ph="INSERT INTO sanpham... " />
-            <marker date="1544153009319" expanded="true" signature="86:456" ph="INSERT INTO sanpham... " />
-            <marker date="1544153009319" expanded="true" signature="2299:2329" ph="delete from sach... " />
-            <marker date="1544153009319" expanded="true" signature="2646:2780" ph="update sach... " />
-            <marker date="1544153009319" expanded="true" signature="2920:2999" ph="select * fro... nxb" />
-            <marker date="1544153009319" expanded="true" signature="3543:3678" ph="insert into sach... " />
-            <marker date="1544153009319" expanded="true" signature="4035:4100" ph="select * fro... nxb" />
-            <marker date="1544153009319" expanded="true" signature="5714:5731" ph="select * fro... nxb" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/GUI/Dashboard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/GUI/Danh sách tài khoản.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/GUI/pDanhSachLoaiSanPham.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/GUI/pDanhSachHangSanPham.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/GUI/pQuanLyDonHang.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="238">
-            <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/GUI/pDanhSahHangSanPham.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="3" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/index.php">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="18" column="37" lean-forward="false" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/GUI/pIndex.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
+          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -724,17 +431,124 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="301">
           <caret line="43" column="21" lean-forward="false" selection-start-line="28" selection-start-column="12" selection-end-line="47" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="188">
+            <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/GUI_giaodien/pages/pQuanLyDonHang.php" />
+    <entry file="file://$PROJECT_DIR$/Admin/GUI_giaodien/pages/pError.php" />
+    <entry file="file://$PROJECT_DIR$/Admin/GUI_giaodien/pages/pDashboard.php" />
+    <entry file="file://$PROJECT_DIR$/Admin/GUI_giaodien/pages/pDanhSachTaiKhoan.php" />
+    <entry file="file://$PROJECT_DIR$/Admin/GUI_giaodien/pages/pDanhSachSanPham.php" />
+    <entry file="file://$PROJECT_DIR$/Admin/GUI_giaodien/pages/pDanhSachLoaiSanPham.php" />
+    <entry file="file://$PROJECT_DIR$/Admin/GUI_giaodien/pages/pDanhSachHangSanPham.php" />
+    <entry file="file://$PROJECT_DIR$/Admin/GUI_giaodien/moduls/mMenu.php" />
+    <entry file="file://$PROJECT_DIR$/Admin/GUI_giaodien/moduls/mDangNhap.php" />
+    <entry file="file://$PROJECT_DIR$/Admin/GUI_giaodien/css/admin.css" />
+    <entry file="file://$PROJECT_DIR$/Admin/GUI_giaodien/moduls/mHeader.php" />
+    <entry file="file://$PROJECT_DIR$/Admin/GUI_giaodien/moduls/mContent.php" />
+    <entry file="file://$PROJECT_DIR$/Admin/GUI_giaodien/pages/pIndex.php" />
+    <entry file="file://$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/pages/icons.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/GUI/pHeader.php">
+    <entry file="file://$PROJECT_DIR$/Admin/DAO_xuly/DB.php" />
+    <entry file="file://$PROJECT_DIR$/admin/DTO/SanPham.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="19" column="35" lean-forward="false" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
-          <folding>
-            <element signature="n#style#0;n#nav#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="102">
+          <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/DAO_xuly/init.php" />
+    <entry file="file://$PROJECT_DIR$/Admin/DAO_xuly/ThemSanPham.php" />
+    <entry file="file://$PROJECT_DIR$/Admin/DAO_xuly/models/TaiKhoan.php" />
+    <entry file="file://$PROJECT_DIR$/Admin/DAO_xuly/DBConnection.php" />
+    <entry file="file://$PROJECT_DIR$/admin/DAO/ThemSanPham.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/DAO/models/TaiKhoan.php" />
+    <entry file="file://$PROJECT_DIR$/admin/DTO/TaiKhoan.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/DAO/bootstrap.php" />
+    <entry file="file://$PROJECT_DIR$/Admin/DAO/DBConnection.php" />
+    <entry file="file://$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/pages/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8874">
+          <caret line="522" column="41" lean-forward="false" selection-start-line="522" selection-start-column="41" selection-end-line="522" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/DAO/DB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1819">
+          <caret line="112" column="2" lean-forward="false" selection-start-line="112" selection-start-column="2" selection-end-line="112" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/DAO/Session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="42" column="2" lean-forward="false" selection-start-line="42" selection-start-column="2" selection-end-line="42" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/DAO/Function.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" column="2" lean-forward="false" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/DAO/init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="34" column="1" lean-forward="false" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>

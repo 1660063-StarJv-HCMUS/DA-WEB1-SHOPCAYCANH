@@ -1,0 +1,21 @@
+<footer class="row">
+<div class="col-3" style="text-align:center">
+    <img src="GUI/images/logo-header.png" />
+    <p>Nhằm quảng bá rộng rãi đến mọi đối tượng khách hàng nên chúng tôi đã lựa chọn hình thức kinh doanh cửa
+        tiệm và chú
+        trọng kết hợp kinh doanh trên mạng</p>
+</div>
+<div class="col-4" style="padding-left:60px;">
+    <h4>DANH MỤC SẢN PHẨM</h4>
+    <ul>
+        <li><a href="index.php?a=2">Tiểu cảnh</a></li>
+        <li> <a href="index.php?a=3">Xương rồng</a></li>
+        <li><a href="index.php?a=4">Sen đá </a></li>
+    </ul>
+</div>
+<div class="col-5">
+    <H4>Địa chỉ</H4>
+    <P> 215B37 Nguyễn Văn Hưởng, P, Quận 2, Hồ Chí Minh
+        <br /> Giờ: 7:00am - 8:00 pm</P>
+</div>
+</footer>

@@ -12,10 +12,31 @@
 
             $danhSachSanPham = array();
 
-            if ($result->num_rows > 0) 
+            if ($result->num_rows > 0) {
+                // output data of each row
+                while ($row = $result->fetch_assoc()) {
+                    $sp = new SanPham();
+                    $sp->setTenSanPham($row['TenSanPham']);
+                    $sp->setHinhURL($row['HinhURL']);
+                    $sp->setGiaSanPham($row['GiaSanPham']);
+                    $danhSachSanPham[] = $sp;
+                }
+            }
+            return $danhSachSanPham;
+        }
+
+        public function LoadTatCaSanPham()
+        {
+            $loadSP_MaLoai = new SanPham_DAO();
+
+            $result = $loadSP_MaLoai->LoadTatCaSanPham();
+
+            $danhSachSanPham = array();
+
+            if ($result->num_rows > 0)
             {
                 // output data of each row
-                while($row = $result->fetch_assoc()) 
+                while($row = $result->fetch_assoc())
                 {
                     $sp = new SanPham();
                     $sp->setTenSanPham($row['TenSanPham']);

@@ -9,6 +9,15 @@
 
             return $ketQua;
         }
+
+        public function LoadTatCaSanPham(){
+            $truyvan = 'select TenSanPham, HinhURL, GiaSanPham from sanpham';
+
+            $db = new DB();
+            $ketQua = $db->ExcuteQuery($truyvan);
+
+            return $ketQua;
+        }
     }
 
 ?>

@@ -1,4 +1,5 @@
+<div class="flex-container">
 <?php
-    //loiox
-    include ('modules/mContent.php');
+    include './GUI/modules/mContent.php';
 ?>
+</div>

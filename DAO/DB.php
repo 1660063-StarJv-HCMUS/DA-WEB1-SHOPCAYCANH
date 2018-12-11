@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: phuon
- * Date: 11/28/2018
- * Time: 11:00 PM
- */
-
 class DB
 {
     var $host = 'localhost';
@@ -18,6 +11,7 @@ class DB
         mysqli_query($connection, "set name 'utf8'");
         $result = mysqli_query($connection, $sql);
         mysqli_close($connection);
+        return $result;
     }
-
 }
+?>

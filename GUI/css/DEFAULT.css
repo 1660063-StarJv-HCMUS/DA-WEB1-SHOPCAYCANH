@@ -96,7 +96,6 @@ div#slider figure {
 /*-------------------content---------------------------*/
 #container{
     min-height: 14rem;
-    border: 1px solid black;
 }
 
 /*-------------------Footer----------------------------*/
@@ -223,7 +222,7 @@ footer div h4 {
     width: 100%;
 }
 
-#loginModal .close {
+#Modal-form .close {
     box-shadow: none;
     position: absolute;
     right: 15px;

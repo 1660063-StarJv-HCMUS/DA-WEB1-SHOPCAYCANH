@@ -12,10 +12,46 @@
     <link rel="shortcut icon" href="GUI/icon/favicon.ico" type="image/x-icon" />
 </head>
 <body>
-        <div id="topbar">
-            <?php
-                include 'GUI/modules/mTopBar.php'
-            ?>
+    <?php
+// 
+
+?>
+<div id="topbar">
+    <div class="row">
+        <div class="col-12 col-lg-3">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
+    </div>
+<?php
+include_once __DIR__ . '/BUS/session.php';
+// Khởi tạo session
+$session = new Session();
+$session->start(); 
+
+if ($session->get() != '')
+{
+    $user = $session->get();
+}
+else
+{
+    $user = '';
+}
+if ($user) {
+?>
+    <div align="center">
+        <h1>Welcome - <?php echo $user; ?></h1><br />
+        <a href="#" id="logout">Logout</a>
+    </div>
+<?php
+}
+// Nếu không đăng nhập
+else {
+    // Hiển thị modal đăng nhập
+    include_once 'GUI/modules/mModal.php';
+}
+?>
+    </div>
         </div>
         <div id="header">
             <?php
@@ -23,44 +59,46 @@
             ?>
         </div>
         <div id="container">
-            <?php
-                $a=1;
-                if(isset($_GET["a"])){
-                    $a=$_GET["a"];
-                }
-                switch ($a) {
-                    case 1:
-                        # code...
-                        include 'GUI/modules/mBanner.php';
-                        include ('GUI/modules/mTrangChu.php');
-                        break;
-                    case 2:
-                        # code...
-                        include ('GUI/pages/pTieuCanh.php');
-                        break;
-                    case 3:
-                        # code...
-                        include ('GUI/pages/pXuongRong.php');
-                        break;
-                    case 4:
-                        # code...
-                        include ('GUI/pages/pSenDa.php');
-                        break;
-                    default:
-                        # code...
-                        include ('GUI/pages/pERROR.php');
-                        break;
-                }
-            ?>
+
+<?php
+$a = 0;
+if (isset($_GET["a"])) {
+    $a = $_GET["a"];
+}
+switch ($a) {
+    case 0:
+        # code...
+        include 'GUI/modules/mBanner.php';
+        include 'GUI/modules/mTrangChu.php';
+        break;
+    case 2:
+        # code...
+        include 'GUI/pages/pTieuCanh.php';
+        break;
+    case 3:
+        # code...
+        include 'GUI/pages/pXuongRong.php';
+        break;
+    case 1:
+        # code...
+        include 'GUI/pages/pSenDa.php';
+        break;
+    default:
+        # code...
+        include 'GUI/pages/pERROR.php';
+        break;
+}
+?>
         </div>
 
         <div id="footer">
             <?php
-                include 'GUI/modules/mFooter.php';
-            ?>
-        </div>    
+include 'GUI/modules/mFooter.php';
+?>
+        </div>
     <script src="GUI/js/jquery-3.2.1.min.js"></script>
     <script src="GUI/js/bootstrap.js"></script>
     <script src="GUI/js/custom.js"></script>
+    <script src="GUI/js/form.js"></script>
 </body>
 </html>

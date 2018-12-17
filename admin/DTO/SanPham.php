@@ -1,6 +1,6 @@
 <?php
-
-public class SanPham{
+class SanPham
+{
     private $MaSanPham;
     private $TenSanPham;
     private $URL;
@@ -21,4 +21,3 @@ public class SanPham{
         $this->MoTa = $mota;
     }
 }
-?>

@@ -73,6 +73,7 @@ body {
         left: -200%;
     }
 }
+
 /*----------------Banner------------------------*/
 div #slider {
     overflow: hidden;
@@ -93,8 +94,9 @@ div#slider figure {
     font-size: 0;
     animation: 15s slidy infinite;
 }
+
 /*-------------------content---------------------------*/
-#container{
+#container {
     min-height: 14rem;
 }
 
@@ -264,15 +266,51 @@ footer div h4 {
     margin: 0.5rem;
 }
 
-/*-------------------Banner-------------------------*/
-/* #slider-banner1 .item {
-    position: relative
+/*-------------------user bar-------------------------*/
+.user {
+    text-align: right;
+    color: #888888;
+    cursor: pointer;
 }
 
-#slider-banner1 .item .text-banner {
+.user span:hover {
+    color: #3f3e3e;
+
+}
+
+.user ul {
     position: absolute;
-    right: 200px;
-    top: 50px;
-    background: rgba(255, 255, 255, .5);
-    padding: 10px 20px;
-} */
+    right: 10px;
+    z-index: 100;
+    background-color: #e5e5e5;
+    text-align: left;
+    border: 1px solid #999;
+    border-bottom: 0;
+    display: none;
+}
+
+.user ul li {
+    border-bottom: 1px solid #999;
+    width: 100%;
+    padding: 0 10px;
+    font-size: 12px;
+    list-style: none;
+}
+
+.user ul li:hover {
+    background-color: #056526;
+}
+
+.user ul li:hover a {
+    color: #FFF;
+    text-decoration: none;
+    display: block;
+}
+
+.user ul li a {
+    color: #4CAF50;
+}
+
+.user:hover ul {
+    display: block;
+}

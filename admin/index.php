@@ -10,16 +10,10 @@
 </head>
 <body>
     <?php
-        if(true)//chưa đăng nhập
-        {
             //include 'GUI/moduls/mDangNhap.php';
             include 'GUI/pages/pIndex.php';
-        }
-        else//đã đăng nhập
-        {
-            include 'GUI/pages/pIndex.php';
-        }
     ?>
+
 <script src="./GUI/bootstrap/js/bootstrap.js"></script>
 <script src="./GUI/bootstrap/js/jquery-3.3.1.min.js"></script>
 </body>

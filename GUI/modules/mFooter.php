@@ -8,9 +8,9 @@
 <div class="col-4" style="padding-left:60px;">
     <h4>DANH MỤC SẢN PHẨM</h4>
     <ul>
-        <li><a href="index.php?a=2">Tiểu cảnh</a></li>
+        <li><a href="index.php?a=1">Tiểu cảnh</a></li>
         <li> <a href="index.php?a=3">Xương rồng</a></li>
-        <li><a href="index.php?a=1">Sen đá </a></li>
+        <li><a href="index.php?a=2">Sen đá </a></li>
     </ul>
 </div>
 <div class="col-5">

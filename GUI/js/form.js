@@ -11,18 +11,20 @@ $("#login-form button").on('click', function () {
     // Ngược lại
     else {
         $.ajax({
-            url: "GUI/modules/mCheckLogin.php",
-            //type: "POST",
-            method:"POST",
+            url: "DAO/Login.php",
+            type: "POST",
+            //method: "POST",
             data: {
-                user_signin : $user_signin,
-                pass_signin : $pass_signin,
+                user_signin: $user_signin,
+                pass_signin: $pass_signin,
             },
             success: function (data) {
-                $("#login-form .alert").removeClass("invisible");
-                $("#login-form .alert").html(data);
-                delay
-                location.reload();
+                if (data == 'No') {
+                    alert("Wrong Data");
+                } else {
+                    $('#login-form').hide();
+                    location.reload();
+                }
             },
             error: function () {
                 $("#login-form .alert").removeClass("invisible");
@@ -30,4 +32,17 @@ $("#login-form button").on('click', function () {
             }
         });
     }
+});
+$('#logout').click(function () {
+    var action = "logout";
+    $.ajax({
+        url: "DAO/Login.php",
+        method: "POST",
+        data: {
+            action: action
+        },
+        success: function () {
+            location.reload();
+        }
+    });
 });

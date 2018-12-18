@@ -12,17 +12,6 @@
     <link rel="shortcut icon" href="GUI/icon/favicon.ico" type="image/x-icon" />
 </head>
 <body>
-    <?php
-// 
-
-?>
-<div id="topbar">
-    <div class="row">
-        <div class="col-12 col-lg-3">
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-youtube"></i>
-    </div>
 <?php
 include_once __DIR__ . '/BUS/session.php';
 // Khởi tạo session
@@ -37,11 +26,25 @@ else
 {
     $user = '';
 }
+include_once ('GUI/modules/mTopBar.php');
 if ($user) {
 ?>
-    <div align="center">
-        <h1>Welcome - <?php echo $user; ?></h1><br />
-        <a href="#" id="logout">Logout</a>
+    <div class="col-3 user">
+        <span>Xin chào, <?php echo $user; ?></span>
+        <ul>
+            <li>
+                <a href="#">Admin</a>
+            </li>
+            <li>
+                <a href="#">Thông tin tài khoản</a>
+            </li>
+            <li>
+                <a href="#">Kiểm tra đơn hàng</a>
+            </li>
+            <li  id="logout">
+                <a href="#">Đăng xuất</a>
+            </li>
+        </ul>
     </div>
 <?php
 }

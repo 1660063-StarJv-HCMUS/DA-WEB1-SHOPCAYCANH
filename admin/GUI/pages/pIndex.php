@@ -21,15 +21,12 @@
         </div>
         <div class="content col-md-9 col-sm-12">
             <?php
-                $a = 1;
+                $a = 2;
                 if(isset($_GET["a"])){
                     $a = $_GET["a"];
                 }
 
                 switch($a){
-                    case 1:
-                        include 'pIndex.php';
-                        break;
                     case 2:
                         include 'pDashboard.php';
                         break;

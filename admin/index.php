@@ -1,3 +1,8 @@
+<?php
+    include_once 'DAO/init.php';
+    include_once 'DAO/Session.php';
+?>
+
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -10,10 +15,19 @@
 </head>
 <body>
     <?php
-            //include 'GUI/moduls/mDangNhap.php';
-            include 'GUI/pages/pIndex.php';
-    ?>
+        $session = new Session();
+        $session->start();//khởi chạy session
 
+        if(false)//chưa đăng nhập
+        {
+            include 'GUI/modules/mDangNhap.php';
+        }
+        else//đã đăng nhập
+        {
+            include 'GUI/pages/pIndex.php';
+        }
+    ?>
+<script src="<?php echo $_DOMAIN; ?>GUI/js/form.js"></script>
 <script src="./GUI/bootstrap/js/bootstrap.js"></script>
 <script src="./GUI/bootstrap/js/jquery-3.3.1.min.js"></script>
 </body>

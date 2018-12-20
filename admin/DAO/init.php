@@ -2,38 +2,23 @@
 /**
  * Created by PhpStorm.
  * User: phuon
- * Date: 12/09/2018
- * Time: 9:39 PM
+ *
  */
-// Require các thư viện PHP
-require_once 'DB.php';
-require_once 'Session.php';
-//require_once 'Functions.php';
 
-// Kết nối database
-$db = new DB();
-$db->connect();
-$db->set_char('utf8');
+//Thông tin chung
+$_DOMAIN = 'http://localhost//web1/DA-WEB1-SHOPCAYCANH/admin/';
 
-// Thông tin chung
-$_DOMAIN = 'http://localhost/newspage/admin/';
-
-date_default_timezone_set('Asia/Ho_Chi_Minh');
+date_default_timezone_set('Asia/Ho_Chi_Minh');//khởi tạo giờ địa phương
 $date_current = '';
-$date_current = date("Y-m-d H:i:sa");
+$date_current = date("Y-m-d H:i:sa");//định dạng năm/tháng/ngày
 
-// Khởi tạo session
-$session = new Session();
-$session->start();
+session_start();//khởi tạo session
 
-// Kiểm tra session
-if ($session->get() != '')
+if (isset($_SESSION['user']))//kiểm tra trong session có tồn tại user
 {
-    $user = $session->get();
+    $user = $_SESSION['user'];//nếu session đã tồn tại user thì gán user =  user trong session
 }
 else
 {
-    $user = '';
+    $user = '';//nếu trong session chưa tồn tại user thì khởi tạo nó rỗng
 }
-
-?>

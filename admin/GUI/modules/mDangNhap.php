@@ -8,20 +8,22 @@
                     <h3 class="panel-title">Mời đăng nhập</h3>
                 </div>
                 <div class="panel-body">
-                    <form action="#" method="post" role="form">
+                    <form action="#" id="formSignin" method="post" role="form">
                         <fieldset>
                             <div class="form-group">
-                                <input class="form-control" placeholder="Tên đăng nhập" name="username" type="text" autofocus>
+                                <input class="form-control" id="user_signin" placeholder="Tên đăng nhập" name="username" type="text" autofocus>
                             </div>
                             <div class="form-group">
-                                <input class="form-control" placeholder="Mật khẩu" name="password" type="password">
+                                <input class="form-control" id="pass_signin" placeholder="Mật khẩu" name="password" type="password">
                             </div>
-                            <div class="checkbox">
+                        <!--    <div class="checkbox">
                                 <label>
                                     <input name="remember" type="checkbox" value="Ghi nhớ đăng nhập"> Ghi nhớ đăng nhập
                                 </label>                          
-                            </div>
-                            <a href="./index.php" class="btn btn-lg btn-success btn-block">Đăng nhập</a>
+                            </div> -->
+                            <button type="submit" class="btn btn-lg btn-success btn-block">Đăng nhập</button>
+
+                        <!--    <a href="./index.php" class="btn btn-lg btn-success btn-block">Đăng nhập</a> -->
                         </fieldset>
                     </form>
                 </div>

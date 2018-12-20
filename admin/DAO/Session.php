@@ -5,7 +5,7 @@
  * Date: 12/09/2018
  * Time: 9:37 PM
  */
-// Lớp session
+// Lớp session, ghi nhận thông tin đăng nhập
 class Session {
     // Hàm bắt đầu session
     public function start()

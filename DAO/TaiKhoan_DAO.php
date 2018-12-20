@@ -24,6 +24,7 @@ class TaiKhoan_DAO //extends DB
         
         return $taiKhoan;
     }
+
     public function checkRow($tenDangNhap, $MatKhau)
     {
         $sql = "SELECT* from TaiKhoan where TenDangNhap = '$tenDangNhap' and MatKhau ='$MatKhau'";
@@ -33,6 +34,7 @@ class TaiKhoan_DAO //extends DB
         $SoDong = mysqli_num_rows($result);
         return $SoDong;
     }
+
     public function AddTK($taiKhoan)
     {
         $sql = "INSERT into TaiKhoan(TenHienThi, TenDangNhap, DiaChi, Email, MatKhau, BiXoa, MaLoaiTaiKhoan ) values('$taiKhoan->TenNguoiDung','$taiKhoan->TenDangNhap','$taiKhoan->DiaChi','$taiKhoan->email','$taiKhoan->MatKhau','$taiKhoan->BiXoa','$taiKhoan->LoaiTK')";

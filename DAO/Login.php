@@ -21,19 +21,22 @@ if (isset($_POST['user_signin']) && isset($_POST['pass_signin'])) {
     // Ngược lại
     else {
         $kiemTra = new TaiKhoan_BUS();
-        if ($kiemTra->GetUserInfo($_POST['user_signin'])) {
-            if ($kiemTra->checkRow($_POST['user_signin'], $_POST['pass_signin'])) {
+        if ($kiemTra->checkUsername($_POST['user_signin'])) {
+            if ($kiemTra->checkAccount($_POST['user_signin'], $_POST['pass_signin'])) {
                 $session->send($_POST['user_signin']);
-                //$_SESSION['username'] = $_POST['username'];
-                echo $show_alert . $success . 'Đăng nhập thành công.';
-                echo 'Yes';
+                //kiem tra admin
+                if ($kiemTra->checkAdmin($_POST['user_signin'], $_POST['pass_signin'])) {
+                    $session->sendAdmin(1);
+                }
+                else {
+                    $session->sendAdmin(0);
+                }
+                echo 'User';
             } else {
                 echo $show_alert . 'Mật khẩu không chính xác.';
-                echo 'No';
             }
         } else {
             echo $show_alert . 'Tên đăng nhập không tồn tại.';
-            echo 'No';
         }
     }
 }

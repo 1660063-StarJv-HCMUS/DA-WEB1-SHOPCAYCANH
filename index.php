@@ -1,3 +1,8 @@
+<!-- hang so bao ve project -->
+<?php
+    define("IN_SITE", true);
+    //chua dung dc
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,25 +21,30 @@
 include_once __DIR__ . '/BUS/session.php';
 // Khởi tạo session
 $session = new Session();
-$session->start(); 
+$session->start();
 
-if ($session->get() != '')
-{
+if ($session->get() != '') {
     $user = $session->get();
-}
-else
-{
+    $admin = $session->getAdmin();
+} else {
     $user = '';
 }
-include_once ('GUI/modules/mTopBar.php');
+include_once 'GUI/modules/mTopBar.php';
 if ($user) {
-?>
+    ?>
     <div class="col-3 user">
         <span>Xin chào, <?php echo $user; ?></span>
         <ul>
-            <li>
-                <a href="#">Admin</a>
-            </li>
+            <?php
+                if ($admin) {
+                    
+            ?>
+                <li>
+                <a href="admin/">Admin</a>
+                </li>
+            <?php
+                }
+            ?>
             <li>
                 <a href="#">Thông tin tài khoản</a>
             </li>
@@ -58,8 +68,8 @@ else {
         </div>
         <div id="header">
             <?php
-                include 'GUI/modules/mHeader.php'
-            ?>
+include 'GUI/modules/mHeader.php'
+?>
         </div>
         <div id="container">
 

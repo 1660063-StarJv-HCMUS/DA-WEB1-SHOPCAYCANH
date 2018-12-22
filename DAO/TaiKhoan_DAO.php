@@ -25,7 +25,7 @@ class TaiKhoan_DAO //extends DB
         return $taiKhoan;
     }
 
-    public function checkRow($tenDangNhap, $MatKhau)
+    public function checkAccount($tenDangNhap, $MatKhau)
     {
         $sql = "SELECT* from TaiKhoan where TenDangNhap = '$tenDangNhap' and MatKhau ='$MatKhau'";
         $db = new DB();
@@ -35,11 +35,31 @@ class TaiKhoan_DAO //extends DB
         return $SoDong;
     }
 
-    public function AddTK($taiKhoan)
+    public function checkAdmin($tenDangNhap, $MatKhau)
     {
-        $sql = "INSERT into TaiKhoan(TenHienThi, TenDangNhap, DiaChi, Email, MatKhau, BiXoa, MaLoaiTaiKhoan ) values('$taiKhoan->TenNguoiDung','$taiKhoan->TenDangNhap','$taiKhoan->DiaChi','$taiKhoan->email','$taiKhoan->MatKhau','$taiKhoan->BiXoa','$taiKhoan->LoaiTK')";
+        $sql = "SELECT* from TaiKhoan where TenDangNhap = '$tenDangNhap' and MatKhau ='$MatKhau' and MaLoaiTaiKhoan = 0";
         $db = new DB();
         $result = $db->ExcuteQuery($sql);
+        //$result = $this->ExecuteQuery($sql);
+        $SoDong = mysqli_num_rows($result);
+        return $SoDong;
+    }
+
+    public function checkUsername($tenDangNhap)
+    {
+        $sql = "SELECT* from TaiKhoan where TenDangNhap = '$tenDangNhap'";
+        $db = new DB();
+        $result = $db->ExcuteQuery($sql);
+        //$result = $this->ExecuteQuery($sql);
+        $SoDong = mysqli_num_rows($result);
+        return $SoDong;
+    }
+
+    public function AddTK($taiKhoan)
+    {
+        $sql = "INSERT into TaiKhoan(TenHienThi, TenDangNhap, DiaChi, Email, MatKhau, BiXoa ) values('$taiKhoan->TenNguoiDung','$taiKhoan->TenDangNhap','$taiKhoan->DiaChi','$taiKhoan->email','$taiKhoan->MatKhau','$taiKhoan->BiXoa')";
+        $db = new DB();
+        return $result = $db->ExcuteQuery($sql);
         //$result = $this->ExecuteQuery($sql);
     }
 }

@@ -39,14 +39,14 @@ class TaiKhoan_DAO extends DB
         $row = mysqli_fetch_array($rs);
 
         $sanPham= new TaiKhoan();
-        $sanPham->MaNguoiDung=$row['MaTaiKhoan'];
-        $sanPham->TenNguoiDung= $row['TenNguoiDung'];
-        $sanPham->TenDangNhap= $row['TenDangNhap'];
-        $sanPham->NgaySinh=$row['NgaySinh'];
-        $sanPham->NoiSinh=$row['DiaChi'];
-        $sanPham->MatKhau=$row['MatKhau'];
-        $sanPham->SDT=$row['SoDienThoai'];
-        $sanPham->BiXoa=$row['BiXoa'];
+        $sanPham->MaNguoiDung   =$row['MaTaiKhoan'];
+        $sanPham->TenNguoiDung  = $row['TenNguoiDung'];
+        $sanPham->TenDangNhap   = $row['TenDangNhap'];
+        $sanPham->NgaySinh      =$row['NgaySinh'];
+        $sanPham->NoiSinh       =$row['DiaChi'];
+        $sanPham->MatKhau       =$row['MatKhau'];
+        $sanPham->SDT           =$row['SoDienThoai'];
+        $sanPham->BiXoa         =$row['BiXoa'];
         return $sanPham;
     }
     public function postInput($string)

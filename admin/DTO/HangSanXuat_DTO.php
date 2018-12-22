@@ -13,10 +13,10 @@ class HangSanXuat
     var $BiXoa;
     public function __construct()
     {
-        $this->MaHangSanXuat = 0;
-        $this->TenHangSanXuat ="";
-        $this->LogoURL = "";
-        $this->BiXoa = 0;
+        $this->MaHangSanXuat    = 0;
+        $this->TenHangSanXuat   ="";
+        $this->LogoURL          = "";
+        $this->BiXoa            = 0;
     }
 }
 ?>

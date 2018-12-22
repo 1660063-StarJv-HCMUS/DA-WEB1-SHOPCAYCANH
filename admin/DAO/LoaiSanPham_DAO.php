@@ -15,11 +15,11 @@ class LoaiSanPham_DAO extends DB
         $lstLoaiSanPham = array();
         while($row = mysqli_fetch_array($result))
         {
-            $loaiSanPham = new LoaiSanPham();
-            $loaiSanPham->MaLoaiSanPham = $row['MaLoaiSanPham'];
-            $loaiSanPham->TenLoaiSanPham = $row['TenLoaiSanPham'];
-            $loaiSanPham->BiXoa = $row['BiXoa'];
-            $lstLoaiSanPham[] = $loaiSanPham;
+            $loaiSanPham                    = new LoaiSanPham();
+            $loaiSanPham->MaLoaiSanPham     = $row['MaLoaiSanPham'];
+        $loaiSanPham->TenLoaiSanPham        = $row['TenLoaiSanPham'];
+            $loaiSanPham->BiXoa             = $row['BiXoa'];
+            $lstLoaiSanPham[]               = $loaiSanPham;
         }
         return $lstLoaiSanPham;
 
@@ -33,10 +33,10 @@ class LoaiSanPham_DAO extends DB
 
         $row = mysqli_fetch_array($rs);
 
-        $sanPham= new LoaiSanPham();
-        $sanPham->TenLoaiSanPham= $row['TenLoaiSanPham'];
-        $sanPham->BiXoa= $row['BiXoa'];
-        $sanPham->MaLoaiSanPham=$row['MaLoaiSanPham'];
+        $sanPham                    = new LoaiSanPham();
+        $sanPham->TenLoaiSanPham    = $row['TenLoaiSanPham'];
+        $sanPham->BiXoa             = $row['BiXoa'];
+        $sanPham->MaLoaiSanPham     =$row['MaLoaiSanPham'];
         return $sanPham;
     }
     public function postInput($string)

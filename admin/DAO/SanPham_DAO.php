@@ -45,7 +45,17 @@ class SanPham_DAO extends DB
 
     //thêm một sản phẩm mới
     public function ThemSanPham($sp){
-        $truyvan = 'insert into sanpham(TenSanPham, HinhURL, GiaSanPham, MaLoaiSanPham, MaSanPham, MoTa, BiXoa, SoLuotXem, SoLuongTon, SoLuongBan, NgayNhap, MaHangSanXuat) VALUE ($this->getTenSanPham)';
+        $truyvan = 'insert into sanpham(TenSanPham, HinhURL, GiaSanPham, MaLoaiSanPham, MaSanPham, MoTa, SoLuongTon, NgayNhap, MaHangSanXuat) 
+        VALUE ($sp->TenSanPham, $sp->HinhURL, $sp->GiaSanPham, $sp->MaLoaiSanPham, $sp->MoTa, $sp->SoLuongTon, $sp->NgayNhap, $sp->MaHangSanXuat)';
+
+        $this->ExecuteQuery($truyvan);
+
+        $truyvan2 = 'select MaSanPham from sanpham where TenSanPham = $sp->TenSanPham';
+
+        $result =  $this->num_rows($truyvan2);
+        if($result > 0)
+            return true;//nếu thêm sản phẩm thành công thì trả về true
+        return false;//nếu thêm không thành công trả về false
     }
 
     //tìm kiếm một sản phẩm dựa trên tên sản phẩm
@@ -57,18 +67,18 @@ class SanPham_DAO extends DB
             return null;
         $row = mysqli_fetch_array($result);
         $sanPham = new SanPham();
-        $sanPham->MaSanPham = $row['MaSanPham'];
-        $sanPham->TenSanPham = $row['TenSanPham'];
-        $sanPham->AnhURL = $row['HinhURL'];
-        $sanPham->GiaSanPham= $row['GiaSanPham'];
-        $sanPham->SoLuongBan = $row['SoLuongBan'];
-        $sanPham->SoLuotXem = $row['SoLuotXem'];
-        $sanPham->MoTa = $row['MoTa'];
-        $sanPham->XuatXu = $row['XuatXu'];
+        $sanPham->MaSanPham     = $row['MaSanPham'];
+        $sanPham->TenSanPham    = $row['TenSanPham'];
+        $sanPham->AnhURL        = $row['HinhURL'];
+    $sanPham->GiaSanPham        = $row['GiaSanPham'];
+        $sanPham->SoLuongBan    = $row['SoLuongBan'];
+        $sanPham->SoLuotXem     = $row['SoLuotXem'];
+        $sanPham->MoTa          = $row['MoTa'];
+        $sanPham->XuatXu        = $row['XuatXu'];
         $sanPham->MaLoaiSanPham = $row['MaLoaiSanPham'];
-        $sanPham->MaHangSanXuat=$row['MaHangSanXuat'];
-        $sanPham->NgayNhap = $row['NgayNhap'];
-        $sanPham->SoLuongTon = $row['SoLuongTon'];
+        $sanPham->MaHangSanXuat =$row['MaHangSanXuat'];
+        $sanPham->NgayNhap      = $row['NgayNhap'];
+        $sanPham->SoLuongTon    = $row['SoLuongTon'];
         return $sanPham;
     }
 }

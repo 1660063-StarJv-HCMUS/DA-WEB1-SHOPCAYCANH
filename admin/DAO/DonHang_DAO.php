@@ -16,12 +16,12 @@ class DonHang_DAO extends DB
         $lstDonHang = array();
         while($row = mysqli_fetch_array($result))
         {
-            $donHang = new DonHang();
-            $donHang->MaDatHang = $row['MaDonHang'];
-            $donHang->MaNguoiDung = $row['MaTaiKhoan'];
-            $donHang->NgayLap = $row['NgayLap'];
+            $donHang                = new DonHang();
+            $donHang->MaDatHang     = $row['MaDonHang'];
+            $donHang->MaNguoiDung   = $row['MaTaiKhoan'];
+            $donHang->NgayLap       = $row['NgayLap'];
             $donHang->TongThanhTien =$row['TongThanhTien'];
-            $donHang->TinhTrang = $row['TinhTrang'];
+            $donHang->TinhTrang     = $row['TinhTrang'];
             $lstDonHang[] = $donHang;
         }
         return $lstDonHang;

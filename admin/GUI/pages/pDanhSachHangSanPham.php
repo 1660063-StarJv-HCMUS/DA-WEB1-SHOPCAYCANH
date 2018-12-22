@@ -1,1 +1,1 @@
-<h1>Trang Danh sách hãng sản phẩm</h1>
+<h1>Danh sách hãng sản phẩm</h1>

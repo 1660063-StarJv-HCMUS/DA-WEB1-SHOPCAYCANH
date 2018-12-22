@@ -50,10 +50,13 @@ body{
 }
 /*******************content*****************/
 .content{
-  border: 1px solid black;
-  height: 500px;
+  height: 900px;
 }
 
 a{
   text-decoration: none;
+}
+
+.content #themsanpham{
+  float: right;
 }

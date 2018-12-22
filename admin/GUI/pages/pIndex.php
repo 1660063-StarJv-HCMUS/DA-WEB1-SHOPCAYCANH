@@ -1,6 +1,6 @@
-<div class="container">
+<div class="container-fluid">
     <div class="header col-lg-12 col-md-12 col-sm-12">
-        <a href="#" class="trangchu"><i class="fa fa-home"></i> Trở về trang mua sắm</a>
+        <a href="../" class="trangchu"><i class="fa fa-home"></i> Trở về trang mua sắm</a>
         <div class="thongtin dropdown-menu">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> thông tin
                 <i class="fas fa-user-circle"></i>
@@ -27,24 +27,21 @@
 
             switch($a){
                 case 1:
-                    //include 'pIndex.php';
-                    break;
-                case 2:
                     include 'pDashboard.php';
                     break;
-                case 3:
+                case 2:
                     include 'pDanhSachTaiKhoan.php';
                     break;
-                case 4:
+                case 3:
                     include 'pDanhSachLoaiSanPham.php';
                     break;
-                case 5:
+                case 4:
                     include 'pDanhSachHangSanPham.php';
                     break;
-                case 6:
+                case 5:
                     include 'pDanhSachSanPham.php';
                     break;
-                case 7:
+                case 6:
                     include 'pQuanLyDonHang.php';
                     break;
                 default:

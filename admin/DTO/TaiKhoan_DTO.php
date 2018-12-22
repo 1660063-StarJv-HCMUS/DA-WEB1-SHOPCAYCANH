@@ -14,13 +14,13 @@ class TaiKhoan
     var $TenHienThi;
     var $DiaChi;
     var $DienThoai;
-    var $Emal;
+    var $Email;
     var $BiXoa;
     var $MaLoaiTaiKhoan;
 
     public function __construct()
     {
-        $this->MaLoaiTaiKhoan = 0;
-        $this->BiXoa = 0;
+        $this->MaLoaiTaiKhoan   = 0;
+        $this->BiXoa            = 0;
     }
 }

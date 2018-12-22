@@ -2,225 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60a66cda-ef4f-40e1-8896-c1972c235766" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/BUS/SanPham_BUS.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/DAO/UploadFile.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/GUI/pages/pThemSanPham.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BUS/thuBUS.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAO/TaiKhoan_DAO.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/TaiKhoan_DAO.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAO/testDAO.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DTO/testDTO.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/BUS/SanPham_BUS.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/BUS/SanPham_BUS.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/DAO/DB.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/DAO/DB.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/DAO/Function.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/DAO/Session.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/DAO/Session.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/DAO/ThemSanPham.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/DAO/init.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/DAO/init.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/DTO/SanPham.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/DTO/TaiKhoan.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/bootstrap/css/bootstrap-theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/bootstrap/css/bootstrap-theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/bootstrap/css/bootstrap-theme.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/bootstrap/css/bootstrap-theme.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/bootstrap/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/bootstrap/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/bootstrap/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/bootstrap/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/bootstrap/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/bootstrap/js/npm.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/bootstrap/js/npm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/font-awesome/HELP-US-OUT.txt" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/font-awesome/HELP-US-OUT.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/font-awesome/css/font-awesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/font-awesome/css/font-awesome.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/font-awesome/css/font-awesome.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/font-awesome/css/font-awesome.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/font-awesome/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/font-awesome/css/font-awesome.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/font-awesome/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/font-awesome/less/animated.less" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/font-awesome/less/animated.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/font-awesome/less/bordered-pulled.less" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/font-awesome/less/bordered-pulled.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/font-awesome/less/core.less" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/font-awesome/less/core.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/font-awesome/less/extras.less" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/font-awesome/less/extras.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/font-awesome/less/fixed-width.less" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/font-awesome/less/fixed-width.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/font-awesome/less/font-awesome.less" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/font-awesome/less/font-awesome.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/font-awesome/less/icons.less" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/font-awesome/less/icons.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/font-awesome/less/larger.less" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/font-awesome/less/larger.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/font-awesome/less/list.less" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/font-awesome/less/list.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/font-awesome/less/mixins.less" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/font-awesome/less/mixins.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/font-awesome/less/path.less" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/font-awesome/less/path.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/font-awesome/less/rotated-flipped.less" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/font-awesome/less/rotated-flipped.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/font-awesome/less/screen-reader.less" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/font-awesome/less/screen-reader.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/font-awesome/less/spinning.less" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/font-awesome/less/spinning.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/font-awesome/less/stacked.less" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/font-awesome/less/stacked.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/font-awesome/less/variables.less" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/font-awesome/less/variables.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/font-awesome/scss/_animated.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/font-awesome/scss/_animated.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/font-awesome/scss/_bordered-pulled.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/font-awesome/scss/_bordered-pulled.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/font-awesome/scss/_core.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/font-awesome/scss/_core.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/font-awesome/scss/_extras.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/font-awesome/scss/_extras.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/font-awesome/scss/_fixed-width.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/font-awesome/scss/_fixed-width.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/font-awesome/scss/_icons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/font-awesome/scss/_icons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/font-awesome/scss/_larger.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/font-awesome/scss/_larger.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/font-awesome/scss/_list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/font-awesome/scss/_list.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/font-awesome/scss/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/font-awesome/scss/_mixins.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/font-awesome/scss/_path.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/font-awesome/scss/_path.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/font-awesome/scss/_rotated-flipped.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/font-awesome/scss/_rotated-flipped.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/font-awesome/scss/_screen-reader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/font-awesome/scss/_screen-reader.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/font-awesome/scss/_spinning.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/font-awesome/scss/_spinning.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/font-awesome/scss/_stacked.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/font-awesome/scss/_stacked.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/font-awesome/scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/font-awesome/scss/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/font-awesome/scss/font-awesome.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/font-awesome/scss/font-awesome.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/moduls/mDangXuat.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/moduls/mDangXuat.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/pages/mContent.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/pages/mDangNhap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/pages/mDangXuat.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/pages/mHeader.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/pages/mMenu.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/DAO/DonHang_DAO.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/DAO/DonHang_DAO.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/DAO/HangSanXuat_DAO.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/DAO/HangSanXuat_DAO.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/DAO/LoaiSanPham_DAO.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/DAO/LoaiSanPham_DAO.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/DAO/SanPham_DAO.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/DAO/SanPham_DAO.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/DAO/Session.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/DAO/TaiKhoan_DAO.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/DAO/TaiKhoan_DAO.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/DAO/UploadFile.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/DAO/UploadFile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/DTO/DonHang_DTO.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/DTO/DonHang_DTO.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/DTO/HangSanXuat_DTO.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/DTO/HangSanXuat_DTO.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/DTO/LoaiSanPham_DTO.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/DTO/LoaiSanPham_DTO.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/DTO/SanPham_DTO.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/DTO/SanPham_DTO.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/DTO/TaiKhoan_DTO.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/DTO/TaiKhoan_DTO.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI/css/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/css/admin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI/js/DangNhap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI/modules/mMenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/modules/mMenu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI/moduls/mContent.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI/moduls/mDangNhap.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI/moduls/mDangXuat.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI/moduls/mHeader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI/moduls/mMenu.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI/pages/pDanhSachHangSanPham.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/pages/pDanhSachHangSanPham.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI/pages/pDanhSachLoaiSanPham.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/pages/pDanhSachLoaiSanPham.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/GUI/pages/pDanhSachSanPham.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/pages/pDanhSachSanPham.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI/pages/pDanhSachTaiKhoan.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/pages/pDanhSachTaiKhoan.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI/pages/pDashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/pages/pDashboard.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/GUI/pages/pIndex.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/pages/pIndex.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/GUI/pages/pQuanLyDonHang.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/pages/pQuanLyDonHang.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/bower.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/data/flot-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/data/flot-data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/data/morris-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/data/morris-data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/dist/css/sb-admin-2.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/dist/css/sb-admin-2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/dist/css/sb-admin-2.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/dist/css/sb-admin-2.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/dist/js/sb-admin-2.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/dist/js/sb-admin-2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/dist/js/sb-admin-2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/dist/js/sb-admin-2.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/gulpfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/js/sb-admin-2.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/js/sb-admin-2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/less/mixins.less" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/less/mixins.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/less/sb-admin-2.less" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/less/sb-admin-2.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/less/variables.less" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/less/variables.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/pages/blank.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/pages/blank.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/pages/buttons.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/pages/buttons.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/pages/flot.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/pages/flot.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/pages/forms.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/pages/forms.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/pages/grid.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/pages/grid.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/pages/icons.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/pages/icons.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/pages/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/pages/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/pages/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/pages/morris.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/pages/morris.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/pages/notifications.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/pages/notifications.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/pages/panels-wells.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/pages/panels-wells.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/pages/tables.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/pages/tables.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/pages/typography.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/pages/typography.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/bootstrap-social/bootstrap-social.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/bootstrap-social/bootstrap-social.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/bootstrap-social/bootstrap-social.less" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/bootstrap-social/bootstrap-social.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/bootstrap-social/bootstrap-social.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/bootstrap-social/bootstrap-social.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/bootstrap/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/bootstrap/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/bootstrap/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/bootstrap/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables-plugins/dataTables.bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables-plugins/dataTables.bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables-plugins/dataTables.bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables-plugins/dataTables.bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables-plugins/dataTables.bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables-plugins/dataTables.bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables-plugins/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables-plugins/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables-responsive/dataTables.responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables-responsive/dataTables.responsive.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables-responsive/dataTables.responsive.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables-responsive/dataTables.responsive.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables-responsive/dataTables.responsive.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables-responsive/dataTables.responsive.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/css/dataTables.bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/css/dataTables.bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/css/dataTables.bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/css/dataTables.bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/css/dataTables.bootstrap4.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/css/dataTables.bootstrap4.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/css/dataTables.bootstrap4.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/css/dataTables.bootstrap4.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/css/dataTables.foundation.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/css/dataTables.foundation.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/css/dataTables.foundation.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/css/dataTables.foundation.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/css/dataTables.jqueryui.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/css/dataTables.jqueryui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/css/dataTables.jqueryui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/css/dataTables.jqueryui.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/css/dataTables.material.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/css/dataTables.material.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/css/dataTables.material.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/css/dataTables.material.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/css/dataTables.semanticui.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/css/dataTables.semanticui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/css/dataTables.semanticui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/css/dataTables.semanticui.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/css/dataTables.uikit.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/css/dataTables.uikit.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/css/dataTables.uikit.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/css/dataTables.uikit.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/css/jquery.dataTables.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/css/jquery.dataTables.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/css/jquery.dataTables.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/css/jquery.dataTables.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/css/jquery.dataTables_themeroller.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/css/jquery.dataTables_themeroller.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/js/dataTables.bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/js/dataTables.bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/js/dataTables.bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/js/dataTables.bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/js/dataTables.bootstrap4.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/js/dataTables.bootstrap4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/js/dataTables.bootstrap4.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/js/dataTables.bootstrap4.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/js/dataTables.foundation.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/js/dataTables.foundation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/js/dataTables.foundation.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/js/dataTables.foundation.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/js/dataTables.jqueryui.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/js/dataTables.jqueryui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/js/dataTables.jqueryui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/js/dataTables.jqueryui.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/js/dataTables.material.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/js/dataTables.material.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/js/dataTables.material.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/js/dataTables.material.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/js/dataTables.semanticui.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/js/dataTables.semanticui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/js/dataTables.semanticui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/js/dataTables.semanticui.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/js/dataTables.uikit.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/js/dataTables.uikit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/js/dataTables.uikit.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/js/dataTables.uikit.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/js/jquery.dataTables.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/js/jquery.dataTables.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/js/jquery.dataTables.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/js/jquery.dataTables.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/js/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/js/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/flot-tooltip/jquery.flot.tooltip.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/flot-tooltip/jquery.flot.tooltip.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/flot-tooltip/jquery.flot.tooltip.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/flot-tooltip/jquery.flot.tooltip.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/flot-tooltip/jquery.flot.tooltip.source.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/flot-tooltip/jquery.flot.tooltip.source.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/flot/excanvas.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/flot/excanvas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/flot/jquery.colorhelpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/flot/jquery.colorhelpers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/flot/jquery.flot.canvas.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/flot/jquery.flot.canvas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/flot/jquery.flot.categories.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/flot/jquery.flot.categories.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/flot/jquery.flot.crosshair.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/flot/jquery.flot.crosshair.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/flot/jquery.flot.errorbars.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/flot/jquery.flot.errorbars.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/flot/jquery.flot.fillbetween.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/flot/jquery.flot.fillbetween.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/flot/jquery.flot.image.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/flot/jquery.flot.image.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/flot/jquery.flot.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/flot/jquery.flot.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/flot/jquery.flot.navigate.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/flot/jquery.flot.navigate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/flot/jquery.flot.pie.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/flot/jquery.flot.pie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/flot/jquery.flot.resize.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/flot/jquery.flot.resize.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/flot/jquery.flot.selection.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/flot/jquery.flot.selection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/flot/jquery.flot.stack.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/flot/jquery.flot.stack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/flot/jquery.flot.symbol.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/flot/jquery.flot.symbol.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/flot/jquery.flot.threshold.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/flot/jquery.flot.threshold.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/flot/jquery.flot.time.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/flot/jquery.flot.time.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/flot/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/flot/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/HELP-US-OUT.txt" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/HELP-US-OUT.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/css/font-awesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/css/font-awesome.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/css/font-awesome.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/css/font-awesome.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/css/font-awesome.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/less/animated.less" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/less/animated.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/less/bordered-pulled.less" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/less/bordered-pulled.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/less/core.less" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/less/core.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/less/extras.less" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/less/extras.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/less/fixed-width.less" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/less/fixed-width.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/less/font-awesome.less" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/less/font-awesome.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/less/icons.less" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/less/icons.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/less/larger.less" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/less/larger.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/less/list.less" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/less/list.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/less/mixins.less" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/less/mixins.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/less/path.less" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/less/path.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/less/rotated-flipped.less" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/less/rotated-flipped.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/less/screen-reader.less" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/less/screen-reader.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/less/spinning.less" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/less/spinning.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/less/stacked.less" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/less/stacked.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/less/variables.less" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/less/variables.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/scss/_animated.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/scss/_animated.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/scss/_bordered-pulled.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/scss/_bordered-pulled.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/scss/_core.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/scss/_core.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/scss/_extras.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/scss/_extras.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/scss/_fixed-width.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/scss/_fixed-width.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/scss/_icons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/scss/_icons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/scss/_larger.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/scss/_larger.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/scss/_list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/scss/_list.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/scss/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/scss/_mixins.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/scss/_path.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/scss/_path.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/scss/_rotated-flipped.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/scss/_rotated-flipped.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/scss/_screen-reader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/scss/_screen-reader.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/scss/_spinning.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/scss/_spinning.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/scss/_stacked.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/scss/_stacked.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/scss/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/scss/font-awesome.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/font-awesome/scss/font-awesome.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/jquery/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/jquery/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/jquery/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/jquery/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/metisMenu/metisMenu.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/metisMenu/metisMenu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/metisMenu/metisMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/metisMenu/metisMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/metisMenu/metisMenu.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/metisMenu/metisMenu.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/metisMenu/metisMenu.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/metisMenu/metisMenu.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/morrisjs/morris.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/morrisjs/morris.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/morrisjs/morris.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/morrisjs/morris.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/morrisjs/morris.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/morrisjs/morris.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/raphael/raphael.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/raphael/raphael.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/raphael/raphael.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/teample/startbootstrap-sb-admin-2-gh-pages/vendor/raphael/raphael.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -228,94 +41,108 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DTO/TaiKhoan.php">
+        <entry file="file://$PROJECT_DIR$/admin/DAO/UploadFile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+            <state relative-caret-position="27">
+              <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DTO/SanPham_DTO.php">
+        <entry file="file://$PROJECT_DIR$/admin/DAO/TaiKhoan_DAO.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+            <state relative-caret-position="884">
+              <caret line="78" column="34" lean-forward="true" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DTO/LoaiSanPham.php">
+        <entry file="file://$PROJECT_DIR$/admin/DAO/SanPham_DAO.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+            <state relative-caret-position="884">
+              <caret line="80" column="32" selection-start-line="80" selection-start-column="32" selection-end-line="80" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DTO/HangSanXuat.php">
+        <entry file="file://$PROJECT_DIR$/admin/DAO/LoaiSanPham_DAO.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+            <state relative-caret-position="884">
+              <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DAO/Login.php">
+        <entry file="file://$PROJECT_DIR$/admin/DAO/init.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="39" column="20" selection-start-line="1" selection-end-line="41" selection-end-column="1" />
+            <state relative-caret-position="297">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/DAO/DangNhap_DAO.php">
+        <entry file="file://$PROJECT_DIR$/admin/DAO/HangSanXuat_DAO.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="569">
-              <caret line="37" column="1" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+            <state relative-caret-position="226">
+              <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/DAO/DonHang_DAO.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27">
+              <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/DAO/DB.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/admin/DAO/UploadFile.php">
+        <entry file="file://$PROJECT_DIR$/admin/GUI/modules/mMenu.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="31" column="52" lean-forward="true" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
+            <state relative-caret-position="685">
+              <caret line="109" column="47" selection-start-line="109" selection-start-column="47" selection-end-line="109" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/DTO/SanPham_DTO.php">
+        <entry file="file://$PROJECT_DIR$/admin/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/GUI/pages/pDanhSachSanPham.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/GUI/pages/pIndex.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="884">
-              <caret line="52" column="10" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
+            <state relative-caret-position="567">
+              <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -326,6 +153,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -335,12 +163,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/DTO/LoaiSanPham.php" />
-        <option value="$PROJECT_DIR$/DTO/HangSanXuat.php" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/admin.php" />
-        <option value="$PROJECT_DIR$/Admin/GUI/css/admin.css" />
-        <option value="$PROJECT_DIR$/Admin/GUI/pDangNhap.php" />
         <option value="$PROJECT_DIR$/Admin/DTO/SanPham.php" />
         <option value="$PROJECT_DIR$/Admin/DAO/ThemSanPham.php" />
         <option value="$PROJECT_DIR$/Admin/GUI/pIndex.php" />
@@ -366,21 +188,32 @@
         <option value="$PROJECT_DIR$/DAO/DB.php" />
         <option value="$PROJECT_DIR$/admin/DTO/SanPham.php" />
         <option value="$PROJECT_DIR$/admin/DTO/TaiKhoan.php" />
-        <option value="$PROJECT_DIR$/admin/DTO/DonHang_DTO.php" />
         <option value="$PROJECT_DIR$/admin/DAO/Session.php" />
         <option value="$PROJECT_DIR$/admin/GUI/moduls/mDangXuat.php" />
         <option value="$PROJECT_DIR$/admin/BUS/SanPham_DAO.php" />
         <option value="$PROJECT_DIR$/admin/GUI/pages/pDanhSachSanPham.php" />
-        <option value="$PROJECT_DIR$/admin/BUS/SanPham_BUS.php" />
-        <option value="$PROJECT_DIR$/admin/DAO/DB.php" />
         <option value="$PROJECT_DIR$/admin/BUS/DangNhap_BUS.php" />
         <option value="$PROJECT_DIR$/DAO/TaiKhoan_DAO.php" />
-        <option value="$PROJECT_DIR$/admin/DAO/SanPham_DAO.php" />
-        <option value="$PROJECT_DIR$/admin/index.php" />
         <option value="$PROJECT_DIR$/admin/GUI/pages/pIndex.php" />
         <option value="$PROJECT_DIR$/admin/DAO/DangNhap_DAO.php" />
         <option value="$PROJECT_DIR$/admin/DAO/File.php" />
+        <option value="$PROJECT_DIR$/admin/GUI/pages/pThemSanPham.php" />
+        <option value="$PROJECT_DIR$/admin/GUI/js/ThemSanPham.js" />
+        <option value="$PROJECT_DIR$/admin/DAO/TaiKhoan_DAO.php" />
+        <option value="$PROJECT_DIR$/admin/DTO/SanPham_DTO.php" />
+        <option value="$PROJECT_DIR$/admin/DTO/TaiKhoan_DTO.php" />
+        <option value="$PROJECT_DIR$/admin/DTO/LoaiSanPham_DTO.php" />
+        <option value="$PROJECT_DIR$/admin/DTO/HangSanXuat_DTO.php" />
+        <option value="$PROJECT_DIR$/admin/DTO/DonHang_DTO.php" />
         <option value="$PROJECT_DIR$/admin/DAO/UploadFile.php" />
+        <option value="$PROJECT_DIR$/admin/DAO/SanPham_DAO.php" />
+        <option value="$PROJECT_DIR$/admin/DAO/LoaiSanPham_DAO.php" />
+        <option value="$PROJECT_DIR$/admin/DAO/HangSanXuat_DAO.php" />
+        <option value="$PROJECT_DIR$/admin/DAO/DonHang_DAO.php" />
+        <option value="$PROJECT_DIR$/admin/DAO/DB.php" />
+        <option value="$PROJECT_DIR$/admin/BUS/SanPham_BUS.php" />
+        <option value="$PROJECT_DIR$/admin/index.php" />
+        <option value="$PROJECT_DIR$/admin/GUI/modules/mMenu.php" />
       </list>
     </option>
   </component>
@@ -389,11 +222,11 @@
       <server host="localhost" id="f3dd1b48-8a1d-4c55-952b-637e4cdfefe4" name="localhost" port="8080" />
     </servers>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-272" />
-    <option name="y" value="170" />
-    <option name="width" value="1936" />
-    <option name="height" value="1096" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1771" />
+    <option name="y" value="83" />
+    <option name="width" value="1026" />
+    <option name="height" value="576" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -452,34 +285,7 @@
               <item name="DA-WEB1-SHOPCAYCANH" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="GUI" type="462c0819:PsiDirectoryNode" />
-              <item name="moduls" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DA-WEB1-SHOPCAYCANH" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DA-WEB1-SHOPCAYCANH" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="GUI" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DA-WEB1-SHOPCAYCANH" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DA-WEB1-SHOPCAYCANH" type="462c0819:PsiDirectoryNode" />
-              <item name="BUS" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DA-WEB1-SHOPCAYCANH" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DA-WEB1-SHOPCAYCANH" type="462c0819:PsiDirectoryNode" />
-              <item name="DAO" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DA-WEB1-SHOPCAYCANH" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DA-WEB1-SHOPCAYCANH" type="462c0819:PsiDirectoryNode" />
-              <item name="DTO" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DA-WEB1-SHOPCAYCANH" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DA-WEB1-SHOPCAYCANH" type="462c0819:PsiDirectoryNode" />
-              <item name="GUI" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -489,10 +295,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -544,16 +351,20 @@
       <workItem from="1545128036925" duration="4898000" />
       <workItem from="1545198457081" duration="6467000" />
       <workItem from="1545281273375" duration="4273000" />
+      <workItem from="1545288141310" duration="6047000" />
+      <workItem from="1545354801825" duration="3279000" />
+      <workItem from="1545364090022" duration="2120000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54731000" />
+    <option name="totallyTimeSpent" value="66177000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="1358" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20499243" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18763326" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -571,120 +382,34 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32995737" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21002132" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32917964" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32995737" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin/DTO/SanPham.php" />
-    <entry file="file://$PROJECT_DIR$/admin/DTO/TaiKhoan.php" />
-    <entry file="file://$PROJECT_DIR$/admin/DAO/Function.php" />
-    <entry file="file://$PROJECT_DIR$/admin/DAO/init.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DAO/DB.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BUS/session.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="38" lean-forward="true" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="12" selection-start-line="17" selection-end-line="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/GUI/pages/pQuanLyDonHang.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/GUI/pages/pError.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/GUI/pages/pDashboard.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/GUI/pages/pDanhSachTaiKhoan.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="34" lean-forward="true" selection-start-column="34" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/GUI/moduls/mContent.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/GUI/moduls/mDangNhap.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/GUI/moduls/mHeader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#style#0;n#nav#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/GUI/moduls/mMenu.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/GUI/moduls/mDangXuat.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/DAO/LoaiSanPham_DAO.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BUS/SanPham_BUS.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" column="5" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="49" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/BUS/SanPham_BUS.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="17" column="65" lean-forward="true" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/DAO/ThemSanPham.php" />
-    <entry file="file://$PROJECT_DIR$/admin/DAO/DB.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BUS/TaiKhoan_BUS.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="56" lean-forward="true" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DAO/Register.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/DAO/SanPham_DAO.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -699,47 +424,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/DTO/TaiKhoan_DTO.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/DTO/LoaiSanPham_DTO.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/DTO/HangSanXuat_DTO.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/DTO/DonHang_DTO.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/DAO/TaiKhoan_DAO.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/DAO/SanPham_DAO.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="626">
-          <caret line="63" column="48" lean-forward="true" selection-start-line="63" selection-start-column="48" selection-end-line="63" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/GUI/modules/mContent.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/GUI/modules/mDangNhap.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -753,36 +437,6 @@
           <folding>
             <element signature="n#style#0;n#nav#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/DAO/DonHang_DAO.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/DAO/HangSanXuat_DAO.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/GUI/pages/pDanhSachLoaiSanPham.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/DAO/Session.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/BUS/DangNhap_BUS.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
@@ -814,19 +468,117 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DAO/Login.php">
+    <entry file="file://$PROJECT_DIR$/admin/GUI/moduls/mContent.php" />
+    <entry file="file://$PROJECT_DIR$/DAO/Register.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BUS/SanPham_BUS.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="20" selection-start-line="1" selection-end-line="41" selection-end-column="1" />
+        <state relative-caret-position="450">
+          <caret line="48" column="9" lean-forward="true" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/DTO/SanPham_DTO.php">
+    <entry file="file://$PROJECT_DIR$/admin/GUI/modules/mContent.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GUI/modules/mModal.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="212">
+          <caret line="18" column="35" lean-forward="true" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="569">
+          <caret line="106" column="7" lean-forward="true" selection-start-line="106" selection-start-column="7" selection-end-line="106" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GUI/js/form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="59" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DAO/Login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1134">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GUI/modules/mTrangChu.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GUI/modules/mHeader.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/GUI/js/DangNhap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="38" column="3" selection-start-line="38" selection-start-column="3" selection-end-line="38" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BUS/TaiKhoan_BUS.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="56" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/GUI/js/ThemSanPham.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="38" column="63" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GUI/modules/mTopBar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/DAO/Session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/GUI/pages/pThemSanPham.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="46" selection-start-column="46" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/GUI/pages/pQuanLyDonHang.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/GUI/pages/pIndex.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="51" column="6" lean-forward="true" selection-start-line="51" selection-start-column="6" selection-end-line="51" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/GUI/pages/pError.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/GUI/pages/pDashboard.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/GUI/pages/pDanhSachTaiKhoan.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/GUI/pages/pDanhSachSanPham.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -835,24 +587,135 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/GUI/pages/pIndex.php">
+    <entry file="file://$PROJECT_DIR$/admin/GUI/pages/pDanhSachLoaiSanPham.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/GUI/pages/pDanhSachHangSanPham.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/BUS/DangNhap_BUS.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="52" column="10" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
+        <state relative-caret-position="216">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/BUS/SanPham_BUS.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="891">
+          <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/DAO/DangNhap_DAO.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
-          <caret line="37" column="1" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+        <state relative-caret-position="162">
+          <caret line="6" column="34" lean-forward="true" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/DTO/TaiKhoan_DTO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/DTO/SanPham_DTO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/DTO/LoaiSanPham_DTO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/DTO/HangSanXuat_DTO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/DTO/DonHang_DTO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/DAO/UploadFile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="31" column="52" lean-forward="true" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
+        <state relative-caret-position="27">
+          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/DAO/TaiKhoan_DAO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="78" column="34" lean-forward="true" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/DAO/SanPham_DAO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="80" column="32" selection-start-line="80" selection-start-column="32" selection-end-line="80" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/DAO/LoaiSanPham_DAO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/DAO/init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/DAO/HangSanXuat_DAO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/DAO/DonHang_DAO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/DAO/DB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/GUI/modules/mMenu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="685">
+          <caret line="109" column="47" selection-start-line="109" selection-start-column="47" selection-end-line="109" selection-end-column="47" />
         </state>
       </provider>
     </entry>

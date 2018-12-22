@@ -1,1 +1,1 @@
-<h1>Trang quản lý đơn hàng</h1>
+<h1>Quản lý đơn hàng</h1>

@@ -16,11 +16,11 @@ class HangSanXuat_DAO extends DB
         $lstHangSanXuat = array();
         while($row = mysqli_fetch_array($result))
         {
-            $hangSanXuat = new HangSanXuat();
-            $hangSanXuat->MaHangSanXuat = $row['MaHangSanXuat'];
-            $hangSanXuat->TenHangSanXuat = $row['TenHangSanXuat'];
-            $hangSanXuat->LogoURL = $row['LogoURL'];
-            $hangSanXuat->BiXoa = $row['BiXoa'];
+            $hangSanXuat                    = new HangSanXuat();
+            $hangSanXuat->MaHangSanXuat     = $row['MaHangSanXuat'];
+            $hangSanXuat->TenHangSanXuat    = $row['TenHangSanXuat'];
+            $hangSanXuat->LogoURL           = $row['LogoURL'];
+            $hangSanXuat->BiXoa             = $row['BiXoa'];
             $lstHangSanXuat[] = $hangSanXuat;
         }
         return $lstHangSanXuat;
@@ -37,10 +37,10 @@ class HangSanXuat_DAO extends DB
         extract($row);
 
         $hangSX= new HangSanXuat();
-        $hangSX->MaHangSanXuat= $row['MaHangSanXuat'];
-        $hangSX->TenHangSanXuat= $row['TenHangSanXuat'];
-        $hangSX->LogoURL= $row['LogoURL'];
-        $hangSX->BiXoa=$row['BiXoa'];
+        $hangSX->MaHangSanXuat  = $row['MaHangSanXuat'];
+        $hangSX->TenHangSanXuat = $row['TenHangSanXuat'];
+        $hangSX->LogoURL        = $row['LogoURL'];
+        $hangSX->BiXoa          =$row['BiXoa'];
         return $hangSX;
     }
     public function postInput($string)

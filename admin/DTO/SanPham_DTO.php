@@ -17,15 +17,15 @@ class SanPham
     var $BiXoa;
     var $SoLuotXem;
     var $SoLuongTon;
-    var $soLuongBan;
+    var $SoLuongBan;
     var $NgayNhap;
     var $MaHangSanXuat;
 
     public function __construct()
     {
-        $this->GiaSanPham = 0;
-        $this->SoLuongTon = 0;
-        $this->BiXoa = 0;
-        $this->SoLuotXem = 0;
+        $this->GiaSanPham   = 0;
+        $this->SoLuongTon   = 0;
+        $this->BiXoa        = 0;
+        $this->SoLuotXem    = 0;
     }
 }

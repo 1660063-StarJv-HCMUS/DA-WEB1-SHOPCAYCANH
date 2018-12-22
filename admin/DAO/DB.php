@@ -1,14 +1,14 @@
 <?php
     class DB{
-        var $host = 'localhost';
-        var $username = 'root';
-        var $password = '';
-        var $database = 'quanlycaycanhstore';
+        var $host       = 'localhost';
+        var $username   = 'root';
+        var $password   = '';
+        var $database   = 'quanlycaycanhstore';
 
         public function ExecuteQuery($sql){
             $connection = new mysqli($this->host, $this->user, $this->password, $this->database) or die('Không thể kết nối database');
             mysqli_set_charset($connection,'UTF8');
-            $result = mysqli_query($connection, $sql);
+            $result     = mysqli_query($connection, $sql);
             mysqli_close($connection);
             return $result;
         }

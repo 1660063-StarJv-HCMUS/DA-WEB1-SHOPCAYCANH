@@ -11,10 +11,25 @@ include_once __DIR__.'/../DAO/TaiKhoan_DAO.php';
         {
             return $this->taiKhoan->GetUserInfo($username);
         }
-        //tra ve so luong tai khoan trung username va mk
-        public function checkRow($tenDangNhap, $MatKhau)
+        public function checkUsername($tenDangNhap)
         {
-            return $this->taiKhoan->checkRow($tenDangNhap, $MatKhau);
+            return $this->taiKhoan->checkUsername($tenDangNhap);
+        }
+        //tra ve so luong tai khoan trung username va mk
+        public function checkAccount($tenDangNhap, $MatKhau)
+        {
+            return $this->taiKhoan->checkAccount($tenDangNhap, $MatKhau);
+        }
+
+        //Kiem tra tk admin
+        public function checkAdmin($tenDangNhap, $MatKhau)
+        {
+            return $this->taiKhoan->checkAdmin($tenDangNhap, $MatKhau);
+        }
+        //them tk nguoi dung
+        public function AddTK($taiKhoan)
+        {
+            return $this->taiKhoan->AddTK($taiKhoan);
         }
     }
 ?>

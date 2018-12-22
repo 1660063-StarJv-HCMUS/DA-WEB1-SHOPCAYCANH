@@ -14,7 +14,10 @@ class Session
     {
         $_SESSION['user'] = $user;
     }
-
+    public function sendAdmin($admin)
+    {
+        $_SESSION['admin'] = $admin;
+    }
     // Hàm lấy dữ liệu session
     public function get()
     {
@@ -24,6 +27,16 @@ class Session
             $user = '';
         }
         return $user;
+    }
+    //kiem
+    public function getAdmin()
+    {
+        if (isset($_SESSION['admin'])) {
+            $admin = $_SESSION['admin'];
+        } else {
+            $admin = '0';
+        }
+        return $admin;
     }
 
     // Hàm xoá session

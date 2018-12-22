@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: phuon
- * Date: 12/16/2018
- * Time: 4:28 PM
- */
-
 class TaiKhoan
 {
     var $MaTaiKhoan;

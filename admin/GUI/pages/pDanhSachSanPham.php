@@ -9,9 +9,9 @@
         <thead>
         <tr>
             <th>Tên sản phẩm</th>
-            <th>Hình ảnh</th>
+            <th class="HinhSP">Hình ảnh</th>
             <th>Hãng sản xuất</th>
-            <th>Giá</th>
+            <th>Giá(VNĐ)</th>
             <th>Số lượt xem</th>
             <th>Số lượng tồn</th>
             <th>Số lượng bán</th>
@@ -21,27 +21,28 @@
         </thead>
         <tbody>
         <?php
-        $a=1;
-        if(isset($_GET["a"]))
-        {
-            $a = $_GET["a"];
-        }
+        
         $loadSP = new SanPham_BUS();
 
-        $result = $loadSP->LoadSanPhamByMaLoai($a);
+        $result = $loadSP->LoadTatCaSanPham();
 
         foreach ($result as $loadSP){
+            $url = '../GUI/images/'.$loadSP->HinhURL;
             echo '
             <tr>
                 <td><a>'.$loadSP->TenSanPham.'</a></td>
-                <td><a>'.$loadSP->HinhURL.'</a></td>
-                <td><a>'.$loadSP->HangSanXuat.'</a></td>
+                <td><img src="'.$url.'" alt="Card image cap"></td>
+                <td><a>'.$loadSP->MaHangSanXuat.'</a></td>
                 <td>'.$loadSP->GiaSanPham.'</td>
                 <td>'.$loadSP->SoLuotXem.'</td>
                 <td>'.$loadSP->SoLuongTon.'</td>
                 <td>'.$loadSP->SoLuongBan.'</td>
                 <td>'.$loadSP->NgayNhap.'</td>
-                <td>Chức năng chỉnh sửa + xóa</td>
+                <td>
+                    <a href="#" title="">Chỉnh sửa</a>
+                    |
+                    <a href="#" title="">Xóa</a>
+                </td>
             </tr>
             ';
         }

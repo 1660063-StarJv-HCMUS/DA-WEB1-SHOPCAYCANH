@@ -1,7 +1,7 @@
 <?php
-    class DB{
+    class Database{
         var $host       = 'localhost';
-        var $username   = 'root';
+        var $user       = 'root';
         var $password   = '';
         var $database   = 'quanlycaycanhstore';
 

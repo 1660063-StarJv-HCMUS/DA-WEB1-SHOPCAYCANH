@@ -6,7 +6,7 @@
  */
 include_once 'DB.php';
 
-class LoaiSanPham_DAO extends DB
+class LoaiSanPhamDAO extends DB
 {
     public function LoadTatCaLoaiSanPham()
     {

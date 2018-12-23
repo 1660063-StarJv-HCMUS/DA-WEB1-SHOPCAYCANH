@@ -5,26 +5,37 @@
  *
  *
  */
-include_once 'DB.php';
 
-class HangSanXuat_DAO extends DB
+include_once 'DB.php';
+include_once __DIR__.'/../DTO/HangSanXuat_DTO.php';
+
+class HangSanXuatDAO extends Database
 {
     public function LoadTatCaHangSanXuat()
     {
-        $sql ="SELECT MaHangSanXuat,TenHangSanXuat,LogoURL,BiXoa from hangsanxuat";
+        $sql ="SELECT TenHangSanXuat,LogoURL from hangsanxuat";
         $result = $this->ExecuteQuery($sql);
-        $lstHangSanXuat = array();
-        while($row = mysqli_fetch_array($result))
-        {
-            $hangSanXuat                    = new HangSanXuat();
-            $hangSanXuat->MaHangSanXuat     = $row['MaHangSanXuat'];
-            $hangSanXuat->TenHangSanXuat    = $row['TenHangSanXuat'];
-            $hangSanXuat->LogoURL           = $row['LogoURL'];
-            $hangSanXuat->BiXoa             = $row['BiXoa'];
-            $lstHangSanXuat[] = $hangSanXuat;
-        }
-        return $lstHangSanXuat;
+        return $result;
     }
+
+    //load hãng sản xuất bởi tên nhà sản xuất
+    public function LoadHangByTen($tenNhaSanXuat){
+        $sql = 'SELECT MaHangSanXuat,TenHangSanXuat,LogoURL,BiXoa FROM hangsanxuat WHERE TenHangSanXuat like $MaHangSanXuat ';
+        $rs = $this->ExecuteQuery($sql);
+        if($rs==null)
+            return null;
+
+        $row = mysqli_fetch_array($rs);
+        extract($row);
+
+        $hangSX= new HangSanXuat();
+        $hangSX->MaHangSanXuat  = $row['MaHangSanXuat'];
+        $hangSX->TenHangSanXuat = $row['TenHangSanXuat'];
+        $hangSX->LogoURL        = $row['LogoURL'];
+        $hangSX->BiXoa          =$row['BiXoa'];
+        return $hangSX;
+    }
+
     //load hãng sản xuất bởi ID
     public function LoadHangByID($MaHangSanXuat )
     {

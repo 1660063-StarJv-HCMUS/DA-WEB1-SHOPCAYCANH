@@ -6,7 +6,7 @@
  *
  */
 
-class DonHang_DAO extends DB
+class DonHangDAO extends DB
 {
     //load tất cả các đơn hàng
     public function LoadTatCaCacDonHang()

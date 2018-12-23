@@ -8,7 +8,7 @@
 include_once 'DB.php';
 include_once __DIR__.'/../DTO/SanPham_DTO.php';
 
-class SanPham_DAO extends DB
+class SanPhamDAO extends Database
 {
     public function PostInput($string)
     {
@@ -30,9 +30,10 @@ class SanPham_DAO extends DB
 
     //load tất cả các sản phẩm
     public function LoadTatCaSanPham(){
-        $truyvan = 'select TenSanPham, HinhURL, GiaSanPham from sanpham';
+        $truyvan = 'select TenSanPham, HinhURL, GiaSanPham, NgayNhap, SoLuongTon, 
+        SoLuongBan, SoLuotXem, MoTa, MaHangSanXuat from sanpham';
 
-        $ketQua = $this->ExcuteQuery($truyvan);
+        $ketQua = $this->ExecuteQuery($truyvan);
 
         return $ketQua;
     }
@@ -81,4 +82,9 @@ class SanPham_DAO extends DB
         $sanPham->SoLuongTon    = $row['SoLuongTon'];
         return $sanPham;
     }
+
+
+    
+
+
 }

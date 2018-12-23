@@ -48,9 +48,19 @@ body{
 .nav li i{
   font-size: 25px;
 }
+
+.nav .themmoi{
+  margin-top: 5px; 
+
+}
+
+.nav .dropdown-menu{
+  width: 100%;
+  border: none;
+  padding: 3px 3px 5px 3px;
+}
 /*******************content*****************/
 .content{
-  height: 900px;
 }
 
 a{

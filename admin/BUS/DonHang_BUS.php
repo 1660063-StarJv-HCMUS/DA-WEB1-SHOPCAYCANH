@@ -5,8 +5,7 @@
  *
  */
 
-include_once __DIR__.'/../DAO/DangNhap_DAO.php';
+class DonHang_BUS
+{
 
-
-?>
-
+}

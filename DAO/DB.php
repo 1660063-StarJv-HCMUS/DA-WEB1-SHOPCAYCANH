@@ -1,10 +1,10 @@
 <?php
 class DB
 {
-    var $host = 'localhost';
-    var $user = 'root';
-    var $password = '';
-    var $database = 'quanlycaycanhstore';
+    var $host       = 'localhost';
+    var $user       = 'root';
+    var $password   = '';
+    var $database   = 'quanlycaycanhstore';
 
     public function ExcuteQuery($sql){
         $connection = new mysqli($this->host, $this->user, $this->password, $this->database) or die('Không thể kết nối database');

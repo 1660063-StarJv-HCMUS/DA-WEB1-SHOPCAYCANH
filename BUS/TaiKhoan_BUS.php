@@ -31,5 +31,10 @@ include_once __DIR__.'/../DAO/TaiKhoan_DAO.php';
         {
             return $this->taiKhoan->AddTK($taiKhoan);
         }
+        //ten nguoi dung
+        public function getName($tenDangNhap)
+        {
+            return $this->taiKhoan->getName($tenDangNhap);
+        }
     }
 ?>

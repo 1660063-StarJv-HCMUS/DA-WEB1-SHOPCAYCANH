@@ -23,7 +23,7 @@ if (isset($_POST['user_signin']) && isset($_POST['pass_signin'])) {
         $kiemTra = new TaiKhoan_BUS();
         if ($kiemTra->checkUsername($_POST['user_signin'])) {
             if ($kiemTra->checkAccount($_POST['user_signin'], $_POST['pass_signin'])) {
-                $session->send($_POST['user_signin']);
+                $session->send($kiemTra->getName($_POST['user_signin']));
                 //kiem tra admin
                 if ($kiemTra->checkAdmin($_POST['user_signin'], $_POST['pass_signin'])) {
                     $session->sendAdmin(1);

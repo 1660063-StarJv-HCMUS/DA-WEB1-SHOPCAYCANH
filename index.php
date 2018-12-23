@@ -29,6 +29,9 @@ if ($session->get() != '') {
 } else {
     $user = '';
 }
+?>
+    <div class="desktop-screen">
+<?php
 include_once 'GUI/modules/mTopBar.php';
 if ($user) {
     ?>
@@ -65,12 +68,14 @@ else {
 }
 ?>
     </div>
-        </div>
-        <div id="header">
-            <?php
+</div>
+    <div id="header">
+<?php
 include 'GUI/modules/mHeader.php'
 ?>
-        </div>
+    </div>
+</div>
+
         <div id="container">
 
 <?php

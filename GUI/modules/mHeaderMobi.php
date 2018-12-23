@@ -114,7 +114,6 @@ else {
         </div>
     </li>
 <?php
-include_once 'GUI/modules/mModal.php';
 }
 ?>
             </ul>

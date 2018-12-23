@@ -50,6 +50,5 @@ else {
         <a role="button" data-toggle="modal" data-target="#Modal-form" onclick="registered()">Đăng ký</a>
     </div>
 <?php
-    include_once 'GUI/modules/mModal.php';
 }
 ?>

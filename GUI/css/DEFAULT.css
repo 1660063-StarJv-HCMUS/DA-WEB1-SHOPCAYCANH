@@ -263,7 +263,7 @@ footer div h4 {
   display: none;
 }
 
-#loginModal .close {
+#Modal-form .close {
   box-shadow: none;
   position: absolute;
   right: 15px;

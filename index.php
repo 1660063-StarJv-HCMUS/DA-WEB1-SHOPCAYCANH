@@ -81,6 +81,7 @@ switch ($a) {
 
         <div id="footer">
             <?php
+include_once 'GUI/modules/mModal.php';
 include 'GUI/modules/mPruductDetails.php';
 include 'GUI/modules/mFooter.php';
 

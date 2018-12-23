@@ -106,7 +106,9 @@ switch ($a) {
 
         <div id="footer">
             <?php
+include 'GUI/modules/mPruductDetails.php';
 include 'GUI/modules/mFooter.php';
+
 ?>
         </div>
     <script src="GUI/js/jquery-3.2.1.min.js"></script>

@@ -19,6 +19,8 @@
                     $sp->setTenSanPham($row['TenSanPham']);
                     $sp->setHinhURL($row['HinhURL']);
                     $sp->setGiaSanPham($row['GiaSanPham']);
+                    $sp->setMoTa($row['MoTa']);
+                    $sp->setMaSanPham($row['MaSanPham']);
                     $danhSachSanPham[] = $sp;
                 }
             }
@@ -42,6 +44,8 @@
                     $sp->setTenSanPham($row['TenSanPham']);
                     $sp->setHinhURL($row['HinhURL']);
                     $sp->setGiaSanPham($row['GiaSanPham']);
+                    $sp->setMoTa($row['MoTa']);
+                    $sp->setMaSanPham($row['MaSanPham']);
                     $danhSachSanPham[] = $sp;
                 }
             }

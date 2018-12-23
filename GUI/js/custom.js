@@ -27,3 +27,19 @@ $('#scroll-bottom').click(
         }, 800);
     }
 );
+/*----------------------poppup datails-------------------*/ 
+$(".btnDetails").click(function () {
+    var image = $(this).data('image');
+    var price = $(this).data('price');
+    var name = $(this).data('name');
+    var price_discount = $(this).data('price_discount');
+    var detail = $(this).data('detail');
+    var id = $(this).data('id');
+    $(".name_product").html(name);
+    $(".price_product i").html(price + " VNĐ");
+    $(".price_product span").html(price_discount + " VNĐ");
+    $(".product p").html(detail);
+    $(".img_details img").attr("src", image);
+    $("#id_product").html(id);
+    $(".quantity input").val(1);
+});

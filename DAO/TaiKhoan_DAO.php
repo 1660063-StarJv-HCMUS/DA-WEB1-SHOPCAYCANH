@@ -57,9 +57,16 @@ class TaiKhoan_DAO //extends DB
 
     public function AddTK($taiKhoan)
     {
-        $sql = "INSERT into TaiKhoan(TenHienThi, TenDangNhap, DiaChi, Email, MatKhau, BiXoa ) values('$taiKhoan->TenNguoiDung','$taiKhoan->TenDangNhap','$taiKhoan->DiaChi','$taiKhoan->email','$taiKhoan->MatKhau','$taiKhoan->BiXoa')";
+        $sql = "INSERT into TaiKhoan(TenHienThi, TenDangNhap, MatKhau, DiaChi, DienThoai, Email,  BiXoa, MaLoaiTaiKhoan ) values('$taiKhoan->TenNguoiDung','$taiKhoan->TenDangNhap','$taiKhoan->MatKhau','$taiKhoan->DiaChi','$taiKhoan->Sdt','$taiKhoan->Email', 0, 1)";
         $db = new DB();
         return $result = $db->ExcuteQuery($sql);
         //$result = $this->ExecuteQuery($sql);
+    }
+
+    public function getName($tenDangNhap)
+    {
+        $info = new TaiKhoan();
+        $info = $this->GetUserInfo($tenDangNhap);
+        return $info->TenNguoiDung;
     }
 }

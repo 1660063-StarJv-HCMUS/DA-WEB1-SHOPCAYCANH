@@ -30,7 +30,7 @@
                     <input type="text" name="phone_number" placeholder="Số điện thoại" pattern="0+[0-9]{9,}" id='phone_number' value="0123456789"/>
                     <input type="text" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" id='email' value="abc@gmail.com"/>
                     <button type="button" name="register_button" id="register_button">TẠO TÀI KHOẢN</button>
-                    <div class="alert alert-danger invisible mt-2"></div>
+                    <div class="alert alert-danger invisible mt-2 mb-0"></div>
                     <p class="message">Đã có tài khoản? <a href="#">Đăng Nhập</a></p>
                 </form>
             </div>

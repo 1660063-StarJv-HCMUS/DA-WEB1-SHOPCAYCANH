@@ -20,11 +20,11 @@ if (isset($_POST['name_info']) && isset($_POST['username_info']) && isset($_POST
             }
             else {
                 $tk= new TaiKhoan();
-                $tk->TenHienThi = $_POST['name_info'];
+                $tk->TenNguoiDung = $_POST['name_info'];
                 $tk->TenDangNhap = $_POST['username_info'];
                 $tk->MatKhau = $_POST['password_info'];
                 $tk->DiaChi = $_POST['address_info'];
-                $tk->DienThoai = $_POST['address_info'];
+                $tk->Sdt = $_POST['phone_number_info'];
                 $tk->Emal = $_POST['email_info'];
                 if($kiemTra->AddTK($tk))
                 {
@@ -32,6 +32,7 @@ if (isset($_POST['name_info']) && isset($_POST['username_info']) && isset($_POST
                 }
                 else {
                     echo $show_alert . 'Đăng ký thất bại.';
+                    echo $tk->Email;
                 };
             }
         }

@@ -6,8 +6,18 @@ if(isset($_GET["a"]))
 {
     $a = $_GET["a"];
 }
+else {
+    $a = 0;
+}
 $loadSP = new SanPham_BUS();
-$result = $loadSP->LoadSanPhamByMaLoai($a);
+if($a)
+{
+    $result = $loadSP->LoadSanPhamByMaLoai($a);
+}
+else {
+    $result = $loadSP->LoadTatCaSanPham(); 
+}
+
 
 foreach ($result as $loadSP) {
     echo'

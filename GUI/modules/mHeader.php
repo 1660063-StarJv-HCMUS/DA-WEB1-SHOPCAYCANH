@@ -1,19 +1,86 @@
 <div class="row">
-    <a class="logo col-lg-3" href="index.php?a=1">
+    <a class="col-3 text-center logo" href="index.php?a=0">
         <img src="GUI/images/logo-header.png" />
     </a>
-    <div class="main-menu col-lg-6">
-        <a href="index.php?a=0">Trang chủ</a>
-        <a href="index.php?a=2">Sen đá</a>
-        <a href="index.php?a=3">Xương rồng</a>
-        <a href="index.php?a=1">Tiểu cảnh</a>
-        <a href="#" id="scroll-bottom" >Liên hệ</a>
+    <div class="col-6">
+        <nav class="menutop">
+            <ul>
+                <li>
+                    <a href="index.php?a=0">Trang chủ</a>
+                </li>
+                <li>
+                    <a href="index.php?a=0">Sản phẩm</a>
+                    <ul>
+                        <li>
+                            <a href="index.php?a=1">Tiểu cảnh</a>
+                        </li>
+                        <li>
+                            <a href="index.php?a=3">Xương rồng</a>
+                        </li>
+                        <li>
+                            <a href="index.php?a=2">Sen đá</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Blog cây cảnh</a>
+                </li>
+                <li>
+                    <a href="#">Giới thiệu</a>
+                </li>
+                <li>
+                    <a href="#" id="scroll-bottom">Liên hệ</a>
+                </li>
+            </ul>
+        </nav>
     </div>
-    <div class=" icon-header col-lg-3 justify-content-end ">
-            <form class="form-search">
-                <label style="cursor: pointer;" for="search"><i class="fa fa-search"></i></label>
-                <input  id="search" type="text" name="input"/>
-            </form>
+    <div class="col-3  icon-header pr-0">
+        <div id="search">
+            <input id="input-search" type="text">
+            <div class="input-group-btn">
+                <div class="btn-group" role="group">
+                    <div class="dropdown dropdown-lg">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                            aria-expanded="false"><span class="caret"></span></button>
+                        <div class="dropdown-menu dropdown-menu-right" role="menu">
+                            <form class="form-horizontal" role="form">
+                                <div class="form-group">
+                                    <h6 for="filter">Loại cây</h6>
+                                    <select class="form-control">
+                                        <option value="0" selected>Tất cả</option>
+                                        <option value="1">Cây tiểu cảnh</option>
+                                        <option value="2">Cây xương rồng</option>
+                                        <option value="3">Cây phong thủy</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <h6 for="filter">Xuất xứ</h6>
+                                    <select class="form-control">
+                                        <option value="0" selected>Tất cả</option>
+                                        <option value="1">Việt Nam</option>
+                                        <option value="2">Trung Quốc</option>
+                                        <option value="3">Thái Lan</option>
+                                    </select>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="price col-6 pl-0">
+                                        <h6>Giá từ:</h6>
+                                        <input class="form-control" type="number">
+                                    </div>
+                                    <div class="price col-6 pr-0">
+                                        <h6>Đến:</h6>
+                                        <input class="form-control" type="number">
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn" id="btn-search"><i style="color:#FFF"
+                                        class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <label style="cursor: pointer;" for="search"><i class="fa fa-search"></i></label>
+        </div>
         <span class="linedivide"></span>
         <a href=""><i class="fa fa-shopping-cart"></i></a>
     </div>

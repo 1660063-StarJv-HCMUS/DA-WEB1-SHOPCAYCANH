@@ -10,3 +10,46 @@
         <span></span>
         <i class="fa fa-envelope"></i> &nbsp; thanhtung@sevenleaves.vn
 </div>
+<?php
+if ($user) {
+    ?>
+    <div class="col-3 user">
+        <span>Xin chào, <?php echo $user; ?></span>
+        <ul>
+            <?php
+                if ($admin) {
+                    
+            ?>
+                <li>
+                <a href="admin/">Admin</a>
+                </li>
+            <?php
+                }
+            ?>
+            <li>
+                <a href="#">Thông tin tài khoản</a>
+            </li>
+            <li>
+                <a href="#">Kiểm tra đơn hàng</a>
+            </li>
+            <li  id="logout">
+                <a href="#">Đăng xuất</a>
+            </li>
+        </ul>
+    </div>
+<?php
+}
+else {
+    // Hiển thị modal đăng nhập
+?>
+    <div id="Login" class="col-12 col-lg-3" style="text-align: right;">
+        <a role="button" data-toggle="modal" data-target="#Modal-form" onclick="login()">Đăng nhập</a>
+        &nbsp;
+        |
+        &nbsp;
+        <a role="button" data-toggle="modal" data-target="#Modal-form" onclick="registered()">Đăng ký</a>
+    </div>
+<?php
+    include_once 'GUI/modules/mModal.php';
+}
+?>

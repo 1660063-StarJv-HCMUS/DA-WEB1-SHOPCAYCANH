@@ -30,48 +30,18 @@ if ($session->get() != '') {
     $user = '';
 }
 ?>
+<?php
+    include 'GUI/modules/mHeaderMobi.php';
+?>
     <div class="desktop-screen">
 <?php
 include_once 'GUI/modules/mTopBar.php';
-if ($user) {
-    ?>
-    <div class="col-3 user">
-        <span>Xin chào, <?php echo $user; ?></span>
-        <ul>
-            <?php
-                if ($admin) {
-                    
-            ?>
-                <li>
-                <a href="admin/">Admin</a>
-                </li>
-            <?php
-                }
-            ?>
-            <li>
-                <a href="#">Thông tin tài khoản</a>
-            </li>
-            <li>
-                <a href="#">Kiểm tra đơn hàng</a>
-            </li>
-            <li  id="logout">
-                <a href="#">Đăng xuất</a>
-            </li>
-        </ul>
-    </div>
-<?php
-}
-// Nếu không đăng nhập
-else {
-    // Hiển thị modal đăng nhập
-    include_once 'GUI/modules/mModal.php';
-}
 ?>
     </div>
 </div>
     <div id="header">
 <?php
-include 'GUI/modules/mHeader.php'
+include 'GUI/modules/mHeader.php';
 ?>
     </div>
 </div>
@@ -115,7 +85,12 @@ include 'GUI/modules/mPruductDetails.php';
 include 'GUI/modules/mFooter.php';
 
 ?>
-        </div>
+</div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
     <script src="GUI/js/jquery-3.2.1.min.js"></script>
     <script src="GUI/js/bootstrap.js"></script>
     <script src="GUI/js/custom.js"></script>

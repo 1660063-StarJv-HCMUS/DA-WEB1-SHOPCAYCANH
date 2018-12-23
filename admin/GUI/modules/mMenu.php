@@ -1,10 +1,10 @@
 <ul>
     <li><a href="index.php?a=1"><i class="fa fa-chart-line"></i> Dashboard</a></li>
-    <li><a href="index.php?a=2"><i class="fa fa-users"></i> Danh sách tài khoản</a></li>
-    <li><a href="index.php?a=3"><i class="fa fa-clipboard-list"></i> Danh sách loại sản phẩm</a></li>
-    <li><a href="index.php?a=4"><i class="fa fa-building"></i> Danh sách hãng sản phẩm</a></li>
-    <li><a href="index.php?a=5"><i class="fas fa-gift"></i> Danh sách sản phẩm</a></li>
-    <li><a href="index.php?a=6"><i class="fa fa-cart-arrow-down"></i> Danh sách đơn hàng</a></li>
+    <li><a href="index.php?a=2"><i class="fa fa-users"></i> Tài khoản</a></li>
+    <li><a href="index.php?a=3"><i class="fa fa-clipboard-list"></i> Loại sản phẩm</a></li>
+    <li><a href="index.php?a=4"><i class="fa fa-building"></i> Hãng sản phẩm</a></li>
+    <li><a href="index.php?a=5"><i class="fas fa-gift"></i> Sản phẩm</a></li>
+    <li><a href="index.php?a=6"><i class="fa fa-cart-arrow-down"></i> Đơn hàng</a></li>
 </ul>
 
 <?php 

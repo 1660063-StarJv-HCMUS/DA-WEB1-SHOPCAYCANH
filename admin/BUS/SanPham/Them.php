@@ -19,7 +19,7 @@
         </div>
         <div class="form-group">
             <span>Số lượng</span>
-            <input type="text" name="soLuong" class="form-control" id="soLuong" placeholder="soLuong">
+            <input type="text" name="soLuong" class="form-control" id="soLuong" placeholder="Số lượng">
         </div>
         <div class="form-group">
             <span>Ngày nhập </span>
@@ -30,7 +30,7 @@
             <input type="text" name="moTa" class="form-control" id="moTa" placeholder="Mô tả">
         </div>
 
-        <button type="submit" name="Thêm" id="themSanPham">Thêm sản phẩm</button>
+        <button type="submit" name="Thêm" id="themSanPham" class="btn btn-success">Thêm sản phẩm</button>
     </form>
 </div>
 

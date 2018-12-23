@@ -5,7 +5,8 @@ body{
 }
 /****************container********************/
 .container{
-  margin-top: 10px;
+  margin-top:10px;
+
 }
 /*****************header*******************/
 .header{
@@ -24,10 +25,12 @@ body{
 
 /******************nav******************/
 .nav{
-  font-size: 15px;
   font-weight: bold;
   margin-top: 10px;
   margin-bottom: 10px;
+  display: block;
+  padding-left: 10px;
+  height: auto;
 }
 
 .nav ul{
@@ -38,11 +41,11 @@ body{
 
 .nav li{
   height: 30px;
-  font-size: 18px;
   line-height: 30px;
   padding-left: 10px;
   border-bottom: 1px solid #cc3366;
   margin-top: 5px;
+  font-size: 18px;
 }
 
 .nav li i{
@@ -50,17 +53,27 @@ body{
 }
 
 .nav .themmoi{
-  margin-top: 5px; 
+  margin-top: 10px;
+}
 
+.nav .form-control{
+  font-size: 0.75rem;
+  height: calc(2rem + 2px);
 }
 
 .nav .dropdown-menu{
   width: 100%;
   border: none;
   padding: 3px 3px 5px 3px;
+  font-size: 15px;
+  transform: translate3d(0px, 45px, 0px)!important;
 }
+
 /*******************content*****************/
 .content{
+  display: block;
+  float: right;
+  font-size: 15px;
 }
 
 a{
@@ -68,5 +81,5 @@ a{
 }
 
 .content #themsanpham{
-  float: right;
+
 }

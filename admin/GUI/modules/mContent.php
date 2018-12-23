@@ -25,3 +25,4 @@ switch($a) {
     default:
         include_once 'pError.php';
 }
+?>

@@ -9,24 +9,13 @@
                     <a href="index.php?a=0">Trang chủ</a>
                 </li>
                 <li>
-                    <a href="index.php?a=0">Sản phẩm</a>
-                    <ul>
-                        <li>
-                            <a href="index.php?a=1">Tiểu cảnh</a>
-                        </li>
-                        <li>
-                            <a href="index.php?a=3">Xương rồng</a>
-                        </li>
-                        <li>
-                            <a href="index.php?a=2">Sen đá</a>
-                        </li>
-                    </ul>
+                    <a href="index.php?a=1">Tiểu cảnh</a>                  
                 </li>
                 <li>
-                    <a href="#">Blog cây cảnh</a>
+                    <a href="index.php?a=2">Xương rồng</a>
                 </li>
                 <li>
-                    <a href="#">Giới thiệu</a>
+                    <a href="index.php?a=3">Sen đá</a>
                 </li>
                 <li>
                     <a href="#" id="scroll-bottom">Liên hệ</a>
@@ -82,6 +71,8 @@
             <label style="cursor: pointer;" for="search"><i class="fa fa-search"></i></label>
         </div>
         <span class="linedivide"></span>
-        <a href=""><i class="fa fa-shopping-cart"></i></a>
+        <div id="cart-icon" style="float: right; cursor: pointer;">
+            <span class="my-cart-icon" data-toggle="modal" data-target="#my-cart-modals"><i class="fa fa-shopping-cart"></i>
+        </div>
     </div>
 </div>

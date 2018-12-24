@@ -85,7 +85,7 @@
                 <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownNV" role="button" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
-                            Xin chào, Hữu Dũng
+                            <span>Xin chào, <?php echo $user; ?></span>
                         </a>
                     <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownNV">
 <?php

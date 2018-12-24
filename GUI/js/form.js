@@ -34,7 +34,7 @@ $("#login-form button").on('click', function () {
         });
     }
 });
-$('#logout').click(function () {
+$('#logout, #logout-destop').on('click', function () {
     var action = "logout";
     $.ajax({
         url: "DAO/Login.php",
@@ -42,7 +42,7 @@ $('#logout').click(function () {
         data: {
             action: action
         },
-        success: function () {
+        success: function () {``
             location.reload();
         }
     });
@@ -86,4 +86,4 @@ $("#register-form button").on('click', function () {
             }
         });
     }
-})
+});

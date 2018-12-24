@@ -32,8 +32,8 @@ if ($user) {
             <li>
                 <a href="#">Kiểm tra đơn hàng</a>
             </li>
-            <li  id="logout">
-                <a href="#">Đăng xuất</a>
+            <li  id="logout-destop">
+            <a href="#">Đăng xuất</a>
             </li>
         </ul>
     </div>

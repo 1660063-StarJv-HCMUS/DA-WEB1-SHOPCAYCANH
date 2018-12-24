@@ -194,8 +194,11 @@ footer div h4 {
 #topbar i:hover {
   color: #a4da22;
 }
+#topbar ul li a{
+  display: block;
+}
 
-#Login a {
+a {
   cursor: pointer;
 }
 
@@ -603,7 +606,7 @@ footer div h4 {
 }
 
 .user ul li a{
-  
+  display: block;
 }
 .user:hover ul {
   display: block;

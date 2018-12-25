@@ -31,9 +31,9 @@ class SanPham_BUS
 
     public function LoadTatCaSanPham()
     {
-        $loadSP_MaLoai = new SanPham_DAO();
+        $loadSP = new SanPham_DAO();
 
-        $result = $loadSP_MaLoai->LoadTatCaSanPham();
+        $result = $loadSP->LoadTatCaSanPham();
 
         $danhSachSanPham = array();
 
@@ -50,6 +50,28 @@ class SanPham_BUS
                 $sp->setMaSanPham($row['MaSanPham']);
                 $danhSachSanPham[] = $sp;
             }       
+        }
+        return $danhSachSanPham;
+    }
+    public function LoadSanPhamNhieuTieuChi($where)
+    {
+        $LoadSP = new SanPham_DAO();
+
+        $kq = $LoadSP->LoadSanPhamNhieuTieuChi($where);
+
+        $danhSachSanPham = array();
+
+        if ($kq->num_rows > 0) {
+            // output data of each row
+            while ($row = $kq->fetch_assoc()) {
+                $sp = new SanPham();
+                $sp->setTenSanPham($row['TenSanPham']);
+                $sp->setHinhURL($row['HinhURL']);
+                $sp->setGiaSanPham($row['GiaSanPham']);
+                $sp->setMoTa($row['MoTa']);
+                $sp->setMaSanPham($row['MaSanPham']);
+                $danhSachSanPham[] = $sp;
+            }
         }
         return $danhSachSanPham;
     }

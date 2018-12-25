@@ -28,7 +28,7 @@ body {
 .menutop {
   text-align: center;
   margin-top: 35px;
-  margin-left: 50px; 
+  margin-left: 50px;
 }
 
 .menutop ul,
@@ -151,12 +151,14 @@ footer div h4 {
   color: #093;
   font-size: 20px;
 }
+
 /*---------------------Top-bar---------------------------*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 #topbar {
   padding: 0 40px;
   min-height: 45px;
@@ -164,6 +166,7 @@ footer div h4 {
   line-height: 45px;
   color: #888888;
 }
+
 #topbar i {
   padding: 10px;
   font-size: 18px;
@@ -172,7 +175,8 @@ footer div h4 {
 #topbar i:hover {
   color: #a4da22;
 }
-#topbar ul li a{
+
+#topbar ul li a {
   display: block;
 }
 
@@ -180,14 +184,15 @@ a {
   cursor: pointer;
 }
 
-.mobi-header{
-    display: none; 
-    text-align: center !important;
+.mobi-header {
+  display: none;
+  text-align: center !important;
 }
-.mobi-header nav{
-    background-color: #4caf50;
-    display: block;
-    text-align: right;
+
+.mobi-header nav {
+  background-color: #4caf50;
+  display: block;
+  text-align: right;
 }
 
 
@@ -226,6 +231,7 @@ a {
   cursor: pointer;
   height: 47px;
 }
+
 .form button:hover,
 .form button:active,
 .form button:focus {
@@ -237,9 +243,11 @@ a {
   color: #b3b3b3;
   font-size: 12px;
 }
+
 .form .message a {
   color: #4caf50;
 }
+
 .form #register-form {
   display: none;
 }
@@ -263,64 +271,74 @@ a {
   width: 70px;
 }
 
-.shopping-cart-table>tbody>tr>td, .shopping-cart-table>tbody>tr>th,
-  .shopping-cart-table>tfoot>tr>td, .shopping-cart-table>tfoot>tr>th,
-  .shopping-cart-table>thead>tr>td,
-  .shopping-cart-table>thead>tr>th{
-      padding: 15px 0;
-      vertical-align: middle;
-      border-top: 1px solid #dadada; 
-  }
+.shopping-cart-table>tbody>tr>td,
+.shopping-cart-table>tbody>tr>th,
+.shopping-cart-table>tfoot>tr>td,
+.shopping-cart-table>tfoot>tr>th,
+.shopping-cart-table>thead>tr>td,
+.shopping-cart-table>thead>tr>th {
+  padding: 15px 0;
+  vertical-align: middle;
+  border-top: 1px solid #dadada;
+}
 
-  .shopping-cart-table>tbody>tr>.details>a {
-    font-size: 18px;
-    font-weight: 700;
-  }
+.shopping-cart-table>tbody>tr>.details>a {
+  font-size: 18px;
+  font-weight: 700;
+}
 
-  .shopping-cart-table>thead>tr>th {
-    color: #30323A;
-    text-transform: uppercase;
-    border-bottom: 1px solid #DADADA;
-  }
+.shopping-cart-table>thead>tr>th {
+  color: #30323A;
+  text-transform: uppercase;
+  border-bottom: 1px solid #DADADA;
+}
 
-  .shopping-cart-table>tfoot>tr>td, .shopping-cart-table>tfoot>tr>th {
-    color: #30323A;
-    border-top: 0px
-  }
+.shopping-cart-table>tfoot>tr>td,
+.shopping-cart-table>tfoot>tr>th {
+  color: #30323A;
+  border-top: 0px
+}
 
-  .shopping-cart-table>tfoot>tr>td:not(.empty), .shopping-cart-table>tfoot>tr>th:not(.empty) {
-    padding: 15px;
-    background-color: #F6F7F8;
-    border: 1px solid #DADADA;
-  }
+.shopping-cart-table>tfoot>tr>td:not(.empty),
+.shopping-cart-table>tfoot>tr>th:not(.empty) {
+  padding: 15px;
+  background-color: #F6F7F8;
+  border: 1px solid #DADADA;
+}
 
-  .shopping-cart-table>tbody>tr>.qty .input {
-    width: 90px;
-    height: 40px;
-  }
-  .shopping-cart-table>tbody>tr>.price {
-    font-size: 18px;
-  }
-  
-  .shopping-cart-table>tbody>tr>.total {
-    font-size: 18px;
-  }
-  
-  .shopping-cart-table>tfoot>tr>.sub-total {
-    font-size: 18px;
-  }
-  
-  .shopping-cart-table>tfoot>tr>.total {
-    font-size: 24px;
-    color: #4caf50;
-  }
+.shopping-cart-table>tbody>tr>.qty .input {
+  width: 90px;
+  height: 40px;
+}
 
-  .shopping-cart-table>tbody>tr:last-child>td {
-    border-bottom: 1px solid #DADADA;
-  }
+.shopping-cart-table>tbody>tr>.price {
+  font-size: 18px;
+}
 
-  .table>caption+thead>tr:first-child>td, .table>caption+thead>tr:first-child>th, .table>colgroup+thead>tr:first-child>td, .table>colgroup+thead>tr:first-child>th, .table>thead:first-child>tr:first-child>td, .table>thead:first-child>tr:first-child>th {
-    border-top: 0;
+.shopping-cart-table>tbody>tr>.total {
+  font-size: 18px;
+}
+
+.shopping-cart-table>tfoot>tr>.sub-total {
+  font-size: 18px;
+}
+
+.shopping-cart-table>tfoot>tr>.total {
+  font-size: 24px;
+  color: #4caf50;
+}
+
+.shopping-cart-table>tbody>tr:last-child>td {
+  border-bottom: 1px solid #DADADA;
+}
+
+.table>caption+thead>tr:first-child>td,
+.table>caption+thead>tr:first-child>th,
+.table>colgroup+thead>tr:first-child>td,
+.table>colgroup+thead>tr:first-child>th,
+.table>thead:first-child>tr:first-child>td,
+.table>thead:first-child>tr:first-child>th {
+  border-top: 0;
 }
 
 
@@ -331,6 +349,7 @@ a {
   margin-top: 15px;
   border-bottom: 1px solid #DADADA;
 }
+
 .section-title:after {
   content: "";
   position: absolute;
@@ -340,28 +359,32 @@ a {
   width: 60px;
   background-color: #4caf50;
 }
+
 /*--------------------Chi tiêt dơn hàng------------------*/
-#check-out{
+#check-out {
   margin: 0 50px;
 }
 
-  #checkout-form{
-    width: 100%;
-  }
+#checkout-form {
+  width: 100%;
+}
 
-.billing-details input{
+.billing-details input {
   height: 40px;
   width: 100%;
 }
+
 .input-checkbox>label {
   color: #30323A;
   font-weight: 700;
 }
+
 .input-checkbox .caption {
   font-size: 13px;
-  margin-left:15px; 
+  margin-left: 15px;
 }
-#btn{
+
+#btn {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
@@ -374,11 +397,13 @@ a {
   cursor: pointer;
   height: 47px;
 }
-#btn:hover{
+
+#btn:hover {
   background: #43a047;
 }
+
 /*-----------------progress-bar----------------------*/
-#progress-bar{
+#progress-bar {
   position: relative;
   line-height: 60px;
   min-height: 120px;
@@ -390,125 +415,133 @@ a {
   margin: auto;
 }
 
-#progress-bar .progress{
+#progress-bar .progress {
   margin: 0 45px;
   padding: 0;
 }
-#progress-bar .progress .progress-bar{
+
+#progress-bar .progress .progress-bar {
   background-color: #4caf50;
 }
 
-#number{
+#number {
   position: absolute;
   width: 100%;
   margin: -7px;
 }
 
-#number span{
+#number span {
   padding: 10px 15px;
   color: #FFF;
   border-radius: 100%;
   background-color: #4caf50;
 }
 
-/*-----------------------fix cart-mobi ---------------------*/
-#cart-mobi{
+/*-----------------------fix cart---------------------*/
+#cart {
   position: fixed;
   background-color: #4caf50;
-  border-radius:100%;
+  border-radius: 100%;
   padding: 15px;
   z-index: 10;
   right: 25px;
   bottom:40px;
   display: none;
 }
+
 /*----------------------cart------------------------------*/
 
 
 @media screen and (max-width: 1025px) {
+
   /*--------------reponsive cho phần header---------------------- */
-  .mobi-header{
+  .mobi-header {
     display: block;
     text-align: right;
   }
-  .desktop-screen{
+
+  .desktop-screen {
     display: none;
   }
+
   /*---------------reponsive cho trang check out-------------------*/
-  #progress-bar{
-    width: 100% ;
+  #progress-bar {
+    width: 100%;
   }
-  #check-out{
+
+  #check-out {
     margin: 0;
   }
-  #progress-bar .row{
+
+  #progress-bar .row {
     width: 100% !important;
-    margin: 0 ;
+    margin: 0;
   }
+
   .shopping-cart-table>tbody>tr>.qty .input {
     width: 40px;
     height: 40px;
   }
-  #number{
-    bottom: 30px  
+
+  #number {
+    bottom: 30px
   }
-  .content{
-    margin: 5px !important;
-  }
-  .input{
-    width: 100% !important; 
-  }
-  #cart-mobi{
-    display: block;
+
+  .content {
+    margin: 0 !important;
   }
 }
 
+#cart {
+  display: none;
+}
+
 /*---------------------------modal details-----------------------*/
-#details .close{
+#details .close {
   box-shadow: none;
   position: absolute;
   right: 15px;
   text-align: right;
   top: 10px;
   z-index: 9;
-  font-size: 15px; 
+  font-size: 15px;
 }
 
 
-.info{
+.info {
   padding: 30px 0;
 }
 
-.star i{
+.star i {
   color: #f5b80e;
 }
 
-.name_product{
+.name_product {
   font-size: 24px;
   font-weight: 700;
-  color: #056526;    
+  color: #056526;
   margin: 0 0 10px 0;
 }
 
-.pride_product{
+.pride_product {
   font-size: 20px;
   font-weight: 700;
   color: rgb(58, 58, 58);
   margin: 0 0 10px 0;
-  
+
 }
 
-h5.price_product span{
+h5.price_product span {
   color: rgb(136, 136, 136);
   font-size: 14px;
   font-weight: 700;
   text-decoration-line: line-through;
   text-decoration-style: solid;
   text-decoration-color: rgb(136, 136, 136);
-  
+
 }
 
-.qty-text{
+.qty-text {
   border: 2px solid #e5e5e5;
   height: 35px;
   width: 50px;
@@ -516,17 +549,17 @@ h5.price_product span{
   font-size: 13px;
 }
 
-.quantity{
+.quantity {
   width: 50px;
 }
 
-.details_body .cart{
+.details_body .cart {
   display: flex;
 }
 
-.details_body .cart-submit{
+.details_body .cart-submit {
   background-color: #4caf50;
-  border:  none;
+  border: none;
   color: #fff;
   cursor: pointer;
   font-size: 13px;
@@ -534,6 +567,7 @@ h5.price_product span{
   margin-left: 15px;
   width: 120px;
 }
+
 /*--------------------Product---------------------*/
 .card:hover {
   box-shadow: -1px 5px 20px rgba(0, 0, 0, 0.75);
@@ -549,18 +583,20 @@ h5.price_product span{
   width: 18rem;
   margin: 0.5rem;
 }
-.content{
+
+.content {
   margin: 20px 50px;
 }
+
 /*------------------user--------------------*/
-.user{
-    text-align: right;
-    color: #888888;
-    cursor: pointer;
+.user {
+  text-align: right;
+  color: #888888;
+  cursor: pointer;
 }
 
-.user span:hover{
-    color: #3f3e3e;
+.user span:hover {
+  color: #3f3e3e;
 
 }
 
@@ -571,32 +607,34 @@ h5.price_product span{
   background-color: #e5e5e5;
   text-align: left;
   border: 1px solid #999;
-  border-bottom: 0; 
+  border-bottom: 0;
   display: none;
 }
 
-.user ul li{
+.user ul li {
   border-bottom: 1px solid #999;
   width: 100%;
   padding: 0 10px;
 }
 
-.user ul li:hover{
+.user ul li:hover {
   background-color: #056526;
 }
 
-.user ul li:hover a{
+.user ul li:hover a {
   color: #FFF;
 }
 
-.user ul li a{
+.user ul li a {
   display: block;
 }
+
 .user:hover ul {
   display: block;
 }
+
 /*------------------info---------------------*/
-.input{
+.input {
   font-family: "Roboto", sans-serif;
   outline: 0;
   background: #f2f2f2;
@@ -608,75 +646,81 @@ h5.price_product span{
   font-size: 14px;
   height: 36px;
 }
-.form-group p{
-    margin-bottom: 5px;
-    font-size: 20px;
-    font-weight: bold;
+
+.form-group p {
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 /*-----------------------------------------------hoàn tất đơn hàng--------------------------*/
-.title{
-    font-size: 20px;
+.title {
+  font-size: 20px;
 }
 
-.details{
-    padding: 0;   
+.details {
+  padding: 0;
 }
 
-@media screen and (max-width: 800px){
-    .info{
-        text-align: center;
-    }
+@media screen and (max-width: 800px) {
+  .info {
+    text-align: center;
+  }
 }
 
 /*-------------------tìm kiếm nâng cao------------------------*/
-#search{
-    width: 80%;
-    display: flex;
+#search {
+  width: 80%;
+  display: flex;
 }
 
-#input-search{
-    font-family: "Roboto", sans-serif;
+#input-search {
+  font-family: "Roboto", sans-serif;
   outline: 0;
   border: 0;
-  border-bottom: 1px solid #000; 
+  border-bottom: 1px solid #000;
   box-sizing: border-box;
   font-size: 14px;
   height: 30px;
-  margin: auto 0;    
+  margin: auto 0;
 }
 
 .dropdown.dropdown-lg .dropdown-menu {
-    padding: 6px 20px;
+  padding: 6px 20px;
 }
 
 .btn-group .btn {
-    border-radius: 0;
-    background-color: #FFF;
+  border-radius: 0;
+  background-color: #FFF;
 }
+
 .form-horizontal .form-group {
-    margin-left: 0;
-    margin-right: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 @media screen and (min-width: 768px) {
-    #adv-search {
-        width: 500px;
-        margin: 0 auto;
-    }
-    .dropdown.dropdown-lg {
-        position: static !important;
-    }
-    .dropdown.dropdown-lg .dropdown-menu {
-        min-width: 500px;
-    }
+  #adv-search {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .dropdown.dropdown-lg {
+    position: static !important;
+  }
+
+  .dropdown.dropdown-lg .dropdown-menu {
+    min-width: 500px;
+  }
 }
+
 @media screen and (max-width: 500px) {
-    .dropdown.dropdown-lg .dropdown-menu {
-        min-width: 320px;
-    }
+  .dropdown.dropdown-lg .dropdown-menu {
+    min-width: 320px;
+  }
 }
-#btn-search{
+
+#btn-search {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;

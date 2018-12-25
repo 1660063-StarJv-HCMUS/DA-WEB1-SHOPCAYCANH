@@ -18,6 +18,15 @@
 
             return $ketQua;
         }
+
+        public function LoadSanPhamNhieuTieuChi($where)
+        {
+            $sql = 'select TenSanPham, HinhURL, GiaSanPham, MoTa, MaSanPham from sanpham where '.implode('and ', $where);
+
+            $db = new DB();
+            $ketQua = $db->ExcuteQuery($sql);
+            return $ketQua;
+        }
     }
 
 ?>

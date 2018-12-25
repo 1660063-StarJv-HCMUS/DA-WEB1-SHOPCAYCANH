@@ -18,12 +18,32 @@ class HangSanXuat_BUS
         if($result->num_rows > 0){
             while ($row = $result->fetch_assoc()){
                 $hangSX = new HangSanXuat();
-
+                $hangSX->MaHangSanXuat  = $row['MaHangSanXuat'];
                 $hangSX->TenHangSanXuat = $row['TenHangSanXuat'];
                 $hangSX->LogoURL        = $row['LogoURL'];
                 $danhSachHangSX[] = $hangSX;
             }
         }
         return $danhSachHangSX;
+    }
+
+    public function ThemHangSanXuat($hang){
+        $hangDAO = new HangSanXuatDAO();
+        $hangDAO->ThemHangSanXuat($hang);
+    }
+/*
+    public function LoadTenHangByID($maHang){
+        $loadHangSX = new HangSanXuatDAO();
+        $result = $loadHangSX->LoadTenHangByID($maHang);
+        $row = $result->fetch_assoc();
+        return $row['TenHangSanXuat'];
+    }
+*/
+    public function LoadMaHangByTenHang($tenHang){
+        $loadHangSX = new HangSanXuatDAO();
+        $result = $loadHangSX->LoadMaHangByTen($tenHang);
+        $row = $result->fetch_assoc();
+
+        return $row['MaHang'];
     }
 }

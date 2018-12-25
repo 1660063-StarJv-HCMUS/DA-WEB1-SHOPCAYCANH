@@ -6,23 +6,13 @@
  */
 include_once 'DB.php';
 
-class LoaiSanPhamDAO extends DB
+class LoaiSanPhamDAO
 {
     public function LoadTatCaLoaiSanPham()
     {
+        $db = new Database();
         $sql = "SELECT MaLoaiSanPham, TenLoaiSanPham,BiXoa from loaisanpham";
-        $result = $this->ExecuteQuery($sql);
-        $lstLoaiSanPham = array();
-        while($row = mysqli_fetch_array($result))
-        {
-            $loaiSanPham                    = new LoaiSanPham();
-            $loaiSanPham->MaLoaiSanPham     = $row['MaLoaiSanPham'];
-        $loaiSanPham->TenLoaiSanPham        = $row['TenLoaiSanPham'];
-            $loaiSanPham->BiXoa             = $row['BiXoa'];
-            $lstLoaiSanPham[]               = $loaiSanPham;
-        }
-        return $lstLoaiSanPham;
-
+        return $db->ExecuteQuery($sql);
     }
     public function LoadSanPhamByID($MaLoaiSanPham )
     {
@@ -39,24 +29,15 @@ class LoaiSanPhamDAO extends DB
         $sanPham->MaLoaiSanPham     =$row['MaLoaiSanPham'];
         return $sanPham;
     }
-    public function postInput($string)
-    {
-        $xxx = $string.'';
-        return isset($_POST[$string]) ? $_POST[$string] : '';
-    }
 
-    public function  getInput($string)
-    {
-        return isset($_GET[$string]) ? $_GET[$string] : '';
-    }
     public function ThemLoaiSanPham($loaisanpham)
     {
+        $db = new Database();
         $sql = "INSERT INTO loaisanpham(TenLoaiSanPham,BiXoa) values('$loaisanpham->TenLoaiSanPham','$loaisanpham->BiXoa')";
-        $result = $this->ExecuteQuery($sql);
+        $result = $db->ExecuteQuery($sql);
     }
     public function XoaLoaiSanPham ($MaLoaiSanPham )
     {
-
         $sql = 'DELETE FROM loaisanpham WHERE MaLoaiSanPham = $MaLoaiSanPham ';
         $this->ExecuteQuery($sql);
     }

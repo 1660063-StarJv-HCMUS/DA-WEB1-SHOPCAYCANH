@@ -2,7 +2,7 @@
 include_once __DIR__.'/../../BUS/HangSanXuat_BUS.php';
 include_once __DIR__.'/../../DTO/HangSanXuat_DTO.php';
 ?>
-<h2>Danh sách sản phẩm</h2>
+<h2>Danh sách hãng sản phẩm</h2>
 
 <table class="table table-hover">
     <thead>

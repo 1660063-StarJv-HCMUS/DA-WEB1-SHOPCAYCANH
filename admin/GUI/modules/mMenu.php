@@ -16,19 +16,21 @@
     switch($a){
 
         case 2:
-            include_once __DIR__.'/../../BUS/TaiKhoan/Them.php';
+            include_once 'ThemTaiKhoan.php';
+            //include_once __DIR__.'/../../BUS/TaiKhoan/Them.php';
             break;
         case 3:
-             include_once  __DIR__.'/../../BUS/LoaiSanPham/Them.php';
+            include_once 'ThemLoaiSanPham.php';
+            //include_once __DIR__.'/../../BUS/LoaiSanPham/Them.php';
             break;
         case 4:
-            include_once __DIR__.'/../../BUS/HangSanPham/Them.php';
+            include_once 'ThemHangSanPham.php';
+            //include_once __DIR__.'/../../BUS/HangSanPham/Them.php';
             break;
         case 5:
-            include_once __DIR__.'/../../BUS/SanPham/Them.php';
+            include_once 'ThemSanPham.php';
+            //include_once '/../../BUS/SanPham/Them.php';
             break;
-
         default:
-            //include 'pError.php';
     }
 ?>

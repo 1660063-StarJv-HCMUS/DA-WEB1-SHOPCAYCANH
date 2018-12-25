@@ -23,9 +23,8 @@ class SanPham
 
     public function __construct()
     {
-        $this->GiaSanPham   = 0;
-        $this->SoLuongTon   = 0;
-        $this->BiXoa        = 0;
+        $this->SoLuongBan   = 0;
         $this->SoLuotXem    = 0;
+        $this->BiXoa        = 0;
     }
 }

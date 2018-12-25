@@ -8,31 +8,36 @@
     <table class="table table-hover">
         <thead>
         <tr>
-            <th>Tên sản phẩm</th>
-            <th class="HinhSP">Hình ảnh</th>
-            <th>Hãng sản xuất</th>
-            <th>Giá(VNĐ)</th>
-            <th>Số lượt xem</th>
-            <th>Số lượng tồn</th>
-            <th>Số lượng bán</th>
-            <th>Ngày nhập</th>
-            <th>chức năng</th>
+            <th scope="col">Tên sản phẩm</th>
+            <th scope="col" class="HinhSP">Hình ảnh</th>
+            <th scope="col">Hãng sản xuất</th>
+            <th scope="col">Giá(VNĐ)</th>
+            <th scope="col">Lượt xem</th>
+            <th scope="col">Số lượng tồn</th>
+            <th scope="col">Số lượng bán</th>
+            <th scope="col">Ngày nhập</th>
+            <th scope="col">chức năng</th>
         </tr>
         </thead>
         <tbody>
+            
         <?php
-        
+        include_once __DIR__.'/../../BUS/HangSanXuat_BUS.php';
         $loadSP = new SanPham_BUS();
+        $loadHang = new HangSanXuat_BUS();
 
         $result = $loadSP->LoadTatCaSanPham();
 
+
         foreach ($result as $loadSP){
             $url = '../GUI/images/'.$loadSP->HinhURL;
+            //$tenNhaSanXuat = $loadHang->LoadTenHangByID($loadSP->MaHangSanXuat);
+            $tenNhaSanXuat;
             echo '
             <tr>
                 <td><a>'.$loadSP->TenSanPham.'</a></td>
-                <td><img src="'.$url.'" alt="Card image cap"></td>
-                <td><a>'.$loadSP->MaHangSanXuat.'</a></td>
+                <td><img src="'.$url.'" alt="Card image cap" class="thumbnail"></td>
+                <td><a>'.$tenNhaSanXuat.'</a></td>
                 <td>'.$loadSP->GiaSanPham.'</td>
                 <td>'.$loadSP->SoLuotXem.'</td>
                 <td>'.$loadSP->SoLuongTon.'</td>

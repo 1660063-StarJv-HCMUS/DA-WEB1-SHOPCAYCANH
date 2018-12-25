@@ -9,80 +9,60 @@
 include_once 'DB.php';
 include_once __DIR__.'/../DTO/HangSanXuat_DTO.php';
 
-class HangSanXuatDAO extends Database
+class HangSanXuatDAO
 {
     public function LoadTatCaHangSanXuat()
     {
-        $sql ="SELECT TenHangSanXuat,LogoURL from hangsanxuat";
-        $result = $this->ExecuteQuery($sql);
+        $db = new Database();
+        $truyvan ="SELECT MaHangSanXuat ,TenHangSanXuat,LogoURL from hangsanxuat";
+        $result = $db->ExecuteQuery($truyvan);
         return $result;
     }
 
-    //load hãng sản xuất bởi tên nhà sản xuất
-    public function LoadHangByTen($tenNhaSanXuat){
-        $sql = 'SELECT MaHangSanXuat,TenHangSanXuat,LogoURL,BiXoa FROM hangsanxuat WHERE TenHangSanXuat like $MaHangSanXuat ';
-        $rs = $this->ExecuteQuery($sql);
-        if($rs==null)
-            return null;
-
-        $row = mysqli_fetch_array($rs);
-        extract($row);
-
-        $hangSX= new HangSanXuat();
-        $hangSX->MaHangSanXuat  = $row['MaHangSanXuat'];
-        $hangSX->TenHangSanXuat = $row['TenHangSanXuat'];
-        $hangSX->LogoURL        = $row['LogoURL'];
-        $hangSX->BiXoa          =$row['BiXoa'];
-        return $hangSX;
+    //load mã hãng sản xuất bởi tên nhà sản xuất
+    public function LoadMaHangByTen($tenNhaSanXuat){
+        $db = new Database();
+        $truyvan = "SELECT MaHangSanXuat,TenHangSanXuat,LogoURL,BiXoa FROM hangsanxuat WHERE TenHangSanXuat = '$tenNhaSanXuat'";
+        $rs = $db->ExecuteQuery($truyvan);
+        return $rs;
     }
 
-    //load hãng sản xuất bởi ID
-    public function LoadHangByID($MaHangSanXuat )
+    public function ThemHangSanXuat($hangSX)
     {
-        $sql = "SELECT  MaHangSanXuat,TenHangSanXuat,LogoURL,BiXoa FROM hangsanxuat WHERE MaHangSanXuat = $MaHangSanXuat ";
-        $rs=$this->ExecuteQuery($sql);
-        if($rs==null)
-            return null;
-
-        $row = mysqli_fetch_array($rs);
-        extract($row);
-
-        $hangSX= new HangSanXuat();
-        $hangSX->MaHangSanXuat  = $row['MaHangSanXuat'];
-        $hangSX->TenHangSanXuat = $row['TenHangSanXuat'];
-        $hangSX->LogoURL        = $row['LogoURL'];
-        $hangSX->BiXoa          =$row['BiXoa'];
-        return $hangSX;
+        $db = new Database();
+        $truyvan = "INSERT INTO hangsanxuat(TenHangSanXuat,LogoURL,BiXoa) values('$hangSX->TenHangSanXuat','$hangSX->LogoURL','$hangSX->BiXoa')";
+        $db->ExecuteQuery($truyvan);
     }
-    public function postInput($string)
+    /*
+    //load hãng sản xuất bởi ID hãng
+    public function LoadTenHangByID($MaHangSanXuat )
     {
-        $xxx = $string.'';
-        return isset($_POST[$string]) ? $_POST[$string] : '';
+        $db = new Database();
+        $truyvan = "SELECT TenHangSanXuat,LogoURL,BiXoa FROM hangsanxuat WHERE MaHangSanXuat = '$MaHangSanXuat'";
+        $rs = $db->ExecuteQuery($truyvan);
+        return $rs;
     }
 
-    public function  getInput($string)
-    {
-        return isset($_GET[$string]) ? $_GET[$string] : '';
-    }
     //Thêm mới hãng sản xuất
     public function ThemHangSanXuat($hangSX)
     {
-        $sql = "INSERT INTO hangsanxuat(TenHangSanXuat,LogoURL,BiXoa) values('$hangSX->TenHangSanXuat','$hangSX->LogoURL','$hangSX->BiXoa')";
-        $result = $this->ExecuteQuery($sql);
+        $db = new Database();
+        $truyvan = "INSERT INTO hangsanxuat(TenHangSanXuat,LogoURL,BiXoa) values('$hangSX->TenHangSanXuat','$hangSX->LogoURL','$hangSX->BiXoa')";
+        $db->ExecuteQuery($truyvan);
     }
+
     //xóa một hãng sản xuất
     public function XoaHangSanXuat ($MaHangSanXuat )
     {
-
-        $sql = 'DELETE FROM hangsanxuat WHERE MaHangSanXuat = $MaHangSanXuat';
-        $this->ExecuteQuery($sql);
+        $db = new Database();
+        $truyvan = 'DELETE FROM hangsanxuat WHERE MaHangSanXuat = $MaHangSanXuat';
+        $db->ExecuteQuery($truyvan);
     }
-
     //chỉnh sửa hãng sản xuất
     public function ChinhSuaHangSanXuat($hangSX)
     {
-
-        $sql="UPDATE hangsanxuat SET TenHangSanXuat='$hangSX->TenHangSanXuat',LogoURL='$hangSX->LogoURL',BiXoa=$hangSX->BiXoa WHERE MaHangSanXuat=$hangSX->MaHangSanXuat";
-        $this->ExecuteQuery($sql);
-    }
+        $db = new Database();
+        $truyvan="UPDATE hangsanxuat SET TenHangSanXuat='$hangSX->TenHangSanXuat',LogoURL='$hangSX->LogoURL',BiXoa=$hangSX->BiXoa WHERE MaHangSanXuat=$hangSX->MaHangSanXuat";
+        $db->ExecuteQuery($truyvan);
+    }*/
 }

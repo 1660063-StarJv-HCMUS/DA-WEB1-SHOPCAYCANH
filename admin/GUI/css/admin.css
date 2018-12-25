@@ -11,18 +11,28 @@ body{
 /*****************header*******************/
 .header{
   height: 50px;
-  font-size: 12px;
-}
-
-.header .trangchu{
-  float: left;
   font-size: 20px;
+  width: 100%;
 }
 
-.header .thongtin{
+.header #trangchu{
+  float: left;
+  text-decoration: none;
+}
+
+.header #dang-xuat{
   float: right;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 17px;
+  background-color: #1c7430;
+  text-align: center;
 }
 
+.header #dang-xuat:hover {
+  cursor: pointer;
+  background-color: #9f191f;
+}
 /******************nav******************/
 .nav{
   font-weight: bold;
@@ -73,7 +83,11 @@ body{
 .content{
   display: block;
   float: right;
-  font-size: 15px;
+  font-size: 12px;
+}
+
+.content img{
+  height: auto;
 }
 
 a{

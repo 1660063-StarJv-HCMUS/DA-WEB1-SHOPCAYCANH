@@ -1,15 +1,10 @@
-<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="../index.php">Trở lại trang mua sắm</a>
+<div class="row">
+    <div id="trangchu" class="col-md-11 col-sm-11">
+        <a href="../"><i class="fas fa-home"></i> Trở lại trang mua sắm</a>
     </div>
-    <!-- /.navbar-header -->
-    <div>username</div>
-    
-    <!-- /.navbar-static-side -->
-</nav>
+
+    <div class="dangxuat col-md-1 col-sm-1 text-right" id="dang-xuat">
+        Đăng xuất
+    </div>
+
+</div>

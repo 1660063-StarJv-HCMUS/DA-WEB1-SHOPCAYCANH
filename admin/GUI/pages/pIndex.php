@@ -1,18 +1,9 @@
 <div class="container-fluid">
     <!------header------------->
     <div class="header col-lg-12 col-md-12 col-sm-12">
-        <a href="../" class="trangchu"><i class="fa fa-home"></i> Trở về trang mua sắm</a>
-        <div class="thongtin dropdown-menu">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> thông tin
-                <i class="fas fa-user-circle"></i>
-                <i class="fas fa-sort-down"></i>
-                <span class="caret"></span>
-            </button>
-                <ul class="dropdown-menu">
-                    <li><a href="#"><i class="fas fa-user"></i> Thông tin cá nhân</a></li>
-                    <li><a href="#"><i class="fas fa-sign-out-alt"></i> Đăng xuất</a></li>
-                </ul>
-        </div>
+        <?php
+            include_once __DIR__.'/../modules/mHeader.php';
+        ?>
     </div>
     <div class="row">
     <!------------nav----------------->

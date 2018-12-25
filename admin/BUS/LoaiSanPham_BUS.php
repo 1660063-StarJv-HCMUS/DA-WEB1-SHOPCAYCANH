@@ -4,8 +4,35 @@
  * User: phuon
  *
  */
+include_once __DIR__.'/../DAO/LoaiSanPham_DAO.php';
+include_once __DIR__.'/../DTO/LoaiSanPham_DTO.php';
 
 class LoaiSanPham_BUS
 {
+    public function LoadTatCaCacLoaiSanPham(){
+        $loadLoai = new LoaiSanPhamDAO();
 
+        $result = $loadLoai->LoadTatCaLoaiSanPham();
+
+        $danhSachLoaiSanPham = array();
+
+        if ($result->num_rows > 0)
+        {
+            // output data of each row
+            while($row = $result->fetch_assoc())
+            {
+                $loai = new LoaiSanPham();
+                $loai->MaLoaiSanPham = $row['MaLoaiSanPham'];
+                $loai->TenLoaiSanPham   = $row['TenLoaiSanPham'];
+
+                $danhSachLoaiSanPham[]  = $loai;
+            }
+        }
+        return $danhSachLoaiSanPham;
+    }
+
+    public function ThemLoaiSanPham($loai){
+        $loaiDAO = new LoaiSanPhamDAO();
+        $loaiDAO->ThemLoaiSanPham($loai);
+    }
 }

@@ -20,6 +20,13 @@
         $result = $loadTK->LoadTatCaTaiKhoan();
 
         foreach ($result as $loadTK){
+            if($loadTK->LoaiTK == 0){
+                $loai = 'Admin';
+            }
+            else{
+                $loai = 'Thường';
+            }
+
             echo '
             <tr>
                 <td>'.$loadTK->TenDangNhap.'</td>
@@ -27,7 +34,7 @@
                 <td>'.$loadTK->DienThoai.'</td>
                 <td>'.$loadTK->email.'</td>
                 <td>'.$loadTK->DiaChi.'</td>
-                <td>'.$loadTK->LoaiTK.'</td>
+                <td>'.$loai.'</td>
                 <td>
                     <a href="#" title="">Chỉnh sửa</a>
                     |

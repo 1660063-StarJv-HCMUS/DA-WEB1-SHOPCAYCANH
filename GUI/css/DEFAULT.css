@@ -26,12 +26,13 @@ body {
 }
 
 .menutop {
-  float: right;
+  text-align: center;
   margin-top: 35px;
+  margin-left: 50px; 
 }
 
 .menutop ul,
-.menu-aside ul {
+{
   margin: 0;
   padding: 0;
   list-style: none;
@@ -59,36 +60,13 @@ body {
   color: #fff;
 }
 
-.menutop ul ul {
-  position: absolute;
-  left: 0;
-  top: 30px;
-  width: 200%;
-  background: #e5e5e5;
-  border: 1px solid #999;
-  border-bottom: none;
-  display: none;
-  z-index: 10000;
-}
-
-.menutop ul ul li {
-  float: none;
-  width: 100%;
-  border-bottom: 1px solid #999;
-}
-
-.menutop ul li:hover>ul {
-  display: block;
-}
-
-
 .linedivide {
   display: block;
   position: relative;
   height: 20px;
   width: 1px;
   background-color: #e5e5e5;
-  margin-left: 23px;
+  margin-left: 0px;
   margin-right: 23px;
   margin-top: 5px;
   top: 32px;
@@ -345,6 +323,8 @@ a {
     border-top: 0;
 }
 
+
+
 .section-title {
   position: relative;
   margin-bottom: 15px;
@@ -444,7 +424,7 @@ a {
 /*----------------------cart------------------------------*/
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1025px) {
   /*--------------reponsive cho phần header---------------------- */
   .mobi-header{
     display: block;
@@ -514,7 +494,7 @@ a {
   
 }
 
-.pride_product span{
+h5.price_product span{
   color: rgb(136, 136, 136);
   font-size: 14px;
   font-weight: 700;

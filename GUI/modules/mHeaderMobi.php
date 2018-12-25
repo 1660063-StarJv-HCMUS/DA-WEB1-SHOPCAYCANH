@@ -70,12 +70,6 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Blog cây cảnh</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Giới thiệu</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="#" id="scroll-bottom">Liên hệ</a>
                 </li>
 

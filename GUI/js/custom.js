@@ -43,3 +43,14 @@ $(".btnDetails").click(function () {
     $("#id_product").html(id);
     $(".quantity input").val(1);
 });
+/* --------------------đổi phí ship ---------------*/
+$(document).ready(function () {
+    $('input[name="shipping"]').change(function () {
+        if ($('#shipping-1').prop('checked')) {
+            $("#ship-fee").html("Miễn phí");
+        } else {
+            $("#ship-fee").html("20000₫");          
+        }
+        updateTotalPrice();
+    });
+});

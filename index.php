@@ -67,6 +67,10 @@ switch ($a) {
         # code...
         include 'GUI/pages/pXuongRong.php';
         break;
+    case 4:
+        # code...
+        include 'GUI/pages/pCheckOut.php';
+        break;
     case 1:
         # code...
         include 'GUI/pages/pSenDa.php';
@@ -84,7 +88,7 @@ switch ($a) {
 include_once 'GUI/modules/mModal.php';
 include 'GUI/modules/mPruductDetails.php';
 include 'GUI/modules/mFooter.php';
-
+include_once 'GUI/modules/mShoppingCart.php';
 ?>
 </div>
     
@@ -96,5 +100,7 @@ include 'GUI/modules/mFooter.php';
     <script src="GUI/js/bootstrap.js"></script>
     <script src="GUI/js/custom.js"></script>
     <script src="GUI/js/form.js"></script>
+    <script src="GUI/js/cart.js"></script>
+    <script src="GUI/js/CheckOut.js"></script>
 </body>
 </html>

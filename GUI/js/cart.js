@@ -11,8 +11,14 @@ $("#add-to-cart").click(function () {
     
     var idProduct = $("#id_product").html();  
     var quantityProduct = $(".quantity input").val();
+
     if(quantityProduct > 12){
         alert("Không mua quá 12 sản phẩm");
+        return;
+    }
+    if(quantityProduct <= 0){
+        alert("Số lượng sản phẩm mua không được nhỏ hơn 0");
+        $(".quantity input").val(1);
         return;
     }
     //Kiểm tra xem sản phẩm đã trong giỏ hàng chưa

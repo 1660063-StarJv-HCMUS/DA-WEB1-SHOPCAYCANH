@@ -108,9 +108,9 @@
                     </table>
                 </div>
             </div>
-        </form>
-        <div class="text-right">
-            <button id="btn">Đặt Hàng</button>
-        </div>           
+            <div class="text-right" id="dat-hang">               
+                <button id="btn">Đặt Hàng</button>
+            </div>
+        </form>                  
     </div>
 </div>

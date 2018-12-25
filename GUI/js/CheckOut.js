@@ -6,7 +6,9 @@ $(window).ready(function() {
         cartItems.forEach(function(item){
             var row = '<tr id="item' + item.id + '" ><td class="thumb"><img src="'+item.img+'" alt=""></td><td class="details"><a href="#">'+ item.name +'</a></td><td class="price text-center"><strong>'+ item.price +'₫</strong><br><del class="font-weak"><small></small></del></td><td class="qty text-center"><input class="input" type="number" value="'+ item.quantity +'" disabled></td><td class="total text-center"><strong class="primary-color">'+item.quantity * item.price+'₫</strong></td></tr>'
             $("#product-table tbody").append(row);       
-            total += item.quantity * item.price;              
+            total += item.quantity * item.price;      
+            var row1 = '<input type="hidden" name="IdProduct" value="'+item.id+'"></input>';
+            $("#dat-hang").append(row1);
         });
         $(".sub-total").html(total+"₫");       
         $("th.total").html(total+"₫");       

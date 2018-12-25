@@ -1,10 +1,6 @@
 <div class="dropdown themmoi">
     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Thêm tài khoản mới</button>
-<<<<<<< HEAD
     <form  id="form-them-tai-khoan" method="post" accept-charset="utf-8" class="dropdown-menu" aria-labelledby="dropdownMenuButton" >
-=======
-    <form id="form-them-tai-khoan" accept-charset="utf-8" class="dropdown-menu" aria-labelledby="dropdownMenuButton" >
->>>>>>> b046b7c159f1ee888ec8d2ba1ccddb22f74d7b38
         <div class="form-group">
             <span>Tên hiển thị </span>
             <input type="text" name="tenHienThi" class="form-control" id="tenHienThi" placeholder="Tên tên hiển thị">

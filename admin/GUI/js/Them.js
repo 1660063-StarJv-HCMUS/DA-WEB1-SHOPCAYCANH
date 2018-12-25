@@ -5,7 +5,7 @@ window.alert('vào rồi đó');
 
 /("#form-tai-khoan button").on('click', function () {
     window.alert('đến thêm tài khoản rồi');
-    /*// Gán các giá trị trong các biến
+    // Gán các giá trị trong các biến
     $tenHienThi     = $('#form-them-tai-khoan  #tenHienThi').val();
     $diaChi         = $('#form-them-tai-khoan #diaChi').val();
     $soDienThoai    = $('#form-them-tai-khoan  #soDienThoai').val();
@@ -42,7 +42,7 @@ window.alert('vào rồi đó');
                 $("#form-them-tai-khoan .alert").html("Không thể đăng ký vào lúc này, hãy thử lại sau.");
             }
         });
-    }*/
+    }
 });
 
 /////////////////Thêm sản phẩm//////////////////////////////////

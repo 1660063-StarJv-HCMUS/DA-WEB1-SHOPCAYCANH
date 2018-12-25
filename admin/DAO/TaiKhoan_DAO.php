@@ -11,7 +11,7 @@ class TaiKhoanDAO extends Database
 
     public function LoadTatCaTaiKhoan()
     {
-        $sql = "SELECT TenDangNhap, TenHienThi, MatKhau, DiaChi, DienThoai, Email, MaLoaiTaiKhoan FROM taikhoan";
+        $sql = "SELECT MaTaiKhoan ,TenDangNhap, TenHienThi, MatKhau, DiaChi, DienThoai, Email, MaLoaiTaiKhoan FROM taikhoan";
         $result = $this->ExecuteQuery($sql);
 
         return $result;

@@ -7,27 +7,6 @@
 include_once __DIR__.'/../DAO/TaiKhoan_DAO.php';
 include_once __DIR__.'/../DTO/TaiKhoan_DTO.php';
 
-//print_r($_POST);
-/*
-$taiKhoan = new TaiKhoan();
-
-$taiKhoan->TenHienThi = $_POST['tenHienThi'];
-
-
-$taiKhoan->DiaChi = $_POST['diaChi'];
-$taiKhoan->DienThoai = $_POST['dienThoai'];
-$taiKhoan->Email = $_POST['email'];
-
-$taiKhoan->TenDangNhap = $_POST['tenDangNhap'];
-$taiKhoan->MatKhau = $_POST['matKhau'];
-
-if($_POST['loaiTaiKhoan'] == 'Admin')
-    $taiKhoan->MaLoaiTaiKhoan = 0;
-else
-    $taiKhoan->MaLoaiTaiKhoan = 1;
-
-//var_dump($taiKhoan);
-*/
 class TaiKhoanBUS
 {
     public function LoadTatCaTaiKhoan()
@@ -43,7 +22,7 @@ class TaiKhoanBUS
             while($row = $result->fetch_assoc())
             {
                 $tk = new TaiKhoan();
-
+                $tk->MaTaiKhoan     = $row['MaTaiKhoan'];
                 $tk->TenDangNhap    = $row['TenDangNhap'];
                 $tk->TenHienThi     = $row['TenHienThi'];
                 $tk->DienThoai      = $row['DienThoai'];
@@ -59,8 +38,6 @@ class TaiKhoanBUS
 	}
 
     public function ThemTaiKhoan($tk){
-
-        //var_dump($tk);
 
         $taiKhoanDAO = new TaiKhoanDAO();
 

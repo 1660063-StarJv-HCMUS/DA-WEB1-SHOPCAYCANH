@@ -2,6 +2,7 @@
 <table class="table table-hover">
     <thead>
         <tr>
+            <th></th>
           <th>Tên đăng nhập</th>
           <th>Tên hiển thị</th>
           <th>Số điện thoại</th>
@@ -29,6 +30,7 @@
 
             echo '
             <tr>
+                <td><input type="checkbox" name="id_TaiKhoan[]" value="'.$loadTK->MaTaiKhoan.'"></td>
                 <td>'.$loadTK->TenDangNhap.'</td>
                 <td>'.$loadTK->TenHienThi.'</td>
                 <td>'.$loadTK->DienThoai.'</td>
@@ -37,8 +39,6 @@
                 <td>'.$loai.'</td>
                 <td>
                     <a href="#" title="">Chỉnh sửa</a>
-                    |
-                    <a href="#" title="">Xóa</a>
                 </td>
             </tr>
             ';

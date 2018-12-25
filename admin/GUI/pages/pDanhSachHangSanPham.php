@@ -7,6 +7,7 @@ include_once __DIR__.'/../../DTO/HangSanXuat_DTO.php';
 <table class="table table-hover">
     <thead>
     <tr>
+        <th></th>
         <th>Tên hãng</th>
         <th class="HinhSP">Logo hãng</th>
         <th>chức năng</th>
@@ -23,12 +24,11 @@ include_once __DIR__.'/../../DTO/HangSanXuat_DTO.php';
         $url = '../GUI/images/'.$loadHang->LogoURL;
         echo '
             <tr>
+                <td><input type="checkbox"/></td>
                 <td><a>'.$loadHang->TenHangSanXuat.'</a></td>
                 <td><img src="'.$url.'" alt="Card image cap"></td>
                 <td>
                     <a href="#" title="">Chỉnh sửa</a>
-                    |
-                    <a href="#" title="">Xóa</a>
                 </td>
             </tr>
             ';

@@ -31,14 +31,7 @@ class HangSanXuat_BUS
         $hangDAO = new HangSanXuatDAO();
         $hangDAO->ThemHangSanXuat($hang);
     }
-/*
-    public function LoadTenHangByID($maHang){
-        $loadHangSX = new HangSanXuatDAO();
-        $result = $loadHangSX->LoadTenHangByID($maHang);
-        $row = $result->fetch_assoc();
-        return $row['TenHangSanXuat'];
-    }
-*/
+
     public function LoadMaHangByTenHang($tenHang){
         $loadHangSX = new HangSanXuatDAO();
         $result = $loadHangSX->LoadMaHangByTen($tenHang);

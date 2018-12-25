@@ -8,6 +8,7 @@
     <table class="table table-hover">
         <thead>
         <tr>
+            <th scope="col"></th>
             <th scope="col">Tên sản phẩm</th>
             <th scope="col" class="HinhSP">Hình ảnh</th>
             <th scope="col">Hãng sản xuất</th>
@@ -26,18 +27,21 @@
         $loadSP = new SanPham_BUS();
         $loadHang = new HangSanXuat_BUS();
 
+        $tmp = $loadHang->LoadTatCaCacHangSanXuat();
+
+        //var_dump($loadHang->LoadTatCaCacHangSanXuat());
+
         $result = $loadSP->LoadTatCaSanPham();
 
 
         foreach ($result as $loadSP){
             $url = '../GUI/images/'.$loadSP->HinhURL;
-            //$tenNhaSanXuat = $loadHang->LoadTenHangByID($loadSP->MaHangSanXuat);
-            $tenNhaSanXuat;
             echo '
             <tr>
+                <td><input type="checkbox"></td>
                 <td><a>'.$loadSP->TenSanPham.'</a></td>
                 <td><img src="'.$url.'" alt="Card image cap" class="thumbnail"></td>
-                <td><a>'.$tenNhaSanXuat.'</a></td>
+                <td><a></a></td>
                 <td>'.$loadSP->GiaSanPham.'</td>
                 <td>'.$loadSP->SoLuotXem.'</td>
                 <td>'.$loadSP->SoLuongTon.'</td>
@@ -45,8 +49,6 @@
                 <td>'.$loadSP->NgayNhap.'</td>
                 <td>
                     <a href="#" title="">Chỉnh sửa</a>
-                    |
-                    <a href="#" title="">Xóa</a>
                 </td>
             </tr>
             ';

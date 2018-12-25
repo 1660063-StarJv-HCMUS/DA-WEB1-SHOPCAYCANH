@@ -1,6 +1,6 @@
 <div class="dropdown themmoi">
     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Thêm tài khoản mới</button>
-    <form action="http://localhost:8080/web1/DA-WEB1-SHOPCAYCANH/admin/BUS/TaiKhoan/Them.php" id="form-them-tai-khoan" method="post" accept-charset="utf-8" class="dropdown-menu" aria-labelledby="dropdownMenuButton" >
+    <form  id="form-them-tai-khoan" method="post" accept-charset="utf-8" class="dropdown-menu" aria-labelledby="dropdownMenuButton" >
         <div class="form-group">
             <span>Tên hiển thị </span>
             <input type="text" name="tenHienThi" class="form-control" id="tenHienThi" placeholder="Tên tên hiển thị">
@@ -36,54 +36,6 @@
         <button type="submit" id="themTaiKhoan" class="btn btn-success">Thêm tài khoản</button>
     </form>
 </div>
-
-
 <?php
-    //include_once __DIR__.'/../../BUS/TaiKhoan_BUS.php';
-    //include_once __DIR__.'/../../DTO/TaiKhoan_DTO.php';
-    /*
-    if($_POST['tenHienThi']  == "" || $_POST['diaChi'] == "" || $_POST['dienThoai'] == "" || $_POST['email'] || $_POST['tenDangNhap'] || $_POST['matKhau']){
-        echo 'Không được bỏ thông tin trống';
-    }
-    else {
-        $taiKhoan = new TaiKhoan();
-
-        $taiKhoan->TenHienThi = $_POST['tenHienThi'];
-        $taiKhoan->DiaChi = $_POST['diaChi'];
-        $taiKhoan->DienThoai = $_POST['dienThoai'];
-        $taiKhoan->Email = $_POST['email'];
-        $taiKhoan->TenDangNhap = $_POST['tenDangNhap'];
-        $taiKhoan->MatKhau = $_POST['matKhau'];
-
-        if($_POST['loaiTaiKhoan'] == 'Admin')
-            $taiKhoan->MaLoaiTaiKhoan = 0;
-        else
-            $taiKhoan->MaLoaiTaiKhoan = 1;
-
-        $themTaiKhoan = new TaiKhoanBUS();
-        //var_dump ($_POST);
-
-        //print_r($taiKhoan);
-
-        $themTaiKhoan->ThemTaiKhoan($taiKhoan);
-    }
-    */
-    /*$taiKhoan = new TaiKhoan();
-
-    $taiKhoan->TenHienThi = $_POST['tenHienThi'];
-    $taiKhoan->DiaChi = $_POST['diaChi'];
-    $taiKhoan->DienThoai = $_POST['dienThoai'];
-    $taiKhoan->Email = $_POST['email'];
-    $taiKhoan->TenDangNhap = $_POST['tenDangNhap'];
-    $taiKhoan->MatKhau = $_POST['matKhau'];
-
-    if($_POST['loaiTaiKhoan'] == 'Admin')
-        $taiKhoan->MaLoaiTaiKhoan = 0;
-    else
-        $taiKhoan->MaLoaiTaiKhoan = 1;
-
-    $themTaiKhoan = new TaiKhoanBUS();
-
-    $themTaiKhoan->ThemTaiKhoan($taiKhoan);
-    */
+//action="http://localhost:8080/web1/DA-WEB1-SHOPCAYCANH/admin/BUS/TaiKhoan/Them.php"
 ?>

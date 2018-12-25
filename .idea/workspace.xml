@@ -2,26 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60a66cda-ef4f-40e1-8896-c1972c235766" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/BUS/HangSanPham/Sua.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/BUS/HangSanPham/Xoa.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/BUS/LoaiSanPham/Sua.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/BUS/LoaiSanPham/Xoa.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/BUS/SanPham/Sua.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/BUS/SanPham/Xoa.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/BUS/TaiKhoan/Sua.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/BUS/TaiKhoan/Xoa.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/BUS/HangSanXuat_BUS.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/BUS/HangSanXuat_BUS.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAO/Register.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/Register.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/BUS/TaiKhoan/Them.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/BUS/TaiKhoan/Them.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/BUS/TaiKhoan_BUS.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/BUS/TaiKhoan_BUS.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/DAO/TaiKhoan_DAO.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/DAO/TaiKhoan_DAO.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/GUI/js/Them.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/js/Them.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/GUI/modules/ThemTaiKhoan.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/modules/ThemTaiKhoan.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/pages/pDanhSachHangSanPham.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/pages/pDanhSachHangSanPham.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/pages/pDanhSachLoaiSanPham.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/pages/pDanhSachLoaiSanPham.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/pages/pDanhSachSanPham.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/pages/pDanhSachSanPham.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/GUI/pages/pDanhSachTaiKhoan.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/pages/pDanhSachTaiKhoan.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,11 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/GUI/pages/pDanhSachLoaiSanPham.php">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/GUI/pages/pDanhSachSanPham.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
-              <caret line="26" column="54" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
+            <state relative-caret-position="506">
+              <caret line="41" column="41" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -66,8 +51,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/GUI/pages/pDanhSachTaiKhoan.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="837">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
             </state>
           </provider>
         </entry>
@@ -84,17 +69,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/GUI/js/Them.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+            <state relative-caret-position="81">
+              <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/GUI/modules/ThemTaiKhoan.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="766">
-              <caret line="39" column="85" selection-start-line="39" selection-start-column="85" selection-end-line="39" selection-end-column="85" />
+              <caret line="43" column="85" selection-start-line="43" selection-start-column="85" selection-end-line="43" selection-end-column="85" />
             </state>
           </provider>
         </entry>
@@ -391,16 +376,15 @@
       <workItem from="1545630013745" duration="5816000" />
       <workItem from="1545643609007" duration="12581000" />
       <workItem from="1545705158334" duration="23177000" />
-      <workItem from="1545729696077" duration="316000" />
+      <workItem from="1545729696077" duration="463000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="159685000" />
+    <option name="totallyTimeSpent" value="159832000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1359275" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -706,13 +690,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/GUI/pages/pDanhSachSanPham.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
-          <caret line="50" column="54" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/BUS/SanPham_BUS.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1755">
@@ -736,8 +713,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/GUI/pages/pDanhSachTaiKhoan.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="837">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>
@@ -778,15 +755,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/GUI/js/Them.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+        <state relative-caret-position="81">
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/GUI/modules/ThemTaiKhoan.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="766">
-          <caret line="39" column="85" selection-start-line="39" selection-start-column="85" selection-end-line="39" selection-end-column="85" />
+          <caret line="43" column="85" selection-start-line="43" selection-start-column="85" selection-end-line="43" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/GUI/pages/pDanhSachSanPham.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="41" column="41" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
         </state>
       </provider>
     </entry>

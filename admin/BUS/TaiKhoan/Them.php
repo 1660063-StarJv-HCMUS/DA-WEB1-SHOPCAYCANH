@@ -5,6 +5,7 @@
  *
  */
 
+<<<<<<< HEAD
 include_once __DIR__.'/../TaiKhoan_BUS.php';
 include_once __DIR__.'/../../DTO/TaiKhoan_DTO.php';
 
@@ -13,26 +14,83 @@ if($_POST['tenHienThi'] == '' || $_POST['diaChi'] == '' || $_POST['dienThoai'] =
 }
 else {
     $taiKhoan = new TaiKhoan();
+=======
+include_once __DIR__.'/../admin/BUS/TaiKhoan_BUS.php';
+include_once __DIR__.'/../../admin/DTO/TaiKhoan_DTO.php';
 
-    $taiKhoan->TenHienThi = $_POST['tenHienThi'];
-    $taiKhoan->DiaChi = $_POST['diaChi'];
-    $taiKhoan->DienThoai = $_POST['dienThoai'];
-    $taiKhoan->Email = $_POST['email'];
-    $taiKhoan->TenDangNhap = $_POST['tenDangNhap'];
-    $taiKhoan->MatKhau = $_POST['matKhau'];
+if(isset($_POST['tenHienThi']) && isset($_POST['diaChi']) && isset($_POST['dienThoai']) && isset($_POST['email']) && isset($_POST['tenDangNhap']) && isset($_POST['matKhau'])){
+    $show_alert = '<script>$("#register-form .alert").removeClass("invisible");</script>';
+    $hide_alert = '<script>$("#register-form .alert").addClass("invisible");</script>';
+    $success = '<script>$("#register-form .alert").attr("class", "alert alert-success mt-2");</script>';
+>>>>>>> b046b7c159f1ee888ec8d2ba1ccddb22f74d7b38
 
+    if(($_POST['tenHienThi']  == "") || ($_POST['diaChi'] == "") || ($_POST['dienThoai'] == "") || ($_POST['email'] = null) || ($_POST['tenDangNhap'] = null) || ($_POST['matKhau'] = null)){
+        echo $show_alert . 'Vui lòng điền đầy đủ thông tin.';
+    }
+    else {
+        $taiKhoan = new TaiKhoan();
+
+<<<<<<< HEAD
     if ($_POST['loaiTaiKhoan'] == 'Admin')
         $taiKhoan->MaLoaiTaiKhoan = 0;
     else
         $taiKhoan->MaLoaiTaiKhoan = 1;
 
     $themTaiKhoan = new TaiKhoanBUS();
+=======
+        $taiKhoan->TenHienThi = $_POST['tenHienThi'];
+        $taiKhoan->DiaChi = $_POST['diaChi'];
+        $taiKhoan->DienThoai = $_POST['dienThoai'];
+        $taiKhoan->Email = $_POST['email'];
+        $taiKhoan->TenDangNhap = $_POST['tenDangNhap'];
+        $taiKhoan->MatKhau = $_POST['matKhau'];
 
-    $themTaiKhoan->ThemTaiKhoan($taiKhoan);
+        if($_POST['loaiTaiKhoan'] == 'Admin')
+            $taiKhoan->MaLoaiTaiKhoan = 0;
+        else
+            $taiKhoan->MaLoaiTaiKhoan = 1;
+
+        $themTaiKhoan = new TaiKhoanBUS();
+        //var_dump ($_POST);
+>>>>>>> b046b7c159f1ee888ec8d2ba1ccddb22f74d7b38
+
+        //print_r($taiKhoan);
+
+        $themTaiKhoan->ThemTaiKhoan($taiKhoan);
+        echo $show_alert .$success. 'Thêm thành công.';
+    }
 }
+<<<<<<< HEAD
 ?>
 <script>
 function goBack() {
   window.history.back();
 }
 </script>
+=======
+// $taiKhoan = new TaiKhoan();
+
+//     $taiKhoan->TenHienThi = $_POST['tenHienThi'];
+//     $taiKhoan->DiaChi = $_POST['diaChi'];
+//     $taiKhoan->DienThoai = $_POST['dienThoai'];
+//     $taiKhoan->Email = $_POST['email'];
+//     $taiKhoan->TenDangNhap = $_POST['tenDangNhap'];
+//     $taiKhoan->MatKhau = $_POST['matKhau'];
+
+//     if($_POST['loaiTaiKhoan'] == 'Admin')
+//         $taiKhoan->MaLoaiTaiKhoan = 0;
+//     else
+//         $taiKhoan->MaLoaiTaiKhoan = 1;
+
+//     $themTaiKhoan = new TaiKhoanBUS();
+
+//     $themTaiKhoan->ThemTaiKhoan($taiKhoan);
+
+// ?>
+<!-- 
+// <script>
+// function goBack() {
+//   window.history.back();
+// }
+// </script> -->
+>>>>>>> b046b7c159f1ee888ec8d2ba1ccddb22f74d7b38

@@ -29,13 +29,13 @@
                                                     <span></span></h5>
                                                 <p></p>
                                             </div>
-                                            <form action="" class="cart" method="POST">
+                                            <div class="cart " style="margin: 0 auto;" >
                                                 <div class="quantity">
                                                     <input type="number" class="qty-text" id="qty" step="1" min="1" max="12"
                                                         name="quantity" value="1">
                                                 </div>
                                                 <button type="button" class="cart-submit" id="add-to-cart" data-max="12">THÊM VÀO GIỎ</button>
-                                            </form>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

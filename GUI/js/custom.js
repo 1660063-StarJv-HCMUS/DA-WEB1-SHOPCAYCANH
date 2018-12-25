@@ -20,7 +20,7 @@ $('.message a').click(function () {
 });
 
 
-$('#scroll-bottom').click(
+$('.scroll-bottom').click(
     function (e) {
         $('html, body').animate({
             scrollTop: $(document).height()

@@ -21,7 +21,7 @@ else {
 
 foreach ($result as $loadSP) {
     echo'
-            <div class="card border-secondary product">
+            <div class="card border-secondary my-product">
             <img class="card-img-top" src="GUI/images/'.$loadSP->getHinhURL().'" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title" style="color:#056526; font-style: normal">'.$loadSP->getTenSanPham().'</h5>

@@ -70,7 +70,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" id="scroll-bottom">Liên hệ</a>
+                    <a class="nav-link scroll-bottom" href="#">Liên hệ</a>
                 </li>
 
 <?php

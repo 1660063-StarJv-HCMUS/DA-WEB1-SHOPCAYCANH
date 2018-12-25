@@ -18,7 +18,7 @@
                     <a href="index.php?a=2">Sen đá</a>
                 </li>
                 <li>
-                    <a href="#" id="scroll-bottom">Liên hệ</a>
+                    <a href="#" class="scroll-bottom">Liên hệ</a>
                 </li>
             </ul>
         </nav>

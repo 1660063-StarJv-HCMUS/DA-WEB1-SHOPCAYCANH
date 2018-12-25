@@ -411,8 +411,8 @@ a {
   background-color: #4caf50;
 }
 
-/*-----------------------fix cart---------------------*/
-#cart{
+/*-----------------------fix cart-mobi ---------------------*/
+#cart-mobi{
   position: fixed;
   background-color: #4caf50;
   border-radius:100%;
@@ -420,6 +420,7 @@ a {
   z-index: 10;
   right: 25px;
   bottom:40px;
+  display: none;
 }
 /*----------------------cart------------------------------*/
 
@@ -457,11 +458,11 @@ a {
   .input{
     width: 100% !important; 
   }
+  #cart-mobi{
+    display: block;
+  }
 }
 
-#cart{
-  display: none;
-}
 /*---------------------------modal details-----------------------*/
 #details .close{
   box-shadow: none;

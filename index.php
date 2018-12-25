@@ -101,6 +101,7 @@ include_once 'GUI/modules/mModal.php';
 include 'GUI/modules/mPruductDetails.php';
 include 'GUI/modules/mFooter.php';
 include_once 'GUI/modules/mShoppingCart.php';
+include 'GUI/modules/mCartMobi.php';
 ?>
 </div>
     

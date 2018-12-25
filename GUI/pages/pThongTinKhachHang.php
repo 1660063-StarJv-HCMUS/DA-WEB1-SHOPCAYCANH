@@ -14,7 +14,7 @@
                 </div>
                 <div class="form-group">
                     <p>Email:</p>
-                    <input class="input" type="email" name="email" placeholder="" value="Tranhuudung1@gmail.com">
+                    <input class="input" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email" placeholder="" value="Tranhuudung1@gmail.com">
                 </div>
                 <div class="form-group">
                     <p>Địa chỉ:</p>

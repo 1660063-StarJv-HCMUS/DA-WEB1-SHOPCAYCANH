@@ -73,6 +73,7 @@
                     <span id="empty-message">
                         <div class="alert alert-danger" role="alert" id="check-out-empty-message">Không có sản phẩm</div>
                     </span>
+                    <div class="table-responsive">
                     <table class="shopping-cart-table table" id="product-table">
                         <thead>
                             <tr>
@@ -106,6 +107,7 @@
                             </tr>
                         </tfoot>
                     </table>
+                    </div>                   
                 </div>
             </div>
             <div class="text-right" id="dat-hang">               

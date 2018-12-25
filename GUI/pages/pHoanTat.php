@@ -88,6 +88,7 @@
                 <div class="section-title">
                     <h3>Sản phẩm</h3>
                 </div>
+                <div class="table-responsive">
                 <table class="shopping-cart-table table" id="product-table">
                         <thead>
                             <tr>
@@ -148,9 +149,11 @@
                             </tr>
                         </tfoot>
                     </table>
-                    <div class="text-right">
-                            <button id="btn" type="button" onclick="location.href='index.php?a=0';" >Xác nhận</button>
-                    </div>
+                </div>
+                
+                <div class="text-right">
+                        <button id="btn" type="button" onclick="location.href='index.php?a=0';" >Xác nhận</button>
+                </div>
             </div>
             
         </div>

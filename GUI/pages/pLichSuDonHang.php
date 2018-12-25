@@ -4,6 +4,7 @@
             <div class="section-title">
                 <h3>Thông tin lịch sử đơn hàng</h3>
             </div>
+            <div class="table-responsive">
             <table class="shopping-cart-table table" id="product-table">
                 <thead>
                     <tr>
@@ -50,6 +51,7 @@
                     </tr>         
                 </tbody>        
             </table>
+            </div>          
         </div>
     </div>
 </div>

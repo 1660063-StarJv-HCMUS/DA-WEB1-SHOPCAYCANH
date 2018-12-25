@@ -1,6 +1,6 @@
 <?php
 include_once __DIR__.'/../BUS/TaiKhoan_BUS.php';
-include_once __DIR__.'/../BUS/session.php';
+// include_once __DIR__.'/../BUS/session.php';
 include_once __DIR__.'/../DTO/TaiKhoan.php';
 if (isset($_POST['name_info']) && isset($_POST['username_info']) && isset($_POST['password_info']) && isset($_POST['address_info']) && isset($_POST['phone_number_info']) && isset($_POST['email_info'])) {
     // Các biến xử lý thông báo

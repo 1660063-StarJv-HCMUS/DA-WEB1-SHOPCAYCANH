@@ -1,6 +1,6 @@
 <div class="dropdown themmoi">
     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Thêm tài khoản mới</button>
-    <form action="http://localhost:8080/web1/DA-WEB1-SHOPCAYCANH/admin/BUS/TaiKhoan/Them.php" id="form-them-tai-khoan" method="post" accept-charset="utf-8" class="dropdown-menu" aria-labelledby="dropdownMenuButton" >
+    <form id="form-them-tai-khoan" accept-charset="utf-8" class="dropdown-menu" aria-labelledby="dropdownMenuButton" >
         <div class="form-group">
             <span>Tên hiển thị </span>
             <input type="text" name="tenHienThi" class="form-control" id="tenHienThi" placeholder="Tên tên hiển thị">
@@ -32,7 +32,7 @@
             <span>Loại tài khoản </span>
             <input type="text" name="loaiTaiKhoan" class="form-control" id="loaiTaiKhoan" placeholder="Loại tài khoản(Admin hoặc thường)">
         </div>
-
+        <div class="alert alert-danger invisible mt-2 mb-0"></div>
         <button type="submit" id="themTaiKhoan" class="btn btn-success">Thêm tài khoản</button>
     </form>
 </div>

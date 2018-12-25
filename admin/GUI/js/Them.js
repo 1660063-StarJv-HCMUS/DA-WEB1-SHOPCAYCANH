@@ -1,19 +1,17 @@
 /////////////////////////thêm tài khoản////////////////////////////
 //Đăng kí
 
-window.alert('vào rồi đó');
-
-/("#form-tai-khoan button").on('click', function () {
+$("#form-them-tai-khoan #themTaiKhoan").on('click', function () {
     window.alert('đến thêm tài khoản rồi');
-    /*// Gán các giá trị trong các biến
+    // Gán các giá trị trong các biến
     $tenHienThi     = $('#form-them-tai-khoan  #tenHienThi').val();
-    $diaChi         = $('#form-them-tai-khoan #diaChi').val();
+    $diaChi         = $('#form-them-tai-khoan  #diaChi').val();
     $soDienThoai    = $('#form-them-tai-khoan  #soDienThoai').val();
     $email          = $('#form-them-tai-khoan  #email').val();
     $tenDangNhap    = $('#form-them-tai-khoan  #tenDangNhap').val();
     $matKhau        = $('#form-them-tai-khoan  #matKhau').val();
-    $loaiTaiKhoan   = $('#form-them-tai-khoan #loaiTaiKhoan').val();
-    // Nếu các giá trị rỗng
+    $loaiTaiKhoan   = $('#form-them-tai-khoan  #loaiTaiKhoan').val();
+    //Nếu các giá trị rỗng
     if ($tenHienThi == '' || $diaChi == ''|| $soDienThoai == ''|| $email == '' || $tenDangNhap == '' || $matKhau == '' || $loaiTaiKhoan == '') {
         $("#form-them-tai-khoan .alert").removeClass("invisible");
         $("#form-them-tai-khoan .alert").html("Vui lòng điền đầy đủ thông tin.");
@@ -21,7 +19,7 @@ window.alert('vào rồi đó');
     else
     {
         $.ajax({
-            url: "BUS/TaiKhoan/Them.php",
+            url: "admin/BUS/TaiKhoan/Them.php",
             type: "POST",
             
             data: {
@@ -42,7 +40,7 @@ window.alert('vào rồi đó');
                 $("#form-them-tai-khoan .alert").html("Không thể đăng ký vào lúc này, hãy thử lại sau.");
             }
         });
-    }*/
+    }
 });
 
 /////////////////Thêm sản phẩm//////////////////////////////////

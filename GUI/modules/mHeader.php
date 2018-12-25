@@ -71,6 +71,7 @@
             <label style="cursor: pointer;" for="search"><i class="fa fa-search"></i></label>
         </div>
         <span class="linedivide"></span>
+        <!--Để phần này lại-->
         <div id="cart-icon" style="float: right; cursor: pointer;">
             <span class="my-cart-icon" data-toggle="modal" data-target="#my-cart-modals"><i class="fa fa-shopping-cart"></i>
         </div>

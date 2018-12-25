@@ -12,10 +12,10 @@
                     <a href="index.php?a=1">Tiểu cảnh</a>                  
                 </li>
                 <li>
-                    <a href="index.php?a=2">Xương rồng</a>
+                    <a href="index.php?a=3">Xương rồng</a>
                 </li>
                 <li>
-                    <a href="index.php?a=3">Sen đá</a>
+                    <a href="index.php?a=2">Sen đá</a>
                 </li>
                 <li>
                     <a href="#" id="scroll-bottom">Liên hệ</a>

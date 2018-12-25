@@ -75,6 +75,14 @@ switch ($a) {
         # code...
         include 'GUI/pages/pHoanTat.php';
         break;
+    case 6:
+        # code...
+        include 'GUI/pages/pThongTinKhachHang.php';
+        break;
+    case 7:
+        # code...
+        include 'GUI/pages/pLichSuDonHang.php';
+        break;
     case 1:
         # code...
         include 'GUI/pages/pSenDa.php';

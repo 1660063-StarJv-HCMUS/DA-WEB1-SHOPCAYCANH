@@ -452,7 +452,10 @@ a {
     bottom: 30px  
   }
   .content{
-    margin: 0 !important;
+    margin: 5px !important;
+  }
+  .input{
+    width: 100% !important; 
   }
 }
 

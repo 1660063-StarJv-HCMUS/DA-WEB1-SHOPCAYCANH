@@ -27,10 +27,10 @@ if ($user) {
                 }
             ?>
             <li>
-                <a href="#">Thông tin tài khoản</a>
+                <a href="index.php?a=6">Thông tin tài khoản</a>
             </li>
             <li>
-                <a href="#">Kiểm tra đơn hàng</a>
+                <a href="index.php?a=7">Kiểm tra đơn hàng</a>
             </li>
             <li  id="logout-destop">
             <a href="#">Đăng xuất</a>

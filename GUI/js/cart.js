@@ -76,18 +76,23 @@ function updateInCart(id)
     var index = cartItems.findIndex(function(item){
         return item.id == id;
     });
+
+    //kiểm tra số lượng nhập vào có hợp lệ hay ko
     if( quantity < 0)
     {
         alert("Bạn không được nhập số lượng nhỏ hơn 1");
         $(selectorQuantity).val(cartItems[index].quantity);
         return;
     }
+
+    //xóa sản phẩm khi nhập số lượng bằng 0
     if(quantity == 0)
     {
         removeItem(id);
     }
-    cartItems[index].quantity = $(selectorQuantity).val();
 
+    //cập nhật lại giỏ hàng
+    cartItems[index].quantity = $(selectorQuantity).val();
     $(selectorTotalprice).html(cartItems[index].quantity * cartItems[index].price + "₫");   
     updateTotalPrice()
 }
@@ -104,12 +109,6 @@ function removeItem(id) {
         var row = '<div class="alert alert-danger" role="alert" id="my-cart-empty-message">Không có sản phẩm</div>';
         $("#my-cart-table").append(row);     
         $("#total-price").remove();
-        /*----------------- trang Check out--------------------*/
-        // xóa bảng giỏ hàng ở trang check out
-        $("#product-table").remove();
-        //thông báo ko có sản phẩm
-        var row = '<div class="alert alert-danger" role="alert" id="check-out-empty-message">Không có sản phẩm</div>'; 
-        $("#empty-message").append(row);
     }
     updateTotalPrice()
 }
@@ -121,6 +120,7 @@ function updateTotalPrice(){
         totalPrice += (item.quantity * item.price);     
     })
     $("#total-price span").html(totalPrice + '₫');
+    // cập nhật cartItem trong localStorage
     localStorage.setItem('cart', JSON.stringify(cartItems)); 
 
     //cập nhật giá của bảng giỏ hàng trong checkout
@@ -131,8 +131,10 @@ function updateTotalPrice(){
     $("th.total").html(totalPrice+"₫");   
 }
 
+// load sản phảm vào giỏ hàng 
 $(window).ready(function() 
 {
+    //lấy dữ liệu từ local storege
     cartItems = JSON.parse(localStorage.getItem("cart"));
     if(cartItems.length != 0)
     {

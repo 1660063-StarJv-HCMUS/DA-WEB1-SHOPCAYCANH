@@ -89,8 +89,8 @@
 <?php
     }
 ?>
-                        <a class="dropdown-item" href="#">Thông tin tài khoản</a>
-                        <a class="dropdown-item" href="#">Lịch sử đơn hàng</a>
+                        <a class="dropdown-item" href="index.php?a=6">Thông tin tài khoản</a>
+                        <a class="dropdown-item" href="index.php?a=7">Kiểm tra đơn hàng</a>
                         <a class="dropdown-item" href="#" id="logout">Đăng xuất</a>
                     </div>
                 </li>

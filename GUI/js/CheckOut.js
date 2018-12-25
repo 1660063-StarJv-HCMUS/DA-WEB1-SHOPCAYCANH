@@ -1,4 +1,12 @@
 $(window).ready(function() {
+    var page = (window.location.href).split('?a=')[1];
+    if(page == 5)
+        return;
+    if( page == '4'){
+        $("#my-cart *").remove();
+        var row = '<div class="alert alert-danger" role="alert" id="my-cart-empty-message">Bạn không thể sử dụng giỏ hàng khi đang thánh toán</div>';
+        $("#my-cart").append(row);
+    }
     if(cartItems.length != 0 )
     {
         $("#check-out-empty-message").remove();

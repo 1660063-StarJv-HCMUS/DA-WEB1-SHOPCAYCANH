@@ -3,7 +3,7 @@
         include './GUI/modules/mProgress-bar.php';
     ?>
     <div id="check-out ">
-        <form action="" id="checkout-form">
+        <form id="checkout-form">
             <div class="row">
                 <div class="col-md-6">
                     <div class="billing-details">
@@ -109,7 +109,7 @@
                 </div>
             </div>
             <div class="text-right" id="dat-hang">               
-                <button id="btn">Đặt Hàng</button>
+                <button type="button" onclick="location.href='index.php?a=5';localStorage.clear();" id="btn">Đặt Hàng</button>
             </div>
         </form>                  
     </div>

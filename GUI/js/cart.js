@@ -11,9 +11,9 @@ $("#add-to-cart").click(function () {
     
     var idProduct = $("#id_product").html();  
     var quantityProduct = $(".quantity input").val();
-
     if(quantityProduct > 12){
         alert("Không mua quá 12 sản phẩm");
+        $(".quantity input").val(1);
         return;
     }
     if(quantityProduct <= 0){
@@ -28,7 +28,6 @@ $("#add-to-cart").click(function () {
 
     if( index == -1 ){
         insertItem();
-        
     }  
     if(index != -1)
         updateItem(index,idProduct,quantityProduct);

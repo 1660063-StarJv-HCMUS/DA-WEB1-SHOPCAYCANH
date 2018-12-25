@@ -23,4 +23,20 @@ class TaiKhoanDAO extends Database
         //var_dump($tk);
         $this->ExecuteQuery($truyvan);
     }
+
+    public function CheckTaiKhoanTonTai($tenDangNhap){
+        $db = new Database();
+        $truyvan = "SELECT * FROM taikhoan WHERE TenDangNhap LIKE '$tenDangNhap'";
+        $result = mysqli_num_rows($db->ExecuteQuery($truyvan));
+        if($result > 0){
+            return true;
+        }
+        return false;
+    }
+
+    public function XoaTaiKhoan($maTaiKhoan){
+        $db = new Database();
+        $truyvan = "DELETE FROM taikhoan WHERE MaTaiKhoan = '$maTaiKhoan'";
+        $db->ExecuteQuery($truyvan);
+    }
 }

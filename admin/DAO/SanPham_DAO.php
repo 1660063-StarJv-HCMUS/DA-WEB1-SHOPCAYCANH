@@ -34,10 +34,10 @@ class SanPhamDAO
     }
 
     //xóa một sản phẩm dựa trên tên của sản phẩm
-    public function XoaSanPham($TenSanPham)
+    public function XoaSanPham($maSanPham)
     {
         $db = new Database();
-        $truyvan = 'delete from sanpham where TenSanPham = $TenSanPham';
+        $truyvan = "DELETE FROM sanpham WHERE MaSanPham = '$maSanPham'" ;
         $db->ExecuteQuery($truyvan);
     }
 
@@ -47,16 +47,7 @@ class SanPhamDAO
         $db = new Database();
         $truyvan = "INSERT INTO `sanpham`(`TenSanPham`, `HinhURL`, `GiaSanPham`, `NgayNhap`, `SoLuongTon`, `SoLuongBan`, `SoLuotXem`, `MoTa`, `BiXoa`, `MaLoaiSanPham`, `MaHangSanXuat`) 
         VALUES ('$sp->TenSanPham', '$sp->HinhURL', '$sp->GiaSanPham', '$sp->NgayNhap', '$sp->SoLuongTon', '$sp->SoLuongBan', '$sp->SoLuotXem', '$sp->MoTa', '$sp->BiXoa', '$sp->MaLoaiSanPham', '$sp->MaHangSanXuat')";
-
-
         $db->ExecuteQuery($truyvan);
-
-        //$truyvan2 = 'select MaSanPham from sanpham where TenSanPham = $sp->TenSanPham';
-
-        //$result =  $this->num_rows($truyvan2);
-        //if($result > 0)
-        //    return true;//nếu thêm sản phẩm thành công thì trả về true
-        //return false;//nếu thêm không thành công trả về false
     }
 
     //tìm kiếm một sản phẩm dựa trên tên sản phẩm
@@ -82,5 +73,15 @@ class SanPhamDAO
         $sanPham->NgayNhap = $row['NgayNhap'];
         $sanPham->SoLuongTon = $row['SoLuongTon'];
         return $sanPham;
+    }
+
+    public function CheckSanPhamTonTai($tenSanPham){
+        $db = new Database();
+        $truyvan = "SELECT * FROM sanpham WHERE TenSanPham LIKE '$tenSanPham'";
+        $result = mysqli_num_rows($db->ExecuteQuery($truyvan));
+        if($result > 0){
+            return true;
+        }
+        return false;
     }
 }

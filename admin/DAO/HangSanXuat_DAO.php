@@ -27,10 +27,27 @@ class HangSanXuatDAO
         return $rs;
     }
 
+    public function CheckHangSXTonTai($tenHang){
+        $db = new Database();
+        $truyvan = "SELECT * FROM hangsanxuat WHERE TenHangSanXuat LIKE '$tenHang'";
+        $result = mysqli_num_rows($db->ExecuteQuery($truyvan));
+        if($result > 0){
+            return true;
+        }
+        return false;
+    }
+
     public function ThemHangSanXuat($hangSX)
     {
         $db = new Database();
         $truyvan = "INSERT INTO hangsanxuat(TenHangSanXuat,LogoURL,BiXoa) values('$hangSX->TenHangSanXuat','$hangSX->LogoURL','$hangSX->BiXoa')";
+        $db->ExecuteQuery($truyvan);
+    }
+
+    public function XoaHangSanXuat($MaHangSanXuat)
+    {
+        $db = new Database();
+        $truyvan = 'DELETE FROM hangsanxuat WHERE MaHangSanXuat = $MaHangSanXuat';
         $db->ExecuteQuery($truyvan);
     }
     /*
@@ -51,13 +68,6 @@ class HangSanXuatDAO
         $db->ExecuteQuery($truyvan);
     }
 
-    //xóa một hãng sản xuất
-    public function XoaHangSanXuat ($MaHangSanXuat )
-    {
-        $db = new Database();
-        $truyvan = 'DELETE FROM hangsanxuat WHERE MaHangSanXuat = $MaHangSanXuat';
-        $db->ExecuteQuery($truyvan);
-    }
     //chỉnh sửa hãng sản xuất
     public function ChinhSuaHangSanXuat($hangSX)
     {

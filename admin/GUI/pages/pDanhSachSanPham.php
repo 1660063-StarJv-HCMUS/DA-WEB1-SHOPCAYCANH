@@ -4,8 +4,19 @@
 ?>
 <!----<div class="container">-->
     <h2>Danh sách sản phẩm</h2>
-    
-    <table class="table table-hover">
+
+    <p>
+        <form method="POST" id="formSearchPost" onsubmit="return false;">
+            <div class="input-group">
+                <input type="text" class="form-control" id="kw_search_post" placeholder="Nhập tên sản phẩm...">
+                <span class="input-group-btn">
+                    <button class="btn btn-primary" type="submit"><i class="fas fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+    </p>
+<div class="table-responsive">
+    <table class="table table-hover table table-striped list">
         <thead>
         <tr>
             <th scope="col"></th>
@@ -33,14 +44,13 @@
 
         $result = $loadSP->LoadTatCaSanPham();
 
-
         foreach ($result as $loadSP){
-            $url = '../GUI/images/'.$loadSP->HinhURL;
+            $url = $_DOMAIN.'/GUI/modules/upload/'.$loadSP->HinhURL;
             echo '
             <tr>
-                <td><input type="checkbox"></td>
+                <td><input type="checkbox" class="del-post-list" data-id="'.$loadSP->MaLoaiSanPham.'"></td>
                 <td><a>'.$loadSP->TenSanPham.'</a></td>
-                <td><img src="'.$url.'" alt="Card image cap" class="thumbnail"></td>
+                <td><img src="'.$url.'" alt="Card image cap" class="thumbnail img-responsive"></td>
                 <td><a></a></td>
                 <td>'.$loadSP->GiaSanPham.'</td>
                 <td>'.$loadSP->SoLuotXem.'</td>
@@ -48,7 +58,7 @@
                 <td>'.$loadSP->SoLuongBan.'</td>
                 <td>'.$loadSP->NgayNhap.'</td>
                 <td>
-                    <a href="#" title="">Chỉnh sửa</a>
+                    <a href="' . $_DOMAIN . '/BUS/edit/' . $loadSP->MaLoaiSanPham .'">Chỉnh sửa</a>
                 </td>
             </tr>
             ';
@@ -56,4 +66,5 @@
         ?>
         </tbody>
     </table>
+</div>
 <!--</div>-->

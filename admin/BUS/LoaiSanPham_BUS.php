@@ -33,6 +33,8 @@ class LoaiSanPham_BUS
 
     public function ThemLoaiSanPham($loai){
         $loaiDAO = new LoaiSanPhamDAO();
-        $loaiDAO->ThemLoaiSanPham($loai);
+        if($loaiDAO->CheckLoaiSPTonTai($loai->TenLoaiSanPham) == false) {
+            $loaiDAO->ThemLoaiSanPham($loai);
+        }
     }
 }

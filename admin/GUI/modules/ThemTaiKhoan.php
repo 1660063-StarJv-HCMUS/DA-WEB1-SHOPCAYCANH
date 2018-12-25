@@ -1,6 +1,6 @@
 <div class="dropdown themmoi">
     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Thêm tài khoản mới</button>
-    <form  id="form-them-tai-khoan" method="post" accept-charset="utf-8" class="dropdown-menu" aria-labelledby="dropdownMenuButton" >
+    <form id="form-them-tai-khoan" method="post" accept-charset="utf-8" class="dropdown-menu" aria-labelledby="dropdownMenuButton" >
         <div class="form-group">
             <span>Tên hiển thị </span>
             <input type="text" name="tenHienThi" class="form-control" id="tenHienThi" placeholder="Tên tên hiển thị">
@@ -30,12 +30,49 @@
 
         <div class="form-group">
             <span>Loại tài khoản </span>
-            <input type="text" name="loaiTaiKhoan" class="form-control" id="loaiTaiKhoan" placeholder="Loại tài khoản(Admin hoặc thường)">
+            <select class="custom-select" name="loaiTaiKhoan">
+                <option value="1">Thường</option>
+                <option value="0">Admin</option>
+            </select>
         </div>
         <div class="alert alert-danger invisible mt-2 mb-0"></div>
         <button type="submit" id="themTaiKhoan" class="btn btn-success">Thêm tài khoản</button>
     </form>
 </div>
+
 <?php
-//action="http://localhost:8080/web1/DA-WEB1-SHOPCAYCANH/admin/BUS/TaiKhoan/Them.php"
+
+if(isset($_POST['tenHienThi']) && isset($_POST['diaChi']) && isset($_POST['dienThoai']) && isset($_POST['tenDangNhap']) && isset($_POST['matKhau'])) {
+
+    if ($_POST['tenHienThi'] == "" || $_POST['diaChi'] == "" || $_POST['dienThoai'] == "" || $_POST['tenDangNhap'] == "" || $_POST['matKhau'] == "") {
+
+    } else {
+        include_once __DIR__ . '/../../BUS/TaiKhoan_BUS.php';
+        include_once __DIR__ . '/../../DTO/TaiKhoan_DTO.php';
+
+        if (($_POST['tenHienThi'] == "") || ($_POST['diaChi'] == "") || ($_POST['dienThoai'] == "") || ($_POST['email'] == null) || ($_POST['tenDangNhap'] == null) || ($_POST['matKhau'] == null)) {
+
+        } else {
+            $taiKhoan = new TaiKhoan();
+
+            $themTaiKhoan = new TaiKhoanBUS();
+            $taiKhoan->TenHienThi = $_POST['tenHienThi'];
+            $taiKhoan->DiaChi = $_POST['diaChi'];
+            $taiKhoan->DienThoai = $_POST['dienThoai'];
+            $taiKhoan->Email = $_POST['email'];
+            $taiKhoan->TenDangNhap = $_POST['tenDangNhap'];
+            $taiKhoan->MatKhau = $_POST['matKhau'];
+
+            $taiKhoan->MaLoaiTaiKhoan = $_POST['loaiTaiKhoan'];
+
+            $themTaiKhoan = new TaiKhoanBUS();
+
+            $themTaiKhoan->ThemTaiKhoan($taiKhoan);
+        }
+    }
+}
+else{
+
+}
+
 ?>

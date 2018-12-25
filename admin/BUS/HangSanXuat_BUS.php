@@ -29,7 +29,9 @@ class HangSanXuat_BUS
 
     public function ThemHangSanXuat($hang){
         $hangDAO = new HangSanXuatDAO();
-        $hangDAO->ThemHangSanXuat($hang);
+        if($hangDAO->CheckHangSXTonTai($hang->TenHangSanXuat) == false) {
+            $hangDAO->ThemHangSanXuat($hang);
+        }
     }
 
     public function LoadMaHangByTenHang($tenHang){
@@ -39,4 +41,6 @@ class HangSanXuat_BUS
 
         return $row['MaHang'];
     }
+
+
 }

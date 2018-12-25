@@ -42,7 +42,7 @@ $('#logout, #logout-destop').on('click', function () {
         data: {
             action: action
         },
-        success: function () {``
+        success: function () {
             location.reload();
         }
     });

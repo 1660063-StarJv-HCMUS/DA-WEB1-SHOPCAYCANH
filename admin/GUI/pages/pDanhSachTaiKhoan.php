@@ -1,4 +1,14 @@
 <h1>Danh sách tài khoản</h1>
+<p>
+    <form method="POST" id="formSearchPost" onsubmit="return false;">
+        <div class="input-group">
+            <input type="text" class="form-control" id="kw_search_post" placeholder="Nhập tên đăng nhập...">
+            <span class="input-group-btn">
+                <button class="btn btn-primary" type="submit"><i class="fas fa-search"></i></button>
+            </span>
+        </div>
+    </form>
+</p>
 <table class="table table-hover">
     <thead>
         <tr>

@@ -4,6 +4,7 @@
  * User: phuon
  *
  */
+
 include_once __DIR__.'/../DAO/TaiKhoan_DAO.php';
 include_once __DIR__.'/../DTO/TaiKhoan_DTO.php';
 
@@ -39,9 +40,10 @@ class TaiKhoanBUS
 
     public function ThemTaiKhoan($tk){
 
-        $taiKhoanDAO = new TaiKhoanDAO();
-
-        $taiKhoanDAO->ThemTaiKhoan($tk);
+        $tkDAO = new TaiKhoanDAO();
+        if($tkDAO->CheckTaiKhoanTonTai($tk->TenDangNhap) == false) {
+            $tkDAO->ThemTaiKhoan($tk);
+        }
 
     }
 }

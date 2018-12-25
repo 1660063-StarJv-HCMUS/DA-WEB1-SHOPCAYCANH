@@ -26,7 +26,7 @@ include_once __DIR__.'/../../DTO/HangSanXuat_DTO.php';
             <tr>
                 <td><input type="checkbox"/></td>
                 <td><a>'.$loadHang->TenHangSanXuat.'</a></td>
-                <td><img src="'.$url.'" alt="Card image cap"></td>
+                <td><img src="'.$url.'" alt="Card image cap" class="thumbnail img-responsive"></td>
                 <td>
                     <a href="#" title="">Chỉnh sửa</a>
                 </td>

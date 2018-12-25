@@ -30,6 +30,15 @@ class LoaiSanPhamDAO
         return $sanPham;
     }
 
+    public function CheckLoaiSPTonTai($tenLoai){
+        $db = new Database();
+        $truyvan = "SELECT * FROM loaisanpham WHERE TenLoaiSanPham LIKE '$tenLoai'";
+        $result = mysqli_num_rows($db->ExecuteQuery($truyvan));
+        if($result > 0){
+            return true;
+        }
+        return false;
+    }
     public function ThemLoaiSanPham($loaisanpham)
     {
         $db = new Database();
@@ -38,7 +47,7 @@ class LoaiSanPhamDAO
     }
     public function XoaLoaiSanPham ($MaLoaiSanPham )
     {
-        $sql = 'DELETE FROM loaisanpham WHERE MaLoaiSanPham = $MaLoaiSanPham ';
+        $sql = "DELETE FROM loaisanpham WHERE MaLoaiSanPham = '$MaLoaiSanPham' ";
         $this->ExecuteQuery($sql);
     }
     public function ChinhSuaLoaiSanPham($loaisanpham)

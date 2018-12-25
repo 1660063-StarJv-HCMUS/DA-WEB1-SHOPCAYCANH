@@ -66,8 +66,10 @@ class SanPham_BUS
     }
 
     public function ThemSanPham($sp){
-        $sanphamDAO = new SanPhamDAO();
-        $sanphamDAO->ThemSanPham($sp);
+        $spDAO = new SanPhamDAO();
+        if($spDAO->CheckSanPhamTonTai($sp->TenSanPham) == false) {
+            $spDAO->ThemSanPham($sp);
+        }
     }
 
 }

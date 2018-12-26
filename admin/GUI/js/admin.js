@@ -155,3 +155,21 @@ $("#form-them-hang-san-pham button").on('click', function () {
 });
 
 //////////////////////////////xóa////////////////////////////
+//Dang xuat admin
+$('#dang-xuat').on('click', function () {
+    var action = "logout";
+    $.ajax({
+        url: 'GUI/modules/mDangXuat.php',
+        method: "POST",
+        data: {
+            action: action
+        },
+        success: function (data) {
+            $('#dang-xuat').html(data);
+            // location.reload();
+        },
+        error: function () {
+            window.alert("thất bại");
+        }
+    });
+});

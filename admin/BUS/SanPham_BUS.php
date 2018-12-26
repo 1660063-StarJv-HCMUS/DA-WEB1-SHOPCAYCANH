@@ -85,4 +85,26 @@ class SanPham_BUS
         $spDAO->XoaSanPham($maSanPham);
     }
 
+    public function SoLuongSanPham_TongBan_TongXem_TongTon(){
+        $spDAO = new SanPhamDAO();
+        return $spDAO->SoLuongSanPham_TongBan_TongXem_TongTon();
+    }
+
+    public function DataChart(){
+        $spDAO = new SanPhamDAO();
+        return $spDAO->DataChart();
+    }
+
+    public function DataChartSenDa(){
+        $spDAO = new SanPhamDAO();
+        return $spDAO->DataChartSenDa();
+    }
+    public function DataChartXuongRong(){
+        $spDAO = new SanPhamDAO();
+        return $spDAO->DataChartXuongRong();
+    }
+    public function DataChartTieuCanh(){
+        $spDAO = new SanPhamDAO();
+        return $spDAO->DataChartTieuCanh();
+    }
 }

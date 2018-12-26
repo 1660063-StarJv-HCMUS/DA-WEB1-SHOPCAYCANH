@@ -87,9 +87,32 @@ class SanPhamDAO
 
     public function ChinhSua($sp){
         $db = new Database();
-        $truyvan = "UPDATE sanpham SET sanpham.TenSanPham='$sp->TenSanPham',sanpham.HinhURL='$sp->HinhURL',sanpham.GiaSanPham='$sp->GiaSanPham',sanpham.NgayNhap='$sp->NgayNhap',sanpham.SoLuongTon='$sp->SoLuongTon',sanpham.SoLuotXem = '$sp->SoLuotXem', sanPham.SoLuongBan='$sp->SoLuongBan' WHERE sanpham.MaSanPham = '$sp->MaSanPham'";
+        $truyvan = "UPDATE sanpham SET sanpham.TenSanPham='$sp->TenSanPham',sanpham.HinhURL='$sp->HinhURL'
+        ,sanpham.GiaSanPham='$sp->GiaSanPham',sanpham.NgayNhap='$sp->NgayNhap',sanpham.SoLuongTon='$sp->SoLuongTon'
+        ,sanpham.SoLuotXem = '$sp->SoLuotXem', sanPham.SoLuongBan='$sp->SoLuongBan' WHERE sanpham.MaSanPham = '$sp->MaSanPham'";
         $db->ExecuteQuery($truyvan);
     }
 
+    public function SoLuongSanPham_TongBan_TongXem_TongTon(){
+        $truyvan = "SELECT COUNT(MaSanPham) AS 'TongSoSanPham',SUM(SoLuongBan) AS 'TongSoLuongBan' , SUM(SoLuotXem) AS 'TongSoLuongXem', SUM(SoLuongTon) AS 'TongSoLuongTon' FROM `sanpham` WHERE 1";
+        $db = new Database();
+        $result = mysqli_fetch_array($db->ExecuteQuery($truyvan));
+        return $result;
+    }
+    public function DataChartSenDa(){
 
+        $SD = "SELECT SUM(SoLuongBan) AS 'SenDa' FROM sanpham WHERE MaLoaiSanPham = 2";
+        $db = new Database();
+        return mysqli_fetch_array($db->ExecuteQuery($SD));
+    }
+    public function DataChartXuongRong(){
+        $XR = "SELECT SUM(SoLuongBan) AS 'XuongRong' FROM sanpham WHERE MaLoaiSanPham = 3";
+        $db = new Database();
+        return mysqli_fetch_array($db->ExecuteQuery($XR));
+    }
+    public function DataChartTieuCanh(){
+        $TC = "SELECT SUM(SoLuongBan) AS 'TieuCanh' FROM sanpham WHERE MaLoaiSanPham = 1";
+        $db = new Database();
+        return mysqli_fetch_array($db->ExecuteQuery($TC));
+    }
 }

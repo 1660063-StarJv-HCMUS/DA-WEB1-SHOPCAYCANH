@@ -62,4 +62,9 @@ class TaiKhoanBUS
         $tk = new TaiKhoanDAO();
         return $tk->CheckTaiKhoanTonTai($tenDangNhap);
     }
+
+    public function TongSoTaiKhoan(){
+        $tk = new TaiKhoanDAO();
+        return $tk->TongSoTaiKhoan();
+    }
 }

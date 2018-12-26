@@ -47,4 +47,9 @@ class LoaiSanPham_BUS
         $loaiDAO = new LoaiSanPhamDAO();
         $loaiDAO->XoaLoaiSanPham($maLoai);
     }
+    
+    public function TongSoLoaiSanPham(){
+        $loaiDAO = new LoaiSanPhamDAO();
+        return $loaiDAO->TongSoLoaiSanPham();
+    }
 }

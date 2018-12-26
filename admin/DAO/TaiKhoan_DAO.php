@@ -44,4 +44,11 @@ class TaiKhoanDAO extends Database
         $truyvan = "DELETE FROM taikhoan WHERE MaTaiKhoan = '$maTaiKhoan'";
         $db->ExecuteQuery($truyvan);
     }
+    public function TongSoTaiKhoan()
+    {
+        $db = new Database();
+        $truyvan = "SELECT COUNT(MaTaiKhoan) AS 'TongSoTaiKhoan' FROM taikhoan WHERE 1";
+        $result = mysqli_fetch_array($db->ExecuteQuery($truyvan));
+        return $result;
+    }
 }

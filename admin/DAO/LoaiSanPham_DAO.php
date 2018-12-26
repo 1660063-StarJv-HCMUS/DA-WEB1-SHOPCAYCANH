@@ -59,4 +59,12 @@ class LoaiSanPhamDAO
         $sql = "DELETE FROM loaisanpham WHERE MaLoaiSanPham = '$MaLoaiSanPham' ";
         $db->ExecuteQuery($sql);
     }
+    
+    public function TongSoLoaiSanPham()
+    {
+        $db = new Database();
+        $truyvan = "SELECT COUNT(MaLoaiSanPham) AS 'TongSoLoaiSanPham' FROM loaisanpham WHERE 1";
+        $result = mysqli_fetch_array($db->ExecuteQuery($truyvan));
+        return $result;
+    }
 }

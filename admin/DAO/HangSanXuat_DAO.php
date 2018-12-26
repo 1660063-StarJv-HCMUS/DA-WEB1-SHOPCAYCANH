@@ -66,4 +66,12 @@ class HangSanXuatDAO
         $row = $ketQua->fetch_assoc();
         return $row['TenHangSanXuat'];
     }
+
+    public function TongSoHangSanXuat()
+    {
+        $db = new Database();
+        $truyvan = "SELECT COUNT(MaHangSanXuat) AS 'TongSoHangSanXuat' FROM hangsanxuat WHERE 1";
+        $result = mysqli_fetch_array($db->ExecuteQuery($truyvan));
+        return $result;
+    }
 }

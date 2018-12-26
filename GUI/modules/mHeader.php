@@ -23,15 +23,22 @@
             </ul>
         </nav>
     </div>
-    <div class="col-3  icon-header pr-0">
-        <div id="search">
-            <input id="input-search" type="text" name="timKiem">
-            <div class="input-group-btn">
-                <div class="btn-group" role="group">
-                    <div class="dropdown dropdown-lg">
-                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
-                            aria-expanded="false"><span class="caret"></span></button>
-                        <div class="dropdown-menu dropdown-menu-right" role="menu">
+    <div class="col-3">
+        <div class="icon-header">
+            <div id="search" >           
+                <div class="input-group-btn">
+                    <div class="btn-group" role="group">
+                        <div class="dropdown dropdown-lg">
+                            <button type="button" class="btn btn-default pt-0" data-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-search"></i>
+                            </button>                       
+                            <div class="dropdown-menu dropdown-menu-right" role="menu">
+                                <form class="form-horizontal" role="form" type="post">
+                                    <div class="from-group">
+                                        <h6>Tìm kiếm:</h6>
+                                        <div class="price col-12 p-0">
+                                            <input class="form-control" type="text" min=0 name="minPrice">
+                                        </div>
                                     </div>
                                     <div class="form-group">
                                         <h6 for="filter">Loại cây</h6>

@@ -4,7 +4,6 @@
     $bus = new TaiKhoan_BUS();
     $info = new TaiKhoan();
     $info = $bus->GetUserInfo($user);
-
 ?>
 <div class="content">
     <form id="info-user">
@@ -29,7 +28,7 @@
                     <p>Số điện thoại:</p>
                     <input class="input" type="tel" name="tel" id="tel" placeholder="Số điện thoại" value= "<?php echo $info->Sdt ?>"">
                 </div>
-                <button type="button" id="btn btn-ChangeInfo">Sửa thông tin</button>
+                <button type="button" class="btn btn-success" id="btn-ChangeInfo">Sửa thông tin</button>
                 <div class="alert alert-danger invisible mt-2 mb-0"></div>
                 <input type="hidden" id="account" name="account" value= "<?php echo $user ?>">
             </div>          

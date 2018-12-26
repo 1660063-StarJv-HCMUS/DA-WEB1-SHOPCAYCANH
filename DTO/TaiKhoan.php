@@ -9,6 +9,7 @@ class TaiKhoan
     var $Email;
     var $BiXoa;
     var $LoaiTK;
+    var $id;
 
     public function __construct()
     {
@@ -20,6 +21,7 @@ class TaiKhoan
         $this->Email = "";
         $this->BiXoa = 0;
         $this->LoaiTK= 1;
+        $id = 0;
     }
 
 }

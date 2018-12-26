@@ -16,39 +16,38 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td class="details">
-                            <a href="#">DH0001</a>
-                        </td>
-                        <td class="details">
-                            <a href="#">Trần Hữu Dũng</a>
-                        </td>
-                        <td class="price text-center"><strong>100000₫</strong></td>
-                        <td class="qty text-center">21/12/2018</td>
-                        <td class="total text-center">Đang giao</td>
-                    </tr>
-                    <tr>
-                        <td class="details">
-                            <a href="#">DH0001</a>
-                        </td>
-                        <td class="details">
-                            <a href="#">Trần Hữu Dũng</a>
-                        </td>
-                        <td class="price text-center"><strong>100000₫</strong></td>
-                        <td class="qty text-center">21/12/2018</td>
-                        <td class="total text-center">Đang giao</td>
-                    </tr>
-                    <tr>
-                        <td class="details">
-                            <a href="#">DH0001</a>
-                        </td>
-                        <td class="details">
-                            <a href="#">Trần Hữu Dũng</a>
-                        </td>
-                        <td class="price text-center"><strong>100000₫</strong></td>
-                        <td class="qty text-center">21/12/2018</td>
-                        <td class="total text-center">Đang giao</td>
-                    </tr>         
+                    
+                    <?php
+
+                        include_once __DIR__.'/../../BUS/DonHang_BUS.php';                       
+                        include_once __DIR__.'/../../BUS/TaiKhoan_BUS.php';
+                        include_once __DIR__.'/../../BUS/TinhTrang_BUS.php';
+                        
+                        $bus = new TaiKhoan_BUS();
+                        $tinhtrang = new TinhTrang_BUS();
+                        $info = new TaiKhoan();
+                        $info = $bus->GetUserInfo($user);
+                        $id = $info->id;                       
+                        $loadDH = new DonHang_BUS();                                               
+                        $result = $loadDH->LoadDonHangByMaKhachHang($id);
+                        $DH = new DonHang();
+                        foreach ($result as $DH) {
+                            $TenTinhTrang =  $tinhtrang->LoadTenTinhTrang($DH->getMaTinhTrang());
+                            echo '
+                            <tr>
+                                <td class="details">
+                                    <a href="#">'.$DH->getMaDonHang().'</a>
+                                </td>
+                                <td class="details">
+                                    <a href="#">'.$user_name.'</a> 
+                                </td>
+                                <td class="price text-center"><strong>'.$DH->getTongThanhTien().'₫</strong></td>
+                                <td class="qty text-center">'.$DH->getNgayLap().'</td>
+                                <td class="total text-center">'.$TenTinhTrang.'</td>
+                            </tr>';
+                        }
+                       
+                    ?>       
                 </tbody>        
             </table>
             </div>          

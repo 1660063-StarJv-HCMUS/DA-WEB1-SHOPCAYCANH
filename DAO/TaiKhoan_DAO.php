@@ -5,7 +5,7 @@ class TaiKhoan_DAO //extends DB
 {
     public function GetUserInfo($username)
     {
-        $sql = "select 	TenHienThi, DiaChi, DienThoai, Email, BiXoa, MaLoaiTaiKhoan from taikhoan where TenDangNhap ='$username'";
+        $sql = "select MaTaiKhoan ,TenHienThi, DiaChi, DienThoai, Email, BiXoa, MaLoaiTaiKhoan from taikhoan where TenDangNhap ='$username'";
 
         //$result = $this->ExecuteQuery($sql);
         $db = new DB();
@@ -16,6 +16,7 @@ class TaiKhoan_DAO //extends DB
         }
         $row = mysqli_fetch_array($result);
         $taiKhoan = new TaiKhoan();
+        $taiKhoan->id = $row['MaTaiKhoan'];
         $taiKhoan->TenNguoiDung = $row['TenHienThi'];
         $taiKhoan->DiaChi = $row['DiaChi'];
         $taiKhoan->Sdt = $row['DienThoai'];

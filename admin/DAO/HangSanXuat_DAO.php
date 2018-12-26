@@ -58,4 +58,12 @@ class HangSanXuatDAO
         $db->ExecuteQuery($truyvan);
     }
 
+    public function LoadHangByMyID($ID)
+    {
+        $sql = "SELECT TenHangSanXuat FROM hangsanxuat WHERE MaHangSanXuat='".$ID."'";
+        $db = new DB();
+        $ketQua = $db->ExcuteQuery($sql);
+        $row = $ketQua->fetch_assoc();
+        return $row['TenHangSanXuat'];
+    }
 }

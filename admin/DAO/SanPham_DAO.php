@@ -87,7 +87,9 @@ class SanPhamDAO
 
     public function ChinhSua($sp){
         $db = new Database();
-        $truyvan = "UPDATE sanpham SET sanpham.TenSanPham='$sp->TenSanPham',sanpham.HinhURL='$sp->HinhURL',sanpham.GiaSanPham='$sp->GiaSanPham',sanpham.NgayNhap='$sp->NgayNhap',sanpham.SoLuongTon='$sp->SoLuongTon' WHERE sanpham.MaSanPham = '$sp->MaSanPham'";
+        $truyvan = "UPDATE sanpham SET sanpham.TenSanPham='$sp->TenSanPham',sanpham.HinhURL='$sp->HinhURL',sanpham.GiaSanPham='$sp->GiaSanPham',sanpham.NgayNhap='$sp->NgayNhap',sanpham.SoLuongTon='$sp->SoLuongTon',sanpham.SoLuotXem = '$sp->SoLuotXem', sanPham.SoLuongBan='$sp->SoLuongBan' WHERE sanpham.MaSanPham = '$sp->MaSanPham'";
         $db->ExecuteQuery($truyvan);
     }
+
+
 }

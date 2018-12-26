@@ -13,6 +13,7 @@
     <thead>
         <tr>
             <th></th>
+            <th>STT</th>
           <th>Tên đăng nhập</th>
           <th>Tên hiển thị</th>
           <th>Số điện thoại</th>
@@ -29,14 +30,13 @@ include_once __DIR__ . '/../../BUS/TaiKhoan_BUS.php';
 $loadTK = new TaiKhoanBUS();
 
 $result = $loadTK->LoadTatCaTaiKhoan();
-
+$i = 1;
 foreach ($result as $loadTK) {
     if ($loadTK->LoaiTK == 0) {
         $loai = 'Admin';
     } else {
         $loai = 'Thường';
     }
-
     echo '
             <tr>
                 <td>
@@ -45,6 +45,7 @@ foreach ($result as $loadTK) {
                         <button id="Xoa" type="submit" class="btn btn-danger"><i class="far fa-trash-alt"></i></button>
                     </form>
                 </td>
+                <td>'.$i.'</td>
                 <td>'.$loadTK->TenDangNhap.'</td>
                 <td>'.$loadTK->TenHienThi.'</td>
                 <td>'.$loadTK->DienThoai.'</td>
@@ -95,6 +96,7 @@ foreach ($result as $loadTK) {
                 </td>
             </tr>
             ';
+    $i++;
 }
 ?>
     </tbody>

@@ -87,18 +87,23 @@ if(isset($_POST['maTaiKhoanEdit'])||isset($_POST['tenDangNhapEdit']) || isset($_
 
     }
     else{
-        $tkUpdate = new TaiKhoan();
-        $tkUpdate->MaTaiKhoan = $_POST['maTaiKhoanEdit'];
-        $tkUpdate->TenDangNhap = $_POST['tenDangNhapEdit'];
-        $tkUpdate->MatKhau = $_POST['matKhauEdit'];
-        $tkUpdate->TenHienThi = $_POST['tenHienThiEdit'];
-        $tkUpdate->DienThoai = $_POST['soDienThoaiEdit'];
-        $tkUpdate->Email = $_POST['emaiEdit'];
-        $tkUpdate->DiaChi = $_POST['diaChiEdit'];
-        $tkUpdate->MaLoaiTaiKhoan = $_POST['loaiTaiKhoanEdit'];
-
         $tkUpdateBUS = new TaiKhoanBUS();
-        $tkUpdateBUS->ChinhSua($tkUpdate);
+        if ($tkUpdateBUS->CheckTaiKhoanTonTai($_POST['tenDangNhapEdit']) == true){
+
+        }
+        else {
+            $tkUpdate = new TaiKhoan();
+            $tkUpdate->MaTaiKhoan = $_POST['maTaiKhoanEdit'];
+            $tkUpdate->TenDangNhap = $_POST['tenDangNhapEdit'];
+            $tkUpdate->MatKhau = $_POST['matKhauEdit'];
+            $tkUpdate->TenHienThi = $_POST['tenHienThiEdit'];
+            $tkUpdate->DienThoai = $_POST['soDienThoaiEdit'];
+            $tkUpdate->Email = $_POST['emaiEdit'];
+            $tkUpdate->DiaChi = $_POST['diaChiEdit'];
+            $tkUpdate->MaLoaiTaiKhoan = $_POST['loaiTaiKhoanEdit'];
+
+            $tkUpdateBUS->ChinhSua($tkUpdate);
+        }
     }
 }
 ?>

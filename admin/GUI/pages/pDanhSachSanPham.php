@@ -20,9 +20,9 @@
         <thead>
         <tr>
             <th scope="col"></th>
+            <th scope="col">STT</th>
             <th scope="col">Tên sản phẩm</th>
             <th scope="col" class="HinhSP">Hình ảnh</th>
-
             <th scope="col">Giá(VNĐ)</th>
             <th scope="col">Lượt xem</th>
             <th scope="col">Số lượng tồn</th>
@@ -38,33 +38,22 @@
         $loadSP = new SanPham_BUS();
         $loadHang = new HangSanXuat_BUS();
 
-        $tmp = $loadHang->LoadTatCaCacHangSanXuat();
-
         $result = $loadSP->LoadTatCaSanPham();
-        //<th scope="col">Hãng sản xuất</th>
-        //print_r($tmp);
-        //foreach ($tmp as $key => $value )
-        //{
-        //    echo $key->MaHangSanXuat;
-        //}
 
+        $i = 1;
         foreach ($result as $loadSP){
             $url = $_DOMAIN.'/GUI/modules/upload/'.$loadSP->HinhURL;
-            //$tenHang = '';
-            //<td><a>'.$tenHang.'</a></td>
-
             echo '
             <tr>
                 <td>
-                
-                <form method="post" name="main-form" id="main-form" enctype="multipart/form-data" accept-charset="utf-8">
-                    <input type="hidden" name="maSanPhamDel" id="maSanPhamDel" value="'.$loadSP->MaSanPham.'">
-                    <button id="Xoa" type="submit" class="btn btn-danger"><i class="far fa-trash-alt"></i></button>
-                </form>
+                    <form method="post" name="main-form" id="main-form" enctype="multipart/form-data" accept-charset="utf-8">
+                        <input type="hidden" name="maSanPhamDel" id="maSanPhamDel" value="'.$loadSP->MaSanPham.'">
+                        <button id="Xoa" type="submit" class="btn btn-danger"><i class="far fa-trash-alt"></i></button>
+                    </form>
                 </td>
+                <td>'.$i.'</td>
                 <td><a>'.$loadSP->TenSanPham.'</a></td>
                 <td><img src="'.$url.'" alt="Card image cap" class="thumbnail img-responsive"></td>
-                
                 <td>'.$loadSP->GiaSanPham.'</td>
                 <td>'.$loadSP->SoLuotXem.'</td>
                 <td>'.$loadSP->SoLuongTon.'</td>
@@ -94,7 +83,14 @@
                                 <span>Số lượng tồn</span>
                                 <input type="text" name="soLuongTonEdit" class="form-control" id="soLuongTonEdit" value="'.$loadSP->SoLuongTon.'">
                             </div>
-                            
+                            <div class="form-group">
+                                <span>Số lượt xem</span>
+                                <input type="text" name="soLuotXemEdit" class="form-control" id="soLuotXemEdit" value="'.$loadSP->SoLuotXem.'">
+                            </div>
+                            <div class="form-group">
+                                <span>Số lượng bán</span>
+                                <input type="text" name="soLuongBanEdit" class="form-control" id="soLuongBanEdit" value="'.$loadSP->SoLuongBan.'">
+                            </div>
                             <div class="form-group">
                                 <span>Ngày nhập</span>
                                 <input type="text" name="ngayNhapEdit" class="form-control" id="ngayNhapEdit" value="'.$loadSP->NgayNhap.'">
@@ -105,6 +101,7 @@
                 </td>
             </tr>
             ';
+            $i++;
         }
         ?>
         </tbody>

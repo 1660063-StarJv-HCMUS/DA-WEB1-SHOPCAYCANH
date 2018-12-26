@@ -234,10 +234,10 @@ if(isset($_POST['maSanPhamEdit']) && isset($_POST['tenSanPhamEdit']) && isset($_
         $sp->MaSanPham = $_POST['maSanPhamEdit'];
         $sp->TenSanPham = $_POST['tenSanPhamEdit'];
         $sp->GiaSanPham = $_POST['giaSanPhamEdit'];
-
         $sp->SoLuongTon = $_POST['soLuongTonEdit'];
         $sp->NgayNhap = $_POST['ngayNhapEdit'];
-
+        $sp->SoLuongBan = $_POST['soLuongBanEdit'];
+        $sp->SoLuotXem = $_POST['soLuotXemEdit'];
         $sp->HinhURL = UploadHinhAnh();
 
         $sp_BUS = new SanPham_BUS();

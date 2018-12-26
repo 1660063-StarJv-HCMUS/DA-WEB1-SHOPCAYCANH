@@ -6,7 +6,7 @@ include_once __DIR__.'/../../BUS/LoaiSanPham_BUS.php';
 ?>
 <h1>Dashboard</h1>
 <h6>Bảng thống kê chung</h6>
-<table class="table table-hover">
+<table class="table table-hover table-bordered">
     <thead>
         <th scope="col">Tổng số tài khoản đã đăng ký</th>
         <th scope="col">Tổng số hãng sản phẩm</th>
@@ -59,7 +59,7 @@ include_once __DIR__.'/../../BUS/LoaiSanPham_BUS.php';
 <canvas id="thongkechung" width="800" height="450"></canvas>
 
 <h6>Bảng thống kê số lượng sản phẩm bán ra của 3 loại sản phẩm sen đá, xương rồng, tiểu cảnh</h6>
-<table class="table table-hover">
+<table class="table table-hover table-bordered">
     <thead>
         <th scope="col">Sen đá</th>
         <th scope="col">Xương rồng</th>

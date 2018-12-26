@@ -52,7 +52,7 @@ else {
 foreach ($result as $loadSP) {
     echo'
         <div class="card border-secondary product mt-2 mr-2 ml-2 mb-2">
-            <img class="card-img-top" src="GUI/images/'.$loadSP->getHinhURL().'" alt="Card image cap">
+            <img class="card-img-top" src="admin/GUI/modules/upload/'.$loadSP->getHinhURL().'" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title" style="color:#056526; font-style: normal">'.$loadSP->getTenSanPham().'</h5>
                 <h6 class="card-subtitle mb-2 text-muted" style="font-size:0.9rem">Tiểu cảnh</h6>
@@ -61,7 +61,7 @@ foreach ($result as $loadSP) {
                 </div> <!-- price-wrap.// -->               
                 <button type="button" class="btn btn-primary float-right btnDetails" data-toggle="modal"
                         data-target="#details" data-price="'.$loadSP->getGiaSanPham().'" data-price_discount="190000" data-detail="'.$loadSP->getMoTa().'"
-                        data-name="'.$loadSP->getTenSanPham().'" data-image="GUI/images/'.$loadSP->getHinhURL().'" data-id="'.$loadSP->getMaSanPham().'">
+                        data-name="'.$loadSP->getTenSanPham().'" data-image="admin/GUI/modules/upload/'.$loadSP->getHinhURL().'" data-id="'.$loadSP->getMaSanPham().'">
                         XEM NHANH
                 </button>
             </div>

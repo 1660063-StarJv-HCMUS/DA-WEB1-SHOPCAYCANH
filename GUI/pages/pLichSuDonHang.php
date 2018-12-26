@@ -1,4 +1,4 @@
-<div class="content">
+
     <div class="row">
         <div class="col-12">
             <div class="section-title">
@@ -54,4 +54,4 @@
             </div>          
         </div>
     </div>
-</div>
+

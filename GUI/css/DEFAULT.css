@@ -66,7 +66,7 @@ body {
   height: 20px;
   width: 1px;
   background-color: #e5e5e5;
-  margin-left: 0px;
+  margin-left: 15px;
   margin-right: 23px;
   margin-top: 5px;
   top: 32px;
@@ -74,7 +74,7 @@ body {
 
 .icon-header {
   display: flex;
-  list-style: none;
+  padding-left: 185px; 
 }
 
 .icon-header i {
@@ -407,7 +407,6 @@ a {
   position: relative;
   line-height: 60px;
   min-height: 120px;
-  /*box-shadow: 0px 6px 6px -6px rgba(0, 0, 0, 0.175);  */
   font-family: Montserrat-Regular;
   font-size: 16px;
   color: #949090;
@@ -537,7 +536,7 @@ h5.price_product span {
   margin: 0.5rem;
 }
 
-.content {
+#container {
   margin: 20px 50px;
 }
 
@@ -624,10 +623,7 @@ h5.price_product span {
 
 /*-------------------tìm kiếm nâng cao------------------------*/
 
-#search {
-  width: 80%;
-  display: flex;
-}
+
 
 #input-search {
   font-family: "Roboto", sans-serif;
@@ -685,7 +681,7 @@ h5.price_product span {
 
 /*------------------------------reponsive--------------------------*/
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1024px) {
 
   /*--------------reponsive cho phần header---------------------- */
   .mobi-header {
@@ -698,9 +694,6 @@ h5.price_product span {
   }
 
   /*---------------reponsive cho trang check out-------------------*/
-  #progress-bar {
-    width: 100%;
-  }
 
   #check-out {
     margin: 0;
@@ -710,7 +703,9 @@ h5.price_product span {
     width: 100% !important;
     margin: 0;
   }
-
+  #progress-bar{
+    width: 100%;
+  }
   .shopping-cart-table>tbody>tr>.qty .input {
     width: 40px;
     height: 40px;
@@ -720,7 +715,7 @@ h5.price_product span {
     bottom: 30px
   }
 
-  .content {
+  #container {
     margin: 0 !important;
   }
   /*-----------------hiện cart fix trên màn hình mobi-------------*/

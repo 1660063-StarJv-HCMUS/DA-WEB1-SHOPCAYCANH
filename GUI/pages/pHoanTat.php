@@ -1,4 +1,4 @@
-<div class="content">
+
     <?php
         include './GUI/modules/mProgress-bar.php';
     ?>
@@ -89,7 +89,7 @@
                     <h3>Sản phẩm</h3>
                 </div>
                 <div class="table-responsive">
-                <table class="shopping-cart-table table" id="product-table">
+                    <table class="shopping-cart-table table" id="product-table">
                         <thead>
                             <tr>
                                 <th>Sẩn phẩm</th>
@@ -157,4 +157,3 @@
             </div>
             
         </div>
-</div>

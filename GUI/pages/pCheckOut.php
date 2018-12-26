@@ -1,4 +1,4 @@
-<div class="content">
+
     <?php
         include './GUI/modules/mProgress-bar.php';
     ?>
@@ -115,4 +115,3 @@
             </div>
         </form>                  
     </div>
-</div>

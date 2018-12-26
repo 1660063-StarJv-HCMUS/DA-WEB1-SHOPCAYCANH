@@ -4,6 +4,11 @@ include_once __DIR__ . '/../DTO/SanPham_DTO.php';
 
 class SanPham_BUS
 {
+    public $SP;
+    public function __construct()
+    {
+        $this->SP = new SanPham_DAO();
+    }
     public function LoadSanPhamByMaLoai($maLoaiSP)
     {
 
@@ -22,6 +27,7 @@ class SanPham_BUS
                     $sp->setGiaSanPham($row['GiaSanPham']);
                     $sp->setMoTa($row['MoTa']);
                     $sp->setMaSanPham($row['MaSanPham']);
+                    $sp->setMaLoaiSanPham($row['MaLoaiSanPham']);
                     $danhSachSanPham[] = $sp;
                 }
             }
@@ -48,6 +54,7 @@ class SanPham_BUS
                 $sp->setGiaSanPham($row['GiaSanPham']);
                 $sp->setMoTa($row['MoTa']);
                 $sp->setMaSanPham($row['MaSanPham']);
+                $sp->setMaLoaiSanPham($row['MaLoaiSanPham']);
                 $danhSachSanPham[] = $sp;
             }       
         }
@@ -70,9 +77,14 @@ class SanPham_BUS
                 $sp->setGiaSanPham($row['GiaSanPham']);
                 $sp->setMoTa($row['MoTa']);
                 $sp->setMaSanPham($row['MaSanPham']);
+                $sp->setMaLoaiSanPham($row['MaLoaiSanPham']);
                 $danhSachSanPham[] = $sp;
             }
         }
         return $danhSachSanPham;
+    }
+    public function getTenLoaiSanPham($MaLoai)
+    {
+        return $this->SP->getTenLoaiSanPham($MaLoai);
     }
 }

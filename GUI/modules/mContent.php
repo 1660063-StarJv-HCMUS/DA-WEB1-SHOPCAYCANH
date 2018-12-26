@@ -47,7 +47,7 @@ else {
         $result = $loadSP->LoadTatCaSanPham(); 
     }
 }
-
+$tenLoai = new SanPham_BUS();
 
 foreach ($result as $loadSP) {
     echo'
@@ -55,7 +55,7 @@ foreach ($result as $loadSP) {
             <img class="card-img-top" src="admin/GUI/modules/upload/'.$loadSP->getHinhURL().'" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title" style="color:#056526; font-style: normal">'.$loadSP->getTenSanPham().'</h5>
-                <h6 class="card-subtitle mb-2 text-muted" style="font-size:0.9rem">Tiểu cảnh</h6>
+                <h6 class="card-subtitle mb-2 text-muted" style="font-size:0.9rem">'.$tenLoai->getTenLoaiSanPham($loadSP->getMaLoaiSanPham()).'</h6>
                 <div class="price-wrap h5">
                     <span>'.$loadSP->getGiaSanPham().' VNĐ</span> <del class="float-right" style="color: #999;">190.000 VNĐ</del>
                 </div> <!-- price-wrap.// -->               

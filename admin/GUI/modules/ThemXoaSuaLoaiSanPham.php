@@ -10,6 +10,7 @@
 </div>
 
 <?php
+////////////////////////thêm
     if(isset($_POST['tenLoaiSanPham'])){
         if($_POST['tenLoaiSanPham'] == ''){
 
@@ -31,6 +32,7 @@
 ?>
 
 <?php
+////////////////////////////sửa
 
 if(isset($_POST['tenLoaiSanPhamEdit']) && isset($_POST['maLoaiSanPhamEdit'])){
     if($_POST['tenLoaiSanPhamEdit'] == '' && $_POST['maLoaiSanPhamEdit'] == ''){
@@ -40,9 +42,6 @@ if(isset($_POST['tenLoaiSanPhamEdit']) && isset($_POST['maLoaiSanPhamEdit'])){
         include_once __DIR__.'/../../DTO/LoaiSanPham_DTO.php';
         include_once __DIR__.'/../../BUS/LoaiSanPham_BUS.php';
 
-
-///////////////////////Thêm sản phẩm mới////////////////////////////////////////
-
         $loai = new LoaiSanPham();
         $loai->MaLoaiSanPham = $_POST['maLoaiSanPhamEdit'];
         $loai->TenLoaiSanPham = $_POST['tenLoaiSanPhamEdit'];
@@ -51,4 +50,21 @@ if(isset($_POST['tenLoaiSanPhamEdit']) && isset($_POST['maLoaiSanPhamEdit'])){
         $loai_BUS->ChinhSua($loai);
     }
 }
+?>
+
+
+<?php
+///////////////////////////xóa
+    if (isset($_POST['maLoaiSanPhamDel'])){
+        if($_POST['maLoaiSanPhamDel'] == ''){
+
+        }
+        else{
+
+            include_once __DIR__.'/../../BUS/LoaiSanPham_BUS.php';
+            $loai_BUS = new LoaiSanPham_BUS();
+
+            $loai_BUS->XoaLoaiSanPham($_POST['maLoaiSanPhamDel']);
+        }
+    }
 ?>

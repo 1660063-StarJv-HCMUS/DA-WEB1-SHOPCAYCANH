@@ -47,4 +47,8 @@ class HangSanXuat_BUS
         $hangDAO->ChinhSua($hang);
     }
 
+    public function XoaHang($maHang){
+        $hangDAO = new HangSanXuatDAO();
+        $hangDAO->XoaHangSanXuat($maHang);
+    }
 }

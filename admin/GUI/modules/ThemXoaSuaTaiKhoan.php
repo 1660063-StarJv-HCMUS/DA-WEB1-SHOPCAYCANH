@@ -102,3 +102,17 @@ if(isset($_POST['maTaiKhoanEdit'])||isset($_POST['tenDangNhapEdit']) || isset($_
     }
 }
 ?>
+
+<?php
+///////////////////xóa tài khoản
+if(isset($_POST['maTaiKhoanDel'])){
+    if($_POST['maTaiKhoanDel'] == ''){
+
+    }
+    else{
+        include_once __DIR__ . '/../../BUS/TaiKhoan_BUS.php';
+        $tkXoaBUS = new TaiKhoanBUS();
+        $tkXoaBUS->XoaTaiKhoan($_POST['maTaiKhoanDel']);
+    }
+}
+?>

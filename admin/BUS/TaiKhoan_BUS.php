@@ -52,4 +52,9 @@ class TaiKhoanBUS
         $tk = new TaiKhoanDAO();
         $tk->ChinhSua($tkUpdate);
     }
+
+    public function XoaTaiKhoan($maTaiKhoan){
+        $tk = new TaiKhoanDAO();
+        $tk->XoaTaiKhoan($maTaiKhoan);
+    }
 }

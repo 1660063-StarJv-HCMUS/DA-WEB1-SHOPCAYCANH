@@ -22,10 +22,10 @@ include_once __DIR__.'/../../BUS/LoaiSanPham_BUS.php';
         echo '
             <tr>
                 <td>
-                    <button id="Xoa" type="submit" class="btn btn-danger">
-                        <i class="far fa-trash-alt"></i>
-                        <input type="hidden" name="maLoaiSanPham" id="maLoaiSanPham" value="'.$loadLoai->MaLoaiSanPham.'">
-                    </button>
+                   <form method="post" name="main-form" id="main-form" enctype="multipart/form-data" accept-charset="utf-8">
+                    <input type="hidden" name="maLoaiSanPhamDel" id="maLoaiSanPhamDel" value="'.$loadLoai->MaLoaiSanPham.'">
+                    <button id="Xoa" type="submit" class="btn btn-danger"><i class="far fa-trash-alt"></i></button>
+                   </form>
                 </td>
                 <td><a>'.$loadLoai->TenLoaiSanPham.'</a></td>
                 <td>

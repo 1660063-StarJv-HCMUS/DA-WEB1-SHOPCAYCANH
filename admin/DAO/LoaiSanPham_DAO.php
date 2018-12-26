@@ -45,15 +45,18 @@ class LoaiSanPhamDAO
         $sql = "INSERT INTO loaisanpham(TenLoaiSanPham,BiXoa) values('$loaisanpham->TenLoaiSanPham','$loaisanpham->BiXoa')";
         $result = $db->ExecuteQuery($sql);
     }
-    public function XoaLoaiSanPham ($MaLoaiSanPham )
-    {
-        $sql = "DELETE FROM loaisanpham WHERE MaLoaiSanPham = '$MaLoaiSanPham' ";
-        $this->ExecuteQuery($sql);
-    }
-    public function ChinhSua($loaisanpham)
+
+    public function ChinhSua($loai)
     {
         $db = new Database();
-        $sql="UPDATE loaisanpham SET loaisanpham.TenLoaiSanPham='$loaisanpham->TenLoaiSanPham' where loaisanpham.MaLoaiSanPham = '$loaisanpham->MaLoaiSanPham'";
+        $sql="UPDATE loaisanpham SET loaisanpham.TenLoaiSanPham='$loai->TenLoaiSanPham' where loaisanpham.MaLoaiSanPham = '$loai->MaLoaiSanPham'";
+        $db->ExecuteQuery($sql);
+    }
+
+    public function XoaLoaiSanPham ($MaLoaiSanPham )
+    {
+        $db = new Database();
+        $sql = "DELETE FROM loaisanpham WHERE MaLoaiSanPham = '$MaLoaiSanPham' ";
         $db->ExecuteQuery($sql);
     }
 }

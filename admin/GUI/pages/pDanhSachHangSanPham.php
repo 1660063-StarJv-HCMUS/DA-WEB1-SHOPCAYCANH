@@ -25,10 +25,10 @@ include_once __DIR__.'/../../DTO/HangSanXuat_DTO.php';
         echo '
             <tr>
                 <td>
-                 <button id="Xoa" type="submit" class="btn btn-danger">
-                    <i class="far fa-trash-alt"></i>
-                    <input type="hidden" name="maHangSanPham" id="maHangSanPham" value="'.$loadHang->MaHangSanXuat.'">
-                 </button>
+                 <form method="post" name="main-form" id="main-form" enctype="multipart/form-data" accept-charset="utf-8">
+                    <input type="hidden" name="maHangSanPhamDel" id="maHangSanPhamDel" value="'.$loadHang->MaHangSanXuat.'">
+                    <button id="Xoa" type="submit" class="btn btn-danger"><i class="far fa-trash-alt"></i></button>
+                </form>
                 </td>
                 <td><a>'.$loadHang->TenHangSanXuat.'</a></td>
                 <td><img src="'.$url.'" alt="Card image cap" class="thumbnail img-responsive"></td>

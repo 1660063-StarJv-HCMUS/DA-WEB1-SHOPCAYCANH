@@ -14,6 +14,7 @@
 </div>
 
 <?php
+/////////////////////////////////Thêm
 if (isset($_POST['tenHangSanPham']) && isset($_FILES)) {
     if ($_POST['tenHangSanPham'] == '') {
 
@@ -87,7 +88,7 @@ if (isset($_POST['tenHangSanPham']) && isset($_FILES)) {
 ?>
 
 <?php
-
+////////////////////////////////////////////Sửa
 
 if ( isset($_POST['maHangSanPhamEdit'])&&isset($_POST['tenHangSanPhamEdit']) && isset($_FILES)) {
 
@@ -162,4 +163,20 @@ if ( isset($_POST['maHangSanPhamEdit'])&&isset($_POST['tenHangSanPhamEdit']) && 
         $hang_BUS->ChinhSua($hang);
     }
 }
+?>
+
+<?php
+////////////////////////////xóa
+
+if ( isset($_POST['maHangSanPhamDel'])) {
+    if ($_POST['maHangSanPhamDel'] == '') {}
+    else {
+    include_once __DIR__ . '/../../DTO/HangSanXuat_DTO.php';
+    include_once __DIR__ . '/../../BUS/HangSanXuat_BUS.php';
+
+    $xoaHangBUS = new HangSanXuat_BUS();
+    $xoaHangBUS->XoaHang($_POST['maHangSanPhamDel']);
+    }
+}
+
 ?>

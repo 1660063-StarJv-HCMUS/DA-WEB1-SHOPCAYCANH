@@ -245,3 +245,17 @@ if(isset($_POST['maSanPhamEdit']) && isset($_POST['tenSanPhamEdit']) && isset($_
     }
 }
 ?>
+
+<?php
+///////////////xóa sản phẩm
+if(isset($_POST['maSanPhamDel'])){
+    if($_POST['maSanPhamDel'] == ''){
+
+    }
+    else{
+        include_once __DIR__ . '/../../BUS/SanPham_BUS.php';
+        $sp_BUS = new SanPham_BUS();
+        $sp_BUS->XoaSanPham($_POST['maSanPhamDel']);
+    }
+}
+?>

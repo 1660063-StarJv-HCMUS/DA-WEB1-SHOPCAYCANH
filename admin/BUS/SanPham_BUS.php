@@ -80,4 +80,9 @@ class SanPham_BUS
 
     }
 
+    public function XoaSanPham($maSanPham){
+        $spDAO = new SanPhamDAO();
+        $spDAO->XoaSanPham($maSanPham);
+    }
+
 }

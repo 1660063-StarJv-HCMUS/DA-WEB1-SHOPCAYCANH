@@ -49,10 +49,11 @@
             echo '
             <tr>
                 <td>
-                    <button id="Xoa" type="submit" class="btn btn-danger">
-                        <i class="far fa-trash-alt"></i>
-                        <input type="hidden" name="maSanPham" id="maSanPham" value="'.$loadSP->MaSanPham.'">
-                    </button>
+                
+                <form method="post" name="main-form" id="main-form" enctype="multipart/form-data" accept-charset="utf-8">
+                    <input type="hidden" name="maSanPhamDel" id="maSanPhamDel" value="'.$loadSP->MaSanPham.'">
+                    <button id="Xoa" type="submit" class="btn btn-danger"><i class="far fa-trash-alt"></i></button>
+                </form>
                 </td>
                 <td><a>'.$loadSP->TenSanPham.'</a></td>
                 <td><img src="'.$url.'" alt="Card image cap" class="thumbnail img-responsive"></td>

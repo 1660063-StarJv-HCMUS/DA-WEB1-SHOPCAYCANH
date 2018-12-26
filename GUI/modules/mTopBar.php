@@ -14,11 +14,10 @@
 if ($user) {
     ?>
     <div class="col-3 user">
-        <span>Xin chào, <?php echo $user; ?></span>
+        <span>Xin chào, <?php echo $user_name; ?></span>
         <ul>
             <?php
-                if ($admin) {
-                    
+                if ($admin) {                   
             ?>
                 <li>
                 <a href="admin/">Admin</a>
@@ -27,7 +26,7 @@ if ($user) {
                 }
             ?>
             <li>
-                <a href="index.php?a=6">Thông tin tài khoản</a>
+                <a href="index.php?a=6 #info-user">Thông tin tài khoản</a>
             </li>
             <li>
                 <a href="index.php?a=7">Kiểm tra đơn hàng</a>

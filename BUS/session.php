@@ -10,9 +10,10 @@ class Session
     }
 
     // Hàm lưu session
-    public function send($user)
+    public function send($user, $user_name)
     {
         $_SESSION['user'] = $user;
+        $_SESSION['user_name'] = $user_name;
     }
     public function sendAdmin($admin)
     {
@@ -27,6 +28,15 @@ class Session
             $user = '';
         }
         return $user;
+    }
+    public function getuserName()
+    {
+        if (isset($_SESSION['user_name'])) {
+            $user_name = $_SESSION['user_name'];
+        } else {
+            $user_name = '';
+        }
+        return $user_name;
     }
     //kiem
     public function getAdmin()

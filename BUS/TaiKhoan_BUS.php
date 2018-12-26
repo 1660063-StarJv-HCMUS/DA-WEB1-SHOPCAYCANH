@@ -36,5 +36,10 @@ include_once __DIR__.'/../DAO/TaiKhoan_DAO.php';
         {
             return $this->taiKhoan->getName($tenDangNhap);
         }
+        //update tk
+        public function UpdateTK($tk)
+        {
+            return $this->taiKhoan->UpdateTK($tk);
+        }
     }
 ?>

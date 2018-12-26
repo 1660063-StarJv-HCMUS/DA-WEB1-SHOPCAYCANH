@@ -32,7 +32,6 @@ if (isset($_POST['name_info']) && isset($_POST['username_info']) && isset($_POST
                 }
                 else {
                     echo $show_alert . 'Đăng ký thất bại.';
-                    echo $tk->Email;
                 };
             }
         }

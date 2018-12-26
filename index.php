@@ -25,6 +25,7 @@ $session->start();
 
 if ($session->get() != '') {
     $user = $session->get();
+    $user_name = $session->getuserName();
     $admin = $session->getAdmin();
 } else {
     $user = '';

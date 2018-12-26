@@ -5,7 +5,7 @@ class TaiKhoan_DAO //extends DB
 {
     public function GetUserInfo($username)
     {
-        $sql = "select 	TenHienThi, DiaChi, Email, BiXoa, MaLoaiTaiKhoan from taikhoan where TenDangNhap ='$username'";
+        $sql = "select 	TenHienThi, DiaChi, DienThoai, Email, BiXoa, MaLoaiTaiKhoan from taikhoan where TenDangNhap ='$username'";
 
         //$result = $this->ExecuteQuery($sql);
         $db = new DB();
@@ -18,7 +18,8 @@ class TaiKhoan_DAO //extends DB
         $taiKhoan = new TaiKhoan();
         $taiKhoan->TenNguoiDung = $row['TenHienThi'];
         $taiKhoan->DiaChi = $row['DiaChi'];
-        $taiKhoan->email = $row['Email'];
+        $taiKhoan->Sdt = $row['DienThoai'];
+        $taiKhoan->Email = $row['Email'];
         $taiKhoan->BiXoa = $row['BiXoa'];
         $taiKhoan->LoaiTK = $row['MaLoaiTaiKhoan'];
         
@@ -68,5 +69,12 @@ class TaiKhoan_DAO //extends DB
         $info = new TaiKhoan();
         $info = $this->GetUserInfo($tenDangNhap);
         return $info->TenNguoiDung;
+    }
+
+    public function UpdateTK($tk)
+    {
+        $sql = "UPDATE taikhoan SET TenHienThi='$tk->TenNguoiDung', DiaChi='$tk->DiaChi', DienThoai='$tk->Sdt', Email='$tk->Email' WHERE TenDangNhap='$tk->TenDangNhap'";
+        $db = new DB();
+        return $result = $db->ExcuteQuery($sql);
     }
 }

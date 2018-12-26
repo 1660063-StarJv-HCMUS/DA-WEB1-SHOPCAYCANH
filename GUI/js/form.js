@@ -87,3 +87,40 @@ $("#register-form button").on('click', function () {
         });
     }
 });
+
+$("#info-user button").on('click', function () {
+        // Gán các giá trị trong các biến
+        $name = $('#info-user  #name').val();
+        $email = $('#info-user #email').val();
+        $address = $('#info-user  #address').val();
+        $tel = $('#info-user  #tel').val();
+        $account =$('#info-user  #account').val();
+
+        if ($name == '' || $email == '' || $address == ''|| $tel == '' || $account == '') {
+            $("#info-user .alert").removeClass("invisible");
+            $("#info-user .alert").html("Vui lòng điền đầy đủ thông tin.");
+        }
+        else
+        {
+            $.ajax({
+                url: "DAO/Update.php",
+                type: "POST",
+                //method: "POST",
+                data: {
+                    account: $account,
+                    name: $name,
+                    address:$address,
+                    tel:$tel,
+                    email:$email,
+                },
+                success: function (data) {
+                    $('#info-user .alert').removeClass('invisible');
+                    $('#info-user .alert').html(data);
+                },
+                error: function () {
+                    $("#info-user .alert").removeClass("invisible");
+                    $("#info-user .alert").html("Không thể đăng ký vào lúc này, hãy thử lại sau.");
+                }
+            });
+        }
+})

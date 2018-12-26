@@ -1,52 +1,54 @@
 <div class="mobi-header">
-        <a href="index.php?a=0">
-            <img src="GUI/images/logo-header.png" />
-        </a>
+    <a href="index.php?a=0">
+        <img src="GUI/images/logo-header.png" />
+    </a>
+    <div id="search" >
         <form class="form-inline my-2 my-lg-0 mt-3">
             <input class="form-control mr-sm-2 col-12" style="width:100%;" type="search" placeholder="Search"
-                aria-label="Search">
-            <div class="input-group-btn">
-                <div class="btn-group" role="group">
-                    <div class="dropdown dropdown-lg">
-                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
-                            aria-expanded="false"><span class="caret"></span></button>
-                        <div class="dropdown-menu dropdown-menu-right" role="menu">
-                            <form class="form-horizontal" role="form" type="post">
-                                <div class="form-group">
-                                    <h6 for="filter">Loại cây</h6>
-                                    <select class="form-control" name="LoaiCay">
-                                        <option value="" selected>Tất cả</option>
-                                        <option value="1">Cây tiểu cảnh</option>
-                                        <option value="2">Sen đá</option>
-                                        <option value="3">Xương rồng</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <h6 for="filter">Xuất xứ</h6>
-                                    <select class="form-control" name = "XuatXu">
+                aria-label="Search">           
+        </form>
+        <div class="input-group-btn" >
+            <div class="btn-group" role="group">
+                <div class="dropdown dropdown-lg">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                        aria-expanded="false"><span class="caret"></span></button>
+                    <div class="dropdown-menu dropdown-menu-right" role="menu">
+                        <form class="form-horizontal" role="form" type="post">
+                            <div class="form-group">
+                                <h6 for="filter">Loại cây</h6>
+                                <select class="form-control" name="LoaiCay">
                                     <option value="" selected>Tất cả</option>
-                                        <option value="1">cayxinh.vn</option>
-                                        <option value="2">thienduongcayxanh.com</option>
-                                        <!-- <option value="3">Thái Lan</option> -->
-                                    </select>
+                                    <option value="1">Cây tiểu cảnh</option>
+                                    <option value="2">Sen đá</option>
+                                    <option value="3">Xương rồng</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <h6 for="filter">Xuất xứ</h6>
+                                <select class="form-control" name = "XuatXu">
+                                    <option value="" selected>Tất cả</option>
+                                    <option value="1">cayxinh.vn</option>
+                                    <option value="2">thienduongcayxanh.com</option>
+                                    <!-- <option value="3">Thái Lan</option> -->
+                                </select>
+                            </div>
+                            <div class="form-group row">
+                                <div class="price col-6 pl-0">
+                                    <h6>Giá từ:</h6>
+                                    <input class="form-control" type="number" min=0 name="minPrice">
                                 </div>
-                                <div class="form-group row">
-                                    <div class="price col-6 pl-0">
-                                        <h6>Giá từ:</h6>
-                                        <input class="form-control" type="number" min=0 name="minPrice">
-                                    </div>
-                                    <div class="price col-6 pr-0">
-                                        <h6>Đến:</h6>
-                                        <input class="form-control" type="number" min=0 name="maxPrice">
-                                    </div>
+                                <div class="price col-6 pr-0">
+                                    <h6>Đến:</h6>
+                                    <input class="form-control" type="number" min=0 name="maxPrice">
                                 </div>
-                                <button type="submit" class="btn" id="btn-search"><i style="color:#FFF" class="fa fa-search"></i></button>
-                            </form>
-                        </div>
+                            </div>
+                            <button type="submit" class="btn" id="btn-search"><i style="color:#FFF" class="fa fa-search"></i></button>
+                        </form>
                     </div>
                 </div>
             </div>
-        </form>
+        </div>
+    </div>
     <nav class="navbar navbar-dark" style="text-align: right;">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContentNV"
             aria-controls="navbarSupportedContentNV" aria-expanded="false" aria-label="Toggle navigation">

@@ -445,54 +445,7 @@ a {
   padding: 15px;
   z-index: 10;
   right: 25px;
-  bottom:40px;
-  display: none;
-}
-
-/*----------------------cart------------------------------*/
-
-
-@media screen and (max-width: 1025px) {
-
-  /*--------------reponsive cho phần header---------------------- */
-  .mobi-header {
-    display: block;
-    text-align: right;
-  }
-
-  .desktop-screen {
-    display: none;
-  }
-
-  /*---------------reponsive cho trang check out-------------------*/
-  #progress-bar {
-    width: 100%;
-  }
-
-  #check-out {
-    margin: 0;
-  }
-
-  #progress-bar .row {
-    width: 100% !important;
-    margin: 0;
-  }
-
-  .shopping-cart-table>tbody>tr>.qty .input {
-    width: 40px;
-    height: 40px;
-  }
-
-  #number {
-    bottom: 30px
-  }
-
-  .content {
-    margin: 0 !important;
-  }
-}
-
-#cart {
+  bottom: 30px;
   display: none;
 }
 
@@ -653,6 +606,11 @@ h5.price_product span {
   font-weight: bold;
 }
 
+@media screen and (max-width: 800px) {
+  .info {
+    text-align: center;
+  }
+}
 /*-----------------------------------------------hoàn tất đơn hàng--------------------------*/
 .title {
   font-size: 20px;
@@ -662,13 +620,10 @@ h5.price_product span {
   padding: 0;
 }
 
-@media screen and (max-width: 800px) {
-  .info {
-    text-align: center;
-  }
-}
+
 
 /*-------------------tìm kiếm nâng cao------------------------*/
+
 #search {
   width: 80%;
   display: flex;
@@ -700,11 +655,6 @@ h5.price_product span {
 }
 
 @media screen and (min-width: 768px) {
-  #adv-search {
-    width: 500px;
-    margin: 0 auto;
-  }
-
   .dropdown.dropdown-lg {
     position: static !important;
   }
@@ -731,4 +681,56 @@ h5.price_product span {
   font-size: 14px;
   height: 50px;
   width: 50px;
+}
+
+/*------------------------------reponsive--------------------------*/
+
+@media screen and (max-width: 1025px) {
+
+  /*--------------reponsive cho phần header---------------------- */
+  .mobi-header {
+    display: block;
+    text-align: right;
+  }
+
+  .desktop-screen {
+    display: none;
+  }
+
+  /*---------------reponsive cho trang check out-------------------*/
+  #progress-bar {
+    width: 100%;
+  }
+
+  #check-out {
+    margin: 0;
+  }
+
+  #progress-bar .row {
+    width: 100% !important;
+    margin: 0;
+  }
+
+  .shopping-cart-table>tbody>tr>.qty .input {
+    width: 40px;
+    height: 40px;
+  }
+
+  #number {
+    bottom: 30px
+  }
+
+  .content {
+    margin: 0 !important;
+  }
+  /*-----------------hiện cart fix trên màn hình mobi-------------*/
+  #cart{
+    display: block;
+  }
+  /*--------------------search màn hình mobi-------------------*/
+  #search {
+    width: 100%;
+    display: block;
+    text-align: left;
+  }
 }

@@ -49,7 +49,7 @@ $("#form-them-tai-khoan button").on('click', function () {
 /////////////////Thêm sản phẩm//////////////////////////////////
 
 $("#form-them-san-pham button").on('click', function () {
-    window.alert('vào rồi');
+    window.alert('Đã thêm thành công');
     // Gán các giá trị trong các biến
     $tenSanPham     = $('#form-them-san-pham #tenSanPham').val();
     $file_upload    = $('#form-them-san-pham #file-upload').val();

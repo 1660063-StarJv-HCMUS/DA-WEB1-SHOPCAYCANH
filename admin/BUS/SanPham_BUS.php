@@ -24,6 +24,7 @@ class SanPham_BUS
             // output data of each row
             while ($row = $result->fetch_assoc()) {
                 $sp = new SanPham();
+                $sp->MaSanPham = $row['MaSanPham'];
                 $sp->TenSanPham = ($row['TenSanPham']);
                 $sp->HinhURL = ($row['HinhURL']);
                 $sp->GiaSanPham = ($row['GiaSanPham']);
@@ -49,6 +50,7 @@ class SanPham_BUS
             while($row = $result->fetch_assoc())
             {
                 $sp = new SanPham();
+                $sp->MaSanPham  = $row['MaSanPham'];
                 $sp->TenSanPham = $row['TenSanPham'];
                 $sp->HinhURL    = $row['HinhURL'];
                 $sp->GiaSanPham = $row['GiaSanPham'];
@@ -70,6 +72,12 @@ class SanPham_BUS
         if($spDAO->CheckSanPhamTonTai($sp->TenSanPham) == false) {
             $spDAO->ThemSanPham($sp);
         }
+    }
+
+    public function ChinhSua($sp){
+        $spDAO = new SanPhamDAO();
+        $spDAO->ChinhSua($sp);
+
     }
 
 }

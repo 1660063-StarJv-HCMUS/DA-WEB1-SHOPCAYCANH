@@ -22,7 +22,7 @@ class LoaiSanPham_BUS
             while($row = $result->fetch_assoc())
             {
                 $loai = new LoaiSanPham();
-                $loai->MaLoaiSanPham = $row['MaLoaiSanPham'];
+                $loai->MaLoaiSanPham    = $row['MaLoaiSanPham'];
                 $loai->TenLoaiSanPham   = $row['TenLoaiSanPham'];
 
                 $danhSachLoaiSanPham[]  = $loai;
@@ -36,5 +36,10 @@ class LoaiSanPham_BUS
         if($loaiDAO->CheckLoaiSPTonTai($loai->TenLoaiSanPham) == false) {
             $loaiDAO->ThemLoaiSanPham($loai);
         }
+    }
+
+    public function ChinhSua($loai){
+        $loaiDAO = new LoaiSanPhamDAO();
+        $loaiDAO->ChinhSua($loai);
     }
 }

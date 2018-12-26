@@ -2,6 +2,7 @@
     //if (!defined('IN_SITE')) die ('The request not found');
     include_once 'DAO/init.php';
     include_once __DIR__.'../../BUS/session.php';
+
 ?>
 
 <!DOCTYPE html>

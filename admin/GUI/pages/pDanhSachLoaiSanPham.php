@@ -21,10 +21,28 @@ include_once __DIR__.'/../../BUS/LoaiSanPham_BUS.php';
     foreach ($result as $loadLoai){
         echo '
             <tr>
-                <td><input type="checkbox"></td>
+                <td>
+                    <button id="Xoa" type="submit" class="btn btn-danger">
+                        <i class="far fa-trash-alt"></i>
+                        <input type="hidden" name="maLoaiSanPham" id="maLoaiSanPham" value="'.$loadLoai->MaLoaiSanPham.'">
+                    </button>
+                </td>
                 <td><a>'.$loadLoai->TenLoaiSanPham.'</a></td>
                 <td>
-                    <a href="#" title="">Chỉnh sửa</a>
+                    <div class="dropdown chinhsua">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Chỉnh sửa</button>
+                        <form id="form-chinh-sua-loai-san-pham" method="post" name="main-form" id="main-form" enctype="multipart/form-data" accept-charset="utf-8" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <div class="form-group">
+                                <input type="hidden" name="maLoaiSanPhamEdit" id="maLoaiSanPhamEdit" value="'.$loadLoai->MaLoaiSanPham.'">
+                            </div>
+                            <div class="form-group">
+                                <span>Tên loại sản phẩm</span>
+                                <input type="text" name="tenLoaiSanPhamEdit" class="form-control" id="tenLoaiSanPhamEdit" value="'.$loadLoai->TenLoaiSanPham.'">
+                            </div>
+
+                            <button type="submit" id="chinhSua" class="btn btn-success">Chỉnh sửa</button>
+                        </form>
+                    </div>
                 </td>
             </tr>
             ';

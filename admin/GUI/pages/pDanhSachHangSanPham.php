@@ -21,14 +21,36 @@ include_once __DIR__.'/../../DTO/HangSanXuat_DTO.php';
     $result = $loadHang->LoadTatCaCacHangSanXuat();
 
     foreach ($result as $loadHang){
-        $url = '../GUI/images/'.$loadHang->LogoURL;
+        $url = $_DOMAIN.'/GUI/modules/upload/'.$loadHang->LogoURL;
         echo '
             <tr>
-                <td><input type="checkbox"/></td>
+                <td>
+                 <button id="Xoa" type="submit" class="btn btn-danger">
+                    <i class="far fa-trash-alt"></i>
+                    <input type="hidden" name="maHangSanPham" id="maHangSanPham" value="'.$loadHang->MaHangSanXuat.'">
+                 </button>
+                </td>
                 <td><a>'.$loadHang->TenHangSanXuat.'</a></td>
                 <td><img src="'.$url.'" alt="Card image cap" class="thumbnail img-responsive"></td>
                 <td>
-                    <a href="#" title="">Chỉnh sửa</a>
+                
+                    <div class="dropdown chinhsua">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Chỉnh sửa</button>
+                        <form id="form-chinh-sua-loai-san-pham" method="post" name="main-form" id="main-form" enctype="multipart/form-data" accept-charset="utf-8" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <div class="form-group">
+                                <input type="hidden" name="maHangSanPhamEdit" id="maHangSanPhamEdit" value="'.$loadHang->MaHangSanXuat.'">
+                            </div>
+                            <div class="form-group">
+                                <span>Tên hãng</span>
+                                <input type="text" name="tenHangSanPhamEdit" class="form-control" id="tenHangSanPhamEdit" value="'.$loadHang->TenHangSanXuat.'">
+                            </div>
+                            <div class="form-group">
+                                <span>Logo hãng</span>
+                                <input type="file" name="file-upload" id="file-upload" />
+                            </div>
+                            <button type="submit" id="chinhSua" class="btn btn-success">Chỉnh sửa</button>
+                        </form>
+                    </div>
                 </td>
             </tr>
             ';

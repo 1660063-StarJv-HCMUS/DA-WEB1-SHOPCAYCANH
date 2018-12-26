@@ -23,6 +23,7 @@ class TaiKhoanBUS
             while($row = $result->fetch_assoc())
             {
                 $tk = new TaiKhoan();
+                
                 $tk->MaTaiKhoan     = $row['MaTaiKhoan'];
                 $tk->TenDangNhap    = $row['TenDangNhap'];
                 $tk->TenHienThi     = $row['TenHienThi'];
@@ -45,5 +46,10 @@ class TaiKhoanBUS
             $tkDAO->ThemTaiKhoan($tk);
         }
 
+    }
+
+    public function ChinhSua($tkUpdate){
+        $tk = new TaiKhoanDAO();
+        $tk->ChinhSua($tkUpdate);
     }
 }

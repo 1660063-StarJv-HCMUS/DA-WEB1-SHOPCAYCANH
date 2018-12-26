@@ -76,3 +76,29 @@ else{
 }
 
 ?>
+
+<?php
+include_once __DIR__ . '/../../BUS/TaiKhoan_BUS.php';
+include_once __DIR__.'/../../DTO/SanPham_DTO.php';
+
+if(isset($_POST['maTaiKhoanEdit'])||isset($_POST['tenDangNhapEdit']) || isset($_POST['matKhauEdit']) ||isset($_POST['tenHienThiEdit']) ||isset($_POST['soDienThoaiEdit']) ||isset($_POST['emaiEdit']) ||isset($_POST['diaChiEdit'])||isset($_POST['loaiTaiKhoanEdit'])){
+
+    if($_POST['maTaiKhoanEdit'] == '' || $_POST['tenDangNhapEdit'] == '' || $_POST['matKhauEdit'] == ''|| $_POST['tenHienThiEdit'] == '' || $_POST['soDienThoaiEdit'] == ''|| $_POST['emaiEdit'] == '' || $_POST['diaChiEdit'] == ''|| $_POST['loaiTaiKhoanEdit'] == ''){
+
+    }
+    else{
+        $tkUpdate = new TaiKhoan();
+        $tkUpdate->MaTaiKhoan = $_POST['maTaiKhoanEdit'];
+        $tkUpdate->TenDangNhap = $_POST['tenDangNhapEdit'];
+        $tkUpdate->MatKhau = $_POST['matKhauEdit'];
+        $tkUpdate->TenHienThi = $_POST['tenHienThiEdit'];
+        $tkUpdate->DienThoai = $_POST['soDienThoaiEdit'];
+        $tkUpdate->Email = $_POST['emaiEdit'];
+        $tkUpdate->DiaChi = $_POST['diaChiEdit'];
+        $tkUpdate->MaLoaiTaiKhoan = $_POST['loaiTaiKhoanEdit'];
+
+        $tkUpdateBUS = new TaiKhoanBUS();
+        $tkUpdateBUS->ChinhSua($tkUpdate);
+    }
+}
+?>

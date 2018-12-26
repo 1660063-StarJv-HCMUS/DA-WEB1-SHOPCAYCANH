@@ -50,9 +50,10 @@ class LoaiSanPhamDAO
         $sql = "DELETE FROM loaisanpham WHERE MaLoaiSanPham = '$MaLoaiSanPham' ";
         $this->ExecuteQuery($sql);
     }
-    public function ChinhSuaLoaiSanPham($loaisanpham)
+    public function ChinhSua($loaisanpham)
     {
-        $sql="UPDATE loaisanpham SET TenLoaiSanPham='$loaisanpham->TenLoaiSanPham', BiXoa = $loaisanpham->BiXoa where MaLoaiSanPham = $loaisanpham->MaLoaiSanPham";
-        $this->ExecuteQuery($sql);
+        $db = new Database();
+        $sql="UPDATE loaisanpham SET loaisanpham.TenLoaiSanPham='$loaisanpham->TenLoaiSanPham' where loaisanpham.MaLoaiSanPham = '$loaisanpham->MaLoaiSanPham'";
+        $db->ExecuteQuery($sql);
     }
 }

@@ -39,7 +39,12 @@ foreach ($result as $loadTK) {
 
     echo '
             <tr>
-                <td><input type="checkbox" name="id_TaiKhoan[]" value="'.$loadTK->MaTaiKhoan.'"></td>
+                <td>
+                    <input type="hidden" name="maTaiKhoanXoa" id="maTaiKhoanXoa" value="'.$loadTK->MaTaiKhoan.'">
+                    <button id="XoaTaiKhoan" type="submit" class="btn btn-danger">
+                        <i class="far fa-trash-alt"></i>
+                    </button>
+                </td>
                 <td>'.$loadTK->TenDangNhap.'</td>
                 <td>'.$loadTK->TenHienThi.'</td>
                 <td>'.$loadTK->DienThoai.'</td>
@@ -47,7 +52,46 @@ foreach ($result as $loadTK) {
                 <td>'.$loadTK->DiaChi.'</td>
                 <td>'.$loai.'</td>
                 <td>
-                    <a href="#" title="">Chỉnh sửa</a>
+                   <div class="dropdown chinhsua">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Chỉnh sửa</button>
+                        <form id="form-chinh-sua-tai-khoan" method="post" name="main-form" id="main-form" enctype="multipart/form-data" accept-charset="utf-8" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <div class="form-group">
+                                <input type="hidden" name="maTaiKhoanEdit" id="maTaiKhoanEdit" value="'.$loadTK->MaTaiKhoan.'">
+                            </div>
+                            <div class="form-group">
+                                <span>Tên đăng nhập</span>
+                                <input type="text" name="tenDangNhapEdit" class="form-control" id="tenDangNhapEdit" value="'.$loadTK->TenDangNhap.'">
+                            </div>
+                            <div class="form-group">
+                                <span>Mật khẩu</span>
+                                <input type="password" name="matKhauEdit" class="form-control" id="matKhauEdit" value="'.$loadTK->MatKhau.'">
+                            </div>
+                            <div class="form-group">
+                                <span>Tên hiển thị</span>
+                                <input type="text" name="tenHienThiEdit" class="form-control" id="tenHienThiEdit" value="'.$loadTK->TenHienThi.'">
+                            </div>
+                            <div class="form-group">
+                                <span>Số điện thoại</span>
+                                <input type="text" name="soDienThoaiEdit" class="form-control" id="soDienThoaiEdit" value="'.$loadTK->DienThoai.'">
+                            </div>
+                            <div class="form-group">
+                                <span>Email</span>
+                                <input type="text" name="emaiEdit" class="form-control" id="emailEdit" value="'.$loadTK->email.'">
+                            </div>
+         
+                            <div class="form-group">
+                                <span>Địa chỉ</span>
+                                <input type="text" name="diaChiEdit" class="form-control" id="diaChiEdit" value="'.$loadTK->DiaChi.'">
+                            </div>
+                            <div class="form-group">
+                                <select class="custom-select" name="loaiTaiKhoanEdit">
+                                    <option value="1">Thường</option>
+                                    <option value="0">Admin</option>
+                                </select>
+                            </div>    
+                            <button type="submit" id="chinhSua" class="btn btn-success">Chỉnh sửa</button>
+                        </form>
+                    </div>
                 </td>
             </tr>
             ';

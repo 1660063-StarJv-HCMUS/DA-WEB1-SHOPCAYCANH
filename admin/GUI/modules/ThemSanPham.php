@@ -70,6 +70,7 @@
 
         <button type="submit" id="themSanPham" class="btn btn-success">Thêm sản phẩm</button>
     </form>
+
 </div>
 <?php
 if(isset($_POST['tenSanPham']) && isset($_POST['giaSanPham']) && isset($_POST['hangSanXuat']) && isset($_POST['soLuong']) && isset($_POST['loaiSanPham']) && isset($_FILES)){
@@ -153,6 +154,94 @@ if(isset($_POST['tenSanPham']) && isset($_POST['giaSanPham']) && isset($_POST['h
         $sp->MaLoaiSanPham = $_POST['loaiSanPham'];
         $sp_BUS = new SanPham_BUS();
         $result = $sp_BUS->ThemSanPham($sp);
+    }
+}
+?>
+
+<?php
+if(isset($_POST['maSanPhamEdit']) && isset($_POST['tenSanPhamEdit']) && isset($_POST['giaSanPhamEdit'])  && isset($_POST['soLuongTonEdit']) && isset($_POST['ngayNhapEdit']) &&isset($_FILES)){
+
+    if($_POST['tenSanPhamEdit'] == '' || $_POST['giaSanPhamEdit'] == '' || $_POST['maSanPhamEdit'] == ''|| $_POST['soLuongTonEdit'] == '' || $_POST['ngayNhapEdit'] == ''){
+
+    }
+    else {
+        include_once __DIR__ . '/../../DTO/SanPham_DTO.php';
+        include_once __DIR__ . '/../../BUS/SanPham_BUS.php';
+        include_once __DIR__ . '/../../DTO/HangSanXuat_DTO.php';
+        include_once __DIR__ . '/../../DAO/init.php';
+//////////////
+        function UploadHinhAnh()
+        {
+//sử dụng move_upload_file để upload tập tin $fileName vào vị trí $destination
+            $fileUpload = $_FILES['file-upload'];
+
+
+            if ($fileUpload['name'] != null) {
+                $filename = $fileUpload['tmp_name'];
+//random tên file
+                $random = RandomString(6);//random 6 ký tự
+//chỉ cho phép upload file có size từ 50kB - 5MB
+                $flagsize = CheckSize($fileUpload['size'], 5 * 1024, 5 * 1024 * 1024);
+
+//chỉ cho phép upload file định dạng hình ảnh jpg, png, JPEG
+                $flagextension = CheckExtension($fileUpload['name'], array('jpg', 'png', 'JPEG'));
+
+                $tenHinh = null;
+
+                if ($flagsize == true && $flagextension == true) {
+
+                    $tenHinh = $random . $fileUpload['name'];
+                    $url = __DIR__.'/upload/';
+                    $destination = $url . $tenHinh;//chuỗi random + tên file để khi upload không bị trùng tên(cơ hội bị trùng tên rất ít)
+
+                    move_uploaded_file($filename, $destination);
+                }
+
+                return $tenHinh;
+            }
+        }
+
+//random string
+        function RandomString($length = 5)
+        {
+            $arrCharacter = array_merge(range('A', 'Z'), range('a', 'z'), range(0, 9));
+            $arrCharacter = implode($arrCharacter, '');
+            $arrCharacter = str_shuffle($arrCharacter);
+
+            $result = substr($arrCharacter, 0, $length);
+            return $result;
+        }
+
+//checksize của file, check định dạng file
+        function CheckSize($size, $min, $max)
+        {
+            $flag = false;
+            if ($size >= $min && $size <= $max) $flag = true;
+            return $flag;
+        }
+
+        function CheckExtension($fileName, $arrExtension)
+        {
+            $ext = pathinfo($fileName, PATHINFO_EXTENSION);
+            $flag = false;
+            if (in_array(strtolower($ext), $arrExtension) == true) $flag = true;
+            return $flag;
+        }
+
+///////////////////////Thêm sản phẩm mới////////////////////////////////////////
+
+        $sp = new SanPham();
+        $sp->MaSanPham = $_POST['maSanPhamEdit'];
+        $sp->TenSanPham = $_POST['tenSanPhamEdit'];
+        $sp->GiaSanPham = $_POST['giaSanPhamEdit'];
+
+        $sp->SoLuongTon = $_POST['soLuongTonEdit'];
+        $sp->NgayNhap = $_POST['ngayNhapEdit'];
+
+        $sp->HinhURL = UploadHinhAnh();
+
+        $sp_BUS = new SanPham_BUS();
+        $sp_BUS->ChinhSua($sp);
     }
 }
 ?>

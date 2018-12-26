@@ -154,40 +154,4 @@ $("#form-them-hang-san-pham button").on('click', function () {
     }
 });
 
-///////////////////////xóa bài viết
-$('#del_post_list').on('click', function() {
-    $confirm = confirm('Bạn có chắc chắn muốn xoá các bài viết đã chọn không?');
-    if ($confirm == true)
-    {
-        $id_post = [];
-
-        $('#list_post input[type="checkbox"]:checkbox:checked').each(function(i) {
-            $id_post[i] = $(this).val();
-        });
-
-        if ($id_post.length === 0)
-        {
-            alert('Vui lòng chọn ít nhất một bài viết.');
-        }
-        else
-        {
-            $.ajax({
-                    url : $_DOMAIN + 'posts.php',
-                    type : 'POST',
-                },
-                data : {
-            id_post : $id_post,
-                action : 'delete_post_list'
-            success : function(data) {
-                location.reload();
-            }, error : function() {
-                alert('Đã có lỗi xảy ra, hãy thử lại.');
-            }
-        });
-        }
-    }
-    else
-    {
-        return false;
-    }
-});
+//////////////////////////////xóa////////////////////////////

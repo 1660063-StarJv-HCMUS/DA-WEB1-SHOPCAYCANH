@@ -14,7 +14,7 @@ class SanPhamDAO
     public function LoadSanPhamByMaLoai($loaisp)
     {
         $db = new Database();
-        $truyvan = 'select TenSanPham, HinhURL, GiaSanPham from sanpham where MaLoaiSanPham = $loaisp ';
+        $truyvan = 'select MaSanPham ,TenSanPham, HinhURL, GiaSanPham from sanpham where MaLoaiSanPham = $loaisp ';
 
         $ketQua = $db->ExcuteQuery($truyvan);
 
@@ -25,7 +25,7 @@ class SanPhamDAO
     public function LoadTatCaSanPham()
     {
         $db = new Database();
-        $truyvan = 'select TenSanPham, HinhURL, GiaSanPham, NgayNhap, SoLuongTon, 
+        $truyvan = 'select MaSanPham ,TenSanPham, HinhURL, GiaSanPham, NgayNhap, SoLuongTon, 
         SoLuongBan, SoLuotXem, MoTa, MaHangSanXuat from sanpham';
 
         $ketQua = $db->ExecuteQuery($truyvan);
@@ -83,5 +83,11 @@ class SanPhamDAO
             return true;
         }
         return false;
+    }
+
+    public function ChinhSua($sp){
+        $db = new Database();
+        $truyvan = "UPDATE sanpham SET sanpham.TenSanPham='$sp->TenSanPham',sanpham.HinhURL='$sp->HinhURL',sanpham.GiaSanPham='$sp->GiaSanPham',sanpham.NgayNhap='$sp->NgayNhap',sanpham.SoLuongTon='$sp->SoLuongTon' WHERE sanpham.MaSanPham = '$sp->MaSanPham'";
+        $db->ExecuteQuery($truyvan);
     }
 }

@@ -42,5 +42,9 @@ class HangSanXuat_BUS
         return $row['MaHang'];
     }
 
+    public function ChinhSua($hang){
+        $hangDAO = new HangSanXuatDAO();
+        $hangDAO->ChinhSua($hang);
+    }
 
 }

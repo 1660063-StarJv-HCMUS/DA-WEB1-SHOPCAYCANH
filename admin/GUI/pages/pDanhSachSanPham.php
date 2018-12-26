@@ -48,7 +48,12 @@
             $url = $_DOMAIN.'/GUI/modules/upload/'.$loadSP->HinhURL;
             echo '
             <tr>
-                <td><input type="checkbox" class="del-post-list" data-id="'.$loadSP->MaLoaiSanPham.'"></td>
+                <td>
+                    <button id="Xoa" type="submit" class="btn btn-danger">
+                        <i class="far fa-trash-alt"></i>
+                        <input type="hidden" name="maSanPham" id="maSanPham" value="'.$loadSP->MaSanPham.'">
+                    </button>
+                </td>
                 <td><a>'.$loadSP->TenSanPham.'</a></td>
                 <td><img src="'.$url.'" alt="Card image cap" class="thumbnail img-responsive"></td>
                 <td><a></a></td>
@@ -58,7 +63,37 @@
                 <td>'.$loadSP->SoLuongBan.'</td>
                 <td>'.$loadSP->NgayNhap.'</td>
                 <td>
-                    <a href="' . $_DOMAIN . '/BUS/edit/' . $loadSP->MaLoaiSanPham .'">Chỉnh sửa</a>
+                    <div class="dropdown chinhsua">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Chỉnh sửa</button>
+                        <form id="form-chinh-sua-san-pham" method="post" name="main-form" id="main-form" enctype="multipart/form-data" accept-charset="utf-8" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <div class="form-group">
+                                <input type="hidden" name="maSanPhamEdit" id="maSanPhamEdit" value="'.$loadSP->MaSanPham.'">
+                            </div>
+                            <div class="form-group">
+                                <span>Tên sản phẩm</span>
+                                <input type="text" name="tenSanPhamEdit" class="form-control" id="tenHangSanPhamEdit" value="'.$loadSP->TenSanPham.'">
+                            </div>
+                            <div class="form-group">
+                                <span>Hình ảnh sản phẩm</span>
+                                <input type="file" name="file-upload" id="file-upload" />
+                            </div>
+                            
+                            <div class="form-group">
+                                <span>Giá</span>
+                                <input type="text" name="giaSanPhamEdit" class="form-control" id="giaSanPhamEdit" value="'.$loadSP->GiaSanPham.'"> 
+                            </div>
+                            <div class="form-group">
+                                <span>Số lượng tồn</span>
+                                <input type="text" name="soLuongTonEdit" class="form-control" id="soLuongTonEdit" value="'.$loadSP->SoLuongTon.'">
+                            </div>
+                            
+                            <div class="form-group">
+                                <span>Ngày nhập</span>
+                                <input type="text" name="ngayNhapEdit" class="form-control" id="ngayNhapEdit" value="'.$loadSP->NgayNhap.'">
+                            </div>
+                            <button type="submit" id="chinhSua" class="btn btn-success">Chỉnh sửa</button>
+                        </form>
+                    </div>
                 </td>
             </tr>
             ';
@@ -67,4 +102,4 @@
         </tbody>
     </table>
 </div>
-<!--</div>-->
+

@@ -47,7 +47,14 @@ class HangSanXuatDAO
     public function XoaHangSanXuat($MaHangSanXuat)
     {
         $db = new Database();
-        $truyvan = 'DELETE FROM hangsanxuat WHERE MaHangSanXuat = $MaHangSanXuat';
+        $truyvan = "DELETE FROM hangsanxuat WHERE MaHangSanXuat = '$MaHangSanXuat'";
+        $db->ExecuteQuery($truyvan);
+    }
+
+    public function ChinhSua($hang){
+
+        $db = new Database();
+        $truyvan = "UPDATE hangsanxuat SET hangsanxuat.TenHangSanXuat='$hang->TenHangSanXuat',hangsanxuat.LogoURL='$hang->LogoURL' WHERE hangsanxuat.MaHangSanXuat='$hang->MaHangSanXuat'";
         $db->ExecuteQuery($truyvan);
     }
     /*

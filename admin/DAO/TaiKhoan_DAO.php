@@ -24,6 +24,11 @@ class TaiKhoanDAO extends Database
         $this->ExecuteQuery($truyvan);
     }
 
+    public function ChinhSua($tkUpdate){
+        $sql = "UPDATE taikhoan SET TenDangNhap = '$tkUpdate->TenDangNhap' ,MatKhau = '$tkUpdate->MatKhau', TenHienThi = '$tkUpdate->TenHienThi', DiaChi = '$tkUpdate->DiaChi', DienThoai = '$tkUpdate->DienThoai', Email = '$tkUpdate->Email', BiXoa= 0, MaLoaiTaiKhoan = '$tkUpdate->MaLoaiTaiKhoan' WHERE MaTaiKhoan = '$tkUpdate->MaTaiKhoan'";
+        $this->ExecuteQuery($sql);
+    }
+
     public function CheckTaiKhoanTonTai($tenDangNhap){
         $db = new Database();
         $truyvan = "SELECT * FROM taikhoan WHERE TenDangNhap LIKE '$tenDangNhap'";

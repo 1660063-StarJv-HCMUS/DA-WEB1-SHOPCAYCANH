@@ -29,3 +29,26 @@
         }
     }
 ?>
+
+<?php
+
+if(isset($_POST['tenLoaiSanPhamEdit']) && isset($_POST['maLoaiSanPhamEdit'])){
+    if($_POST['tenLoaiSanPhamEdit'] == '' && $_POST['maLoaiSanPhamEdit'] == ''){
+
+    }
+    else{
+        include_once __DIR__.'/../../DTO/LoaiSanPham_DTO.php';
+        include_once __DIR__.'/../../BUS/LoaiSanPham_BUS.php';
+
+
+///////////////////////Thêm sản phẩm mới////////////////////////////////////////
+
+        $loai = new LoaiSanPham();
+        $loai->MaLoaiSanPham = $_POST['maLoaiSanPhamEdit'];
+        $loai->TenLoaiSanPham = $_POST['tenLoaiSanPhamEdit'];
+
+        $loai_BUS = new LoaiSanPham_BUS();
+        $loai_BUS->ChinhSua($loai);
+    }
+}
+?>

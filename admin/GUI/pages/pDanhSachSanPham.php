@@ -22,7 +22,7 @@
             <th scope="col"></th>
             <th scope="col">Tên sản phẩm</th>
             <th scope="col" class="HinhSP">Hình ảnh</th>
-            <th scope="col">Hãng sản xuất</th>
+
             <th scope="col">Giá(VNĐ)</th>
             <th scope="col">Lượt xem</th>
             <th scope="col">Số lượng tồn</th>
@@ -40,12 +40,19 @@
 
         $tmp = $loadHang->LoadTatCaCacHangSanXuat();
 
-        //var_dump($loadHang->LoadTatCaCacHangSanXuat());
-
         $result = $loadSP->LoadTatCaSanPham();
+        //<th scope="col">Hãng sản xuất</th>
+        //print_r($tmp);
+        //foreach ($tmp as $key => $value )
+        //{
+        //    echo $key->MaHangSanXuat;
+        //}
 
         foreach ($result as $loadSP){
             $url = $_DOMAIN.'/GUI/modules/upload/'.$loadSP->HinhURL;
+            //$tenHang = '';
+            //<td><a>'.$tenHang.'</a></td>
+
             echo '
             <tr>
                 <td>
@@ -57,7 +64,7 @@
                 </td>
                 <td><a>'.$loadSP->TenSanPham.'</a></td>
                 <td><img src="'.$url.'" alt="Card image cap" class="thumbnail img-responsive"></td>
-                <td><a></a></td>
+                
                 <td>'.$loadSP->GiaSanPham.'</td>
                 <td>'.$loadSP->SoLuotXem.'</td>
                 <td>'.$loadSP->SoLuongTon.'</td>

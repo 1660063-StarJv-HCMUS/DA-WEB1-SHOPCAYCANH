@@ -51,4 +51,8 @@ class HangSanXuat_BUS
         $hangDAO = new HangSanXuatDAO();
         $hangDAO->XoaHangSanXuat($maHang);
     }
+    public function LoadTenHangByID($ID){
+        $hangDAO = new HangSanXuatDAO();
+        return $hangDAO->LoadTenHangByID($ID);
+    }
 }

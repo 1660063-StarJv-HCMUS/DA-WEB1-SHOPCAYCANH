@@ -5,7 +5,6 @@
         <th scope="col">Tổng thành tiền</th>
         <th scope="col">Ngày đặt hàng</th>
         <th scope="col">Trạng thái</th>
-        <th scope="col"></th>
     </thead>
     <tbody>
         <tr>
@@ -15,7 +14,6 @@
                 $loadDH = new DonHang_BUS();
                 $loadTenTK = new TaiKhoanBUS();
                 $result =  $loadDH->LoadTatCaCacDonHang();
-
                 foreach($result as $DH)
                 {
                     $select1 = "";
@@ -44,22 +42,20 @@
                             <td>
                                 '. $DH->NgayLap .'
                             </td>
-                            <td>
-                                
-                                <select class="custom-select" name="hangSanXuat">
-                                    <option value="1" '. $select1 .' >Đang giao</option>
-                                    <option value="2" '. $select2 .' >Đã giao</option>
-                                    <option value="3" '. $select3 .' >Hủy</option>                                    
-                                </select>
-                            </td>
-                            <td>
-                                <button class="btn btn-success" type="button" aria-haspopup="true" aria-expanded="false">cập nhật</button>
+                            <td scope="row">
+                                <form method="post" name="main-form" id="main-form" enctype="multipart/form-data" accept-charset="utf-8">
+                                    <input type="hidden" name="MDHEdit" id="maTaiKhoanDel" value="'.$DH->MaDonHang.'">
+                                    <select class="custom-select" name="tinhTrangDonHangEdit">
+                                        <option value="1" '. $select1 .' >Đang giao</option>
+                                        <option value="2" '. $select2 .' >Đã giao</option>
+                                        <option value="3" '. $select3 .' >Hủy</option>                                    
+                                    </select>
+                                    <button id="CapNhat" type="submit" class="btn btn-success">Cập nhật</button>
+                                </form>
                             </td>
                         </tr>
                         ';    
                 }
-
-                
             ?>
         </tr>
     </tbody>

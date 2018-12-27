@@ -31,6 +31,10 @@
             include_once 'ThemXoaSuaSanPham.php';
 
             break;
+        case 6:
+            include_once 'ChinhSuaDonHang.php';
+            break;
+
         default:
     }
 ?>

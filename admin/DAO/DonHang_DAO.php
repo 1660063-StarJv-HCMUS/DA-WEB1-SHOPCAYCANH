@@ -27,6 +27,12 @@ class DonHangDAO
         return mysqli_fetch_assoc($result);
     }
 
+    public function CapNhatTinhTrangDonHang($donHang){
+        $truyvan = "UPDATE donhang SET donhang.MaTinhTrang = '$donHang->MaTinhTrang' WHERE donhang.MaDonHang = '$donHang->MaDonHang'";
+        $db = new Database();
+        $db->ExecuteQuery($truyvan);
+    }
+
     public function postInput($string)
     {
         $xxx = $string.'';

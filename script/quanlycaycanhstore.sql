@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 27, 2018 at 02:34 PM
+-- Generation Time: Dec 27, 2018 at 05:09 PM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 7.2.11
 
@@ -43,7 +43,9 @@ CREATE TABLE `chitietdonhang` (
 INSERT INTO `chitietdonhang` (`MaChiTietDonDatHang`, `SoLuong`, `GiaBan`, `MaDonDatHang`, `MaSanPham`) VALUES
 ('DHCT00001', 1, 60000, 'DH000001', 26),
 ('DHCT00002', 2, 75000, 'DH000002', 29),
-('DHCT00003', 8, 60000, 'DH00003', 26);
+('DHCT00003', 8, 60000, 'DH00003', 26),
+('DHCT00004', 10, 100000, 'DH000004', 31),
+('DHCT00005', 9, 60000, 'DH000005', 26);
 
 -- --------------------------------------------------------
 
@@ -64,8 +66,10 @@ CREATE TABLE `donhang` (
 --
 
 INSERT INTO `donhang` (`MaDonHang`, `NgayLap`, `TongThanhTien`, `MaTaiKhoan`, `MaTinhTrang`) VALUES
-('DH000001', '2018-12-27', 60000, 7, 2),
+('DH000001', '2018-12-27', 60000, 7, 1),
 ('DH000002', '2018-12-27', 150000, 6, 1),
+('DH000004', '2018-12-27', 1000000, 13, 2),
+('DH000005', '2018-12-27', 540000, 12, 2),
 ('DH00003', '2018-12-27', 480000, 10, 2);
 
 -- --------------------------------------------------------
@@ -214,7 +218,13 @@ INSERT INTO `taikhoan` (`MaTaiKhoan`, `TenDangNhap`, `MatKhau`, `TenHienThi`, `D
 (10, 'obama23', '0bama', 'Obama', 'Hồ Chí Minh', '0956441332', 'obamavietnam@gmail.com', 0, 1),
 (11, 'mrtrump', 'lantram123', 'Đô Lan Trăm', 'Hồ Chí Minh', '031564498', 'donaltrump@gmail.com', 0, 1),
 (12, 'ronaldo', 'ronaldo1', 'Ronaldo', 'Vĩnh Long', '0832431245', 'ronaldonumber1@gmail.con', 0, 1),
-(13, 'messi', 'messi123', 'Lê Ô La', 'Cà Mau', '0123455643', 'messi2134@gmail.com', 0, 1);
+(13, 'messi', 'messi123', 'Lê Ô La', 'Cà Mau', '0123455643', 'messi2134@gmail.com', 0, 1),
+(14, 'captain', 'emyeuhoabinh', 'Cáp Từn', 'Bình Dương', '099993555', 'captain.america@gmail.com', 0, 1),
+(15, 'emyeuhoahoc', '123456hoa', 'Hulk Màu Hường', 'Đồng Nai', '0333240358', 'hulkyeudoi@yahoo.com', 0, 1),
+(16, 'spiderman2', 'spiderman', 'Nhện Nhọ', 'Hồ Chí Minh', '01633240358', 'spiderman.notnho@gmail.com', 0, 1),
+(17, 'emyeuvinaphone@gmail', 'vinaphone', 'Tổng đài viettel', 'Hồ Chí Minh', '0399913234', 'viettelmuonnam@gmail.com', 0, 1),
+(18, 'fptmanhnhat', 'fptsuperlag', 'FPT ADSL', 'Hà Nội', '0398121655', 'khongduocchuifpt@gmail.com', 0, 1),
+(19, 'haiadmin', 'sa', 'Nguyễn Thanh Hải', 'Đồng Nai', '0355055666', 'haidong@gmail.com', 0, 1);
 
 -- --------------------------------------------------------
 
@@ -320,7 +330,7 @@ ALTER TABLE `sanpham`
 -- AUTO_INCREMENT for table `taikhoan`
 --
 ALTER TABLE `taikhoan`
-  MODIFY `MaTaiKhoan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `MaTaiKhoan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- Constraints for dumped tables

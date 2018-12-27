@@ -81,11 +81,6 @@ switch ($p) {
         # code...
         include 'GUI/pages/pLichSuDonHang.php';
         break;
-    case 1:
-        # code...
-        include 'GUI/modules/mBanner.php';
-        include 'GUI/pages/pSenDa.php';
-        break;
     default:
         # code...
         include 'GUI/pages/pERROR.php';

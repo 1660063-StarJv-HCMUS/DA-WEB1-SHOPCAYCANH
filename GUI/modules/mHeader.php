@@ -10,7 +10,7 @@
                     <a href="index.php?p=0">Trang chủ</a>
                 </li>
                 <li>
-                    <a href="index.php?">Cây</a>
+                    <a href="index.php?p=2">Cây</a>
                     <ul>
                     <?php
                         include_once 'BUS/LoaiSanPham_BUS.php';
@@ -26,7 +26,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="index.php?">Xứ</a>
+                    <a href="index.php?p=2">Xứ</a>
                     <ul>
                     <?php
                         include_once 'BUS/HangSanXuat_BUS.php';
@@ -45,7 +45,7 @@
                     <a href="">Blog</a>
                 </li>
                 <li>
-                    <a href="" class="scroll-bottom">Liên hệ</a>
+                    <a href="#footer" class="scroll-bottom">Liên hệ</a>
                 </li>
             </ul>
         </nav>

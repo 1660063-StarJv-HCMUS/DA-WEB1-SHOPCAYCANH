@@ -8,7 +8,8 @@
     </thead>
     <tbody>
         <tr>
-        	<?php
+            <?php
+            
                 include_once __DIR__.'/../../BUS/DonHang_BUS.php';
                 include_once __DIR__.'/../../BUS/TaiKhoan_BUS.php';
                 $loadDH = new DonHang_BUS();
@@ -34,7 +35,8 @@
                     echo '
                         <tr>
                             <td>
-                                '. $loadTenTK->getTenTaiKhoanTheoID($DH->MaTaiKhoan) .'
+                                <a class="btn" href="#" data-toggle="modal" data-target="#Details-modals" onclick="loadModalChiTiet(\''. $DH->MaDonHang .'\')" >'. $loadTenTK->getTenTaiKhoanTheoID($DH->MaTaiKhoan) .'</a>
+                                
                             </td>
                             <td>
                                 '. $DH->TongThanhTien .'

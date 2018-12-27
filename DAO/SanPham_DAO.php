@@ -49,6 +49,26 @@
             return $row['TenLoaiSanPham'];
         }
 
+
+        public function getUlrSanPham($MaSanPham)
+        {
+            $sql = 'SELECT HinhURL FROM sanpham WHERE MaSanPham='.$MaSanPham;
+            $db = new DB();
+            $ketQua = $db->ExcuteQuery($sql);
+            $row = $ketQua->fetch_assoc();
+            return $row['HinhURL'];
+        }
+
+        public function getTenSanPham($MaSanPham)
+        {
+            $sql = 'SELECT TenSanPham FROM sanpham WHERE MaSanPham='.$MaSanPham;
+            $db = new DB();
+            $ketQua = $db->ExcuteQuery($sql);
+            $row = $ketQua->fetch_assoc();
+            return $row['TenSanPham'];
+        }
+
     }
+
 
 ?>

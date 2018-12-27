@@ -41,6 +41,7 @@
                         break;
                     case 6:
                         include 'pQuanLyDonHang.php';
+                        include_once __DIR__.'/../modules/mChiTietDonHang.php';
                         break;
                     default:
                         include 'pError.php';

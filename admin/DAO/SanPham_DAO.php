@@ -115,4 +115,22 @@ class SanPhamDAO
         $db = new Database();
         return mysqli_fetch_array($db->ExecuteQuery($TC));
     }
+
+    public function getUlrSanPham($MaSanPham)
+        {
+            $sql = 'SELECT HinhURL FROM sanpham WHERE MaSanPham='.$MaSanPham;
+            $db = new Database();
+            $ketQua = $db->ExecuteQuery($sql);
+            $row = $ketQua->fetch_assoc();
+            return $row['HinhURL'];
+        }
+
+        public function getTenSanPham($MaSanPham)
+        {
+            $sql = 'SELECT TenSanPham FROM sanpham WHERE MaSanPham='.$MaSanPham;
+            $db = new Database();
+            $ketQua = $db->ExecuteQuery($sql);
+            $row = $ketQua->fetch_assoc();
+            return $row['TenSanPham'];
+        }
 }

@@ -107,4 +107,13 @@ class SanPham_BUS
         $spDAO = new SanPhamDAO();
         return $spDAO->DataChartTieuCanh();
     }
+    public function getUlrSanPham($MaSanPham){
+        $spDAO = new SanPhamDAO();
+        return $spDAO->getUlrSanPham($MaSanPham);
+    }
+
+    public function getTenSanPham($MaSanPham){
+        $spDAO = new SanPhamDAO();
+        return $spDAO->getTenSanPham($MaSanPham);
+    }
 }

@@ -95,7 +95,7 @@
                         $LoaiSP = new LoaiSanPham_BUS();
                         $ds = $LoaiSP->DSLoaiSanPham();
                         foreach ($ds as $tenLoai) {
-                            echo '<a class="dropdown-item" href="index.php?a='.$tenLoai->MaLoaiSanPham.'">'.$tenLoai->TenLoaiSanPham.'</a>';
+                            echo '<a class="dropdown-item" href="index.php?p=2&a='.$tenLoai->MaLoaiSanPham.'">'.$tenLoai->TenLoaiSanPham.'</a>';
                         }
                     ?>
                     </div>
@@ -111,7 +111,7 @@
                         $XuatXu = new HangSanXuat_BUS();
                         $ds = $XuatXu->DSXuatXu();
                         foreach ($ds as $xuatXu) {
-                            echo '<a class="dropdown-item" href="index.php?b='.$xuatXu->MaHangSanXuat.'">'.$xuatXu->TenHangSanXuat.'</a> ';
+                            echo '<a class="dropdown-item" href="index.php?p=2&b='.$xuatXu->MaHangSanXuat.'">'.$xuatXu->TenHangSanXuat.'</a> ';
                         }
                     ?>
                     </div>

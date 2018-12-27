@@ -50,14 +50,14 @@ include 'GUI/modules/mHeader.php';
         <div id="container">
 
 <?php
-$p = 0;
+$p = 1;
 if (isset($_GET["p"])) {
     $p = $_GET["p"];
 }
 
 include 'GUI/modules/mBanner.php';
 switch ($p) {
-    case 0:
+    case 1:
         # code...
         include 'GUI/modules/mTrangChu.php';
         break;

@@ -1,13 +1,13 @@
 
 <div class="row">
-    <a class="col-3 text-center logo" href="index.php?p=0">
+    <a class="col-3 text-center logo" href="index.php?p=1">
         <img src="GUI/images/logo-header.png" />
     </a>
     <div class="col-6">
         <nav class="menutop">
             <ul>
                 <li>
-                    <a href="index.php?p=0">Trang chủ</a>
+                    <a href="index.php?p=1">Trang chủ</a>
                 </li>
                 <li>
                     <a href="index.php?p=2">Loại cây</a>
@@ -19,7 +19,7 @@
                         foreach ($ds as $tenLoai) {
                             echo '                        
                                 <li>
-                                    <a href="index.php?a='.$tenLoai->MaLoaiSanPham.'">'.$tenLoai->TenLoaiSanPham.'</a>
+                                    <a href="index.php?p=2&a='.$tenLoai->MaLoaiSanPham.'">'.$tenLoai->TenLoaiSanPham.'</a>
                                 </li> ';
                         }
                     ?>
@@ -35,7 +35,7 @@
                         foreach ($ds as $Xu) {
                             echo '                        
                                 <li>
-                                    <a href="index.php?b='.$Xu->MaHangSanXuat.'">'.$Xu->TenHangSanXuat.'</a>
+                                    <a href="index.php?p=2&b='.$Xu->MaHangSanXuat.'">'.$Xu->TenHangSanXuat.'</a>
                                 </li> ';
                         }
                     ?>

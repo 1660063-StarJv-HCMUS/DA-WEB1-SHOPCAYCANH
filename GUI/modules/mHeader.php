@@ -26,7 +26,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="index.php?p=2">Xứ</a>
+                    <a href="index.php?p=2">Xuất xứ</a>
                     <ul>
                     <?php
                         include_once 'BUS/HangSanXuat_BUS.php';

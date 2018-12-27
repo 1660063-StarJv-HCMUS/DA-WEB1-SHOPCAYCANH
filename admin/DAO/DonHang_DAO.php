@@ -6,25 +6,17 @@
  *
  */
 
-class DonHangDAO extends DB
+include_once 'DB.php';
+class DonHangDAO 
 {
     //load tất cả các đơn hàng
     public function LoadTatCaCacDonHang()
     {
-        $sql ="SELECT MaDonHang, MaTaiKhoan, NgayLap,TongThanhTien, TinhTrang from donhang";
-        $result = $this->ExecuteQuery($sql);
-        $lstDonHang = array();
-        while($row = mysqli_fetch_array($result))
-        {
-            $donHang                = new DonHang();
-            $donHang->MaDatHang     = $row['MaDonHang'];
-            $donHang->MaNguoiDung   = $row['MaTaiKhoan'];
-            $donHang->NgayLap       = $row['NgayLap'];
-            $donHang->TongThanhTien =$row['TongThanhTien'];
-            $donHang->TinhTrang     = $row['TinhTrang'];
-            $lstDonHang[] = $donHang;
-        }
-        return $lstDonHang;
+        $sql ="SELECT * from donhang";
+        $db = new Database();
+        $result = $db->ExecuteQuery($sql);
+        
+        return $result;
 
     }
     //load đơn hàng bởi mã đơn hàng

@@ -1,5 +1,5 @@
 $(window).ready(function() {
-    var page = (window.location.href).split('?a=')[1][0];
+    var page = (window.location.href).split('?p=')[1][0];
 
     //index.php?a=7 không làm gì 
     if(page == 7)

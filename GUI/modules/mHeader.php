@@ -26,7 +26,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="index.php?p=2">Xứ</a>
+                    <a href="index.php?p=2">Xuất xứ</a>
                     <ul>
                     <?php
                         include_once 'BUS/HangSanXuat_BUS.php';
@@ -35,7 +35,7 @@
                         foreach ($ds as $Xu) {
                             echo '                        
                                 <li>
-                                    <a href="index.php?b='.$Xu->MaHangSanXuat.'">'.$Xu->TenHangSanxuat.'</a>
+                                    <a href="index.php?b='.$Xu->MaHangSanXuat.'">'.$Xu->TenHangSanXuat.'</a>
                                 </li> ';
                         }
                     ?>
@@ -93,7 +93,7 @@
                                                 $XuatXu = new HangSanXuat_BUS();
                                                 $ds = $XuatXu->DSXuatXu();
                                                 foreach ($ds as $xuatXu) {
-                                                    echo '<option value="'.$xuatXu->MaHangSanXuat.'">'.$xuatXu->TenHangSanxuat.'</option> ';
+                                                    echo '<option value="'.$xuatXu->MaHangSanXuat.'">'.$xuatXu->TenHangSanXuat.'</option> ';
                                                 }
                                             ?>
                                         </select>

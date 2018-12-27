@@ -9,14 +9,14 @@
 class HangSanXuat
 {
     var $MaHangSanXuat;
-    var $TenHangSanxuat;
+    var $TenHangSanXuat;
     var $LogoURL;
     var $BiXoa;
     public function __construct()
     {
-        $this->MaHangSanXuat = 0;
-        $this->TenHangSanxuat ="ABC";
-        $this->LogoURL = "";
-        $this->BiXoa = 0;
+        $this->MaHangSanXuat = '';
+        $this->TenHangSanXuat ='';
+        $this->LogoURL = '';
+        $this->BiXoa = '';
     }
 }

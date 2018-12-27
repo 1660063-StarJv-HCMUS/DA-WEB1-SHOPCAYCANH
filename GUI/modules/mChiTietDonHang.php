@@ -11,7 +11,7 @@
                 </div>
                 <div class="modal-body" id="my-details">
                     <table class="table table-hover table-responsive" id="my-details-table">
-                       <tbody id="my-details-tbody" >
+                        <tbody id="my-details-tbody" >
                         </tbody>
                     </table>
                 </div>

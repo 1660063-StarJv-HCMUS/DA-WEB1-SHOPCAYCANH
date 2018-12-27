@@ -17,7 +17,7 @@ class DonHang
     {
         $this->MaDonHang    = 0;
         $this->MaTaiKhoan   =0;
-        $this->NgayLap      = "2017-02-19";
+        $this->NgayLap      = "";
         $this->TongThanhTien= 0;
     }
 }

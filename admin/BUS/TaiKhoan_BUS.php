@@ -68,4 +68,8 @@ class TaiKhoanBUS
         $tk = new TaiKhoanDAO();
         return $tk->TongSoTaiKhoan();
     }
+    public function getTenTaiKhoanTheoID($MaTaiKhoan){
+        $tk = new TaiKhoanDAO();
+        return $tk->getTenTaiKhoanTheoId($MaTaiKhoan);
+    }
 }

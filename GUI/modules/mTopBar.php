@@ -8,7 +8,7 @@
 <div class="col-12 col-lg-6" style="text-align: center;">
         <i class="fa fa-phone"></i> &nbsp;0965521664646
         <span></span>
-        <i class="fa fa-envelope"></i> &nbsp; thanhtung@sevenleaves.vn
+        <i class="fa fa-envelope"></i> &nbsp; admin@sevenleaves.vn
 </div>
 <?php
 if ($user) {

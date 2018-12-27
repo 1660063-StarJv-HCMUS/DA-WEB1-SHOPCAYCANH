@@ -54,6 +54,8 @@ $a = 0;
 if (isset($_GET["a"])) {
     $a = $_GET["a"];
 }
+
+
 switch ($a) {
     case 0:
         # code...
@@ -62,10 +64,12 @@ switch ($a) {
         break;
     case 2:
         # code...
+        include 'GUI/modules/mBanner.php';
         include 'GUI/pages/pTieuCanh.php';
         break;
     case 3:
         # code...
+        include 'GUI/modules/mBanner.php';
         include 'GUI/pages/pXuongRong.php';
         break;
     case 4:
@@ -86,6 +90,7 @@ switch ($a) {
         break;
     case 1:
         # code...
+        include 'GUI/modules/mBanner.php';
         include 'GUI/pages/pSenDa.php';
         break;
     default:
@@ -103,6 +108,7 @@ include 'GUI/modules/mPruductDetails.php';
 include 'GUI/modules/mFooter.php';
 include_once 'GUI/modules/mShoppingCart.php';
 include 'GUI/modules/mCartMobi.php';
+include 'GUI/modules/mChiTietDonHang.php';
 ?>
 </div>
     

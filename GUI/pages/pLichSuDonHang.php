@@ -36,7 +36,7 @@
                             echo '
                             <tr>
                                 <td class="details">
-                                    <a href="#">'.$DH->getMaDonHang().'</a>
+                                    <a href="#" data-toggle="modal" data-target="#Details-modals" >'.$DH->getMaDonHang().'</a>
                                 </td>
                                 <td class="details">
                                     <a href="#">'.$user_name.'</a> 

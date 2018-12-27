@@ -27,7 +27,7 @@
                                         </select>
                                     </div>
                                     <div class="form-group">
-                                        <h6 for="filter">Xuất xứ</h6>
+                                        <h6 for="filter">Hãng</h6>
                                         <select class="form-control" name = "XuatXu">
                                             <option value="" selected>Tất cả</option>
                                             <option value="1">cayxinh.vn</option>
@@ -66,13 +66,27 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownNV" role="button" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
-                        Sản phẩm
+                        Cây
                     </a>
                     <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownNV">
                         <a class="dropdown-item" href="index.php?a=3">Xương rồng</a>
                         <a class="dropdown-item" href="index.php?a=2">Sen đá</a>
                         <a class="dropdown-item" href="index.php?a=1">Tiểu cảnh</a>
                     </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownNV" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Hãng
+                    </a>
+                    <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownNV">
+                        <a class="dropdown-item" href="index.php?a=3">CayXinh.vn</a>
+                        <a class="dropdown-item" href="index.php?a=2">Sen đá</a>
+                        <a class="dropdown-item" href="index.php?a=1">Tiểu cảnh</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scroll-bottom" href="#">Blog</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link scroll-bottom" href="#">Liên hệ</a>

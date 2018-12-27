@@ -3,7 +3,7 @@
         <img src="GUI/images/logo-header.png" />
     </a>
     <div class="col-6">
-        <nav class="menutop">
+        <!--<nav class="menutop">
             <ul>
                 <li>
                     <a href="index.php?a=0">Trang chủ</a>
@@ -16,6 +16,47 @@
                 </li>
                 <li>
                     <a href="index.php?a=2">Sen đá</a>
+                </li>
+                <li>
+                    <a href="#" class="scroll-bottom">Liên hệ</a>
+                </li>
+            </ul>
+        </nav>-->
+        <nav class="menutop">
+            <ul>
+                <li>
+                    <a href="index.php?a=0">Trang chủ</a>
+                </li>
+                <li>
+                    <a href="#">Loại cây</a>
+                    <ul>
+                        <li>
+                            <a href="index.php?a=1">Tiểu cảnh</a>
+                        </li>
+                        <li>
+                            <a href="index.php?a=3">Xương rồng</a>
+                        </li>
+                        <li>
+                            <a href="index.php?a=2">Sen đá</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Blog cây cảnh</a>
+                </li>
+                <li>
+                    <a href="#">Xuất xứ</a>
+                    <ul>
+                        <li>
+                            <a href="index.php?a=1">Việt Nam</a>
+                        </li>
+                        <li>
+                            <a href="index.php?a=3">Thái Lan</a>
+                        </li>
+                        <li>
+                            <a href="index.php?a=2">Lào</a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <a href="#" class="scroll-bottom">Liên hệ</a>
@@ -50,7 +91,7 @@
                                         </select>
                                     </div>
                                     <div class="form-group">
-                                        <h6 for="filter">Xuất xứ</h6>
+                                        <h6 for="filter">Hãng</h6>
                                         <select class="form-control" name = "XuatXu">
                                             <option value="" selected>Tất cả</option>
                                             <option value="1">cayxinh.vn</option>

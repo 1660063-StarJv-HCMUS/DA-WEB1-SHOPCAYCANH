@@ -82,4 +82,5 @@
             $row = $ketQua->fetch_assoc();
             return $row['TenSanPham'];
         }
+    }
 ?>

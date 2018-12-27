@@ -16,7 +16,7 @@
             <td><img width="40px" height="40px" src="admin/GUI/modules/upload/'. $load_sanpham->getUlrSanPham($ct->MaSanPham) .'"></td>
             <td class="name" style="width: 200px">'.$load_sanpham->getTenSanPham($ct->MaSanPham).'</td>
             <td class="price">'.$ct->GiaBan.'</td>
-            <td><input type="number" min="1" step="1" class="quantity qty-text" value="'.$ct->SoLuong.'" style="width:50px;height: 30px;" disable></td>
+            <td><input type="text"  class="quantity qty-text" value="'.$ct->SoLuong.'" style="width:50px;height: 30px;" disabled></td>
             <td class="total_price">'.$ct->SoLuong * $ct->GiaBan.'</td>
         </tr>
         ';

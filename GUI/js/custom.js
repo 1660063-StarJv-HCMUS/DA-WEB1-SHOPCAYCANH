@@ -57,5 +57,4 @@ $(document).ready(function () {
 
 $("#logout-destop,#logout").click(function(){
     localStorage.removeItem('cart');
-    console.log(1);
 });

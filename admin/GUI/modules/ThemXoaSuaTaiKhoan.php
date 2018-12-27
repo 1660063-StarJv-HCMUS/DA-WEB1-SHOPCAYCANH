@@ -1,5 +1,5 @@
 <div class="dropdown themmoi">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Thêm tài khoản mới</button>
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tài khoản mới</button>
     <form id="form-them-tai-khoan" method="post" accept-charset="utf-8" class="dropdown-menu" aria-labelledby="dropdownMenuButton" >
         <div class="form-group">
             <span>Tên hiển thị </span>
@@ -36,7 +36,7 @@
             </select>
         </div>
         <div class="alert alert-danger invisible mt-2 mb-0"></div>
-        <button type="submit" id="themTaiKhoan" class="btn btn-success">Thêm tài khoản</button>
+        <button type="submit" id="themTaiKhoan" class="btn btn-success">Thêm</button>
     </form>
 </div>
 

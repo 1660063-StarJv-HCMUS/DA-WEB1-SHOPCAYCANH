@@ -3,7 +3,7 @@ include_once __DIR__.'/../../BUS/HangSanXuat_BUS.php';
 include_once __DIR__.'/../../DTO/HangSanXuat_DTO.php';
 ?>
 <h2>Danh sách hãng sản phẩm</h2>
-
+<div class="table-responsive">
 <table class="table table-hover">
     <thead>
     <tr>
@@ -58,3 +58,4 @@ include_once __DIR__.'/../../DTO/HangSanXuat_DTO.php';
     ?>
     </tbody>
 </table>
+</div>

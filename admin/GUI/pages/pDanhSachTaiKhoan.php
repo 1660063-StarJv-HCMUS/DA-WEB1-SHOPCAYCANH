@@ -9,6 +9,7 @@
         </div>
     </form>
 </p>
+<div class="table-responsive">
 <table class="table table-hover">
     <thead>
         <tr>
@@ -101,3 +102,4 @@ foreach ($result as $loadTK) {
 ?>
     </tbody>
 </table>
+</div>

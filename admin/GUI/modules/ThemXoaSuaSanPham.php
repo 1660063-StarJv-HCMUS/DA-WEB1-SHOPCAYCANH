@@ -1,5 +1,5 @@
 <div class="dropdown themmoi">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Thêm sản phẩm mới</button>
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sản phẩm mới</button>
     <form id="form-them-san-pham" method="post" name="main-form" id="main-form" enctype="multipart/form-data" accept-charset="utf-8" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
         <div class="form-group">
             <span>Tên sản phẩm </span>
@@ -68,7 +68,7 @@
             <input type="text" name="moTa" class="form-control" id="moTa" placeholder="Mô tả">
         </div>
 
-        <button type="submit" id="themSanPham" class="btn btn-success">Thêm sản phẩm</button>
+        <button type="submit" id="themSanPham" class="btn btn-success">Thêm</button>
     </form>
 
 </div>

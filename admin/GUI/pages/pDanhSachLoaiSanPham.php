@@ -2,7 +2,7 @@
 include_once __DIR__.'/../../BUS/LoaiSanPham_BUS.php';
 ?>
 <h2>Danh sách loại sản phẩm</h2>
-
+<div class="table-responsive">
 <table class="table table-hover">
     <thead>
     <tr>
@@ -50,3 +50,4 @@ include_once __DIR__.'/../../BUS/LoaiSanPham_BUS.php';
     ?>
     </tbody>
 </table>
+</div>

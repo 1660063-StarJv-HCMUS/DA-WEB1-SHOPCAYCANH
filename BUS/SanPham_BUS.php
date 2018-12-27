@@ -78,6 +78,53 @@ class SanPham_BUS
         }
         return $danhSachSanPham;
     }
+
+    public function LoadTop10SanPhamBanChay()
+    {
+        $result = $this->SP->LoadTop10SanPhamBanChay();
+
+        $danhSachSanPham = array();
+
+        if ($result->num_rows > 0) {
+            // output data of each row
+            while ($row = $result->fetch_assoc()) {
+                $sp = new SanPham();
+                $sp->setTenSanPham($row['TenSanPham']);
+                $sp->setHinhURL($row['HinhURL']);
+                $sp->setGiaSanPham($row['GiaSanPham']);
+                $sp->setMoTa($row['MoTa']);
+                $sp->setMaSanPham($row['MaSanPham']);
+                $sp->setMaLoaiSanPham($row['MaLoaiSanPham']);
+                $sp->setMaHangSanXuat($row['MaHangSanXuat']);
+                $danhSachSanPham[] = $sp;
+            }
+        }
+        return $danhSachSanPham;
+    }
+
+    public function LoadTop10SanPhamXemNhieu()
+    {
+        $result = $this->SP->LoadTop10SanPhamXemNhieu();
+
+        $danhSachSanPham = array();
+
+        if ($result->num_rows > 0) {
+            // output data of each row
+            while ($row = $result->fetch_assoc()) {
+                $sp = new SanPham();
+                $sp->setTenSanPham($row['TenSanPham']);
+                $sp->setHinhURL($row['HinhURL']);
+                $sp->setGiaSanPham($row['GiaSanPham']);
+                $sp->setMoTa($row['MoTa']);
+                $sp->setMaSanPham($row['MaSanPham']);
+                $sp->setMaLoaiSanPham($row['MaLoaiSanPham']);
+                $sp->setMaHangSanXuat($row['MaHangSanXuat']);
+                $danhSachSanPham[] = $sp;
+            }
+        }
+        return $danhSachSanPham;
+    }
+
     public function LoadSanPhamNhieuTieuChi($where)
     {
         $kq = $this->SP->LoadSanPhamNhieuTieuChi($where);

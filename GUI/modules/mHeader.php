@@ -10,7 +10,7 @@
                     <a href="index.php?p=0">Trang chủ</a>
                 </li>
                 <li>
-                    <a href="index.php?p=2">Cây</a>
+                    <a href="index.php?p=2">Loại cây</a>
                     <ul>
                     <?php
                         include_once 'BUS/LoaiSanPham_BUS.php';

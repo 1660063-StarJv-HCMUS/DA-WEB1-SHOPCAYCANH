@@ -38,7 +38,23 @@
             return $ketQua;
         }
 
-        
+        public function LoadTop10SanPhamBanChay()
+        {
+            $sql = 'select TenSanPham, HinhURL, GiaSanPham, MoTa, MaSanPham, MaLoaiSanPham, MaHangSanXuat FROM sanpham ORDER BY SoLuotXem DESC LIMIT 10';
+
+            $db = new DB();
+            $ketQua = $db->ExcuteQuery($sql);
+            return $ketQua;
+        }
+
+        public function LoadTop10SanPhamXemNhieu()
+        {
+            $sql = 'select TenSanPham, HinhURL, GiaSanPham, MoTa, MaSanPham, MaLoaiSanPham, MaHangSanXuat FROM sanpham ORDER BY SoLuongBan DESC LIMIT 10';
+
+            $db = new DB();
+            $ketQua = $db->ExcuteQuery($sql);
+            return $ketQua;
+        }
 
         public function getTenLoaiSanPham($MaLoai)
         {
@@ -48,7 +64,6 @@
             $row = $ketQua->fetch_assoc();
             return $row['TenLoaiSanPham'];
         }
-
 
         public function getUlrSanPham($MaSanPham)
         {
@@ -67,8 +82,4 @@
             $row = $ketQua->fetch_assoc();
             return $row['TenSanPham'];
         }
-
-    }
-
-
 ?>

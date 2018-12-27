@@ -50,27 +50,20 @@ include 'GUI/modules/mHeader.php';
         <div id="container">
 
 <?php
-$a = 0;
-if (isset($_GET["a"])) {
-    $a = $_GET["a"];
+$p = 0;
+if (isset($_GET["p"])) {
+    $p = $_GET["p"];
 }
 
-
-switch ($a) {
+include 'GUI/modules/mBanner.php';
+switch ($p) {
     case 0:
         # code...
-        include 'GUI/modules/mBanner.php';
         include 'GUI/modules/mTrangChu.php';
         break;
     case 2:
         # code...
-        include 'GUI/modules/mBanner.php';
-        include 'GUI/pages/pTieuCanh.php';
-        break;
-    case 3:
-        # code...
-        include 'GUI/modules/mBanner.php';
-        include 'GUI/pages/pXuongRong.php';
+        include 'GUI/pages/pProducts.php';
         break;
     case 4:
         # code...

@@ -15,7 +15,7 @@ class HangSanXuat
     public function __construct()
     {
         $this->MaHangSanXuat = 0;
-        $this->TenHangSanxuat = "";
+        $this->TenHangSanxuat ="ABC";
         $this->LogoURL = "";
         $this->BiXoa = 0;
     }

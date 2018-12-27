@@ -103,7 +103,7 @@ $("#form-them-loai-san-pham button").on('click', function () {
     else
     {
         $.ajax({
-            url: $_DOMAIN,
+            url: "index.php",
             type: "POST",
             
             data: {
@@ -159,14 +159,13 @@ $("#form-them-hang-san-pham button").on('click', function () {
 $('#dang-xuat').on('click', function () {
     var action = "logout";
     $.ajax({
-        url: 'GUI/modules/mDangXuat.php',
+        url: $_DOMAIN,
         method: "POST",
         data: {
             action: action
         },
-        success: function (data) {
-            $('#dang-xuat').html(data);
-            // location.reload();
+        success: function () {
+            location.reload();
         },
         error: function () {
             window.alert("thất bại");

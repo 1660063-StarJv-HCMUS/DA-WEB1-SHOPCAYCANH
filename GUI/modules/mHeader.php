@@ -1,69 +1,56 @@
+
 <div class="row">
-    <a class="col-3 text-center logo" href="index.php?a=0">
+    <a class="col-3 text-center logo" href="index.php?p=0">
         <img src="GUI/images/logo-header.png" />
     </a>
     <div class="col-6">
-        <!--<nav class="menutop">
-            <ul>
-                <li>
-                    <a href="index.php?a=0">Trang chủ</a>
-                </li>
-                <li>
-                    <a href="index.php?a=1">Tiểu cảnh</a>                  
-                </li>
-                <li>
-                    <a href="index.php?a=3">Xương rồng</a>
-                </li>
-                <li>
-                    <a href="index.php?a=2">Sen đá</a>
-                </li>
-                <li>
-                    <a href="#" class="scroll-bottom">Liên hệ</a>
-                </li>
-            </ul>
-        </nav>-->
         <nav class="menutop">
             <ul>
                 <li>
-                    <a href="index.php?a=0">Trang chủ</a>
+                    <a href="index.php?p=0">Trang chủ</a>
                 </li>
                 <li>
-                    <a href="#">Loại cây</a>
+                    <a href="index.php?">Cây</a>
                     <ul>
-                        <li>
-                            <a href="index.php?a=1">Tiểu cảnh</a>
-                        </li>
-                        <li>
-                            <a href="index.php?a=3">Xương rồng</a>
-                        </li>
-                        <li>
-                            <a href="index.php?a=2">Sen đá</a>
-                        </li>
+                    <?php
+                        include_once 'BUS/LoaiSanPham_BUS.php';
+                        $LoaiSP = new LoaiSanPham_BUS();
+                        $ds = $LoaiSP->DSLoaiSanPham();
+                        foreach ($ds as $tenLoai) {
+                            echo '                        
+                                <li>
+                                    <a href="index.php?a='.$tenLoai->MaLoaiSanPham.'">'.$tenLoai->TenLoaiSanPham.'</a>
+                                </li> ';
+                        }
+                    ?>
                     </ul>
                 </li>
                 <li>
-                    <a href="#">Blog cây cảnh</a>
-                </li>
-                <li>
-                    <a href="#">Xuất xứ</a>
+                    <a href="index.php?">Xứ</a>
                     <ul>
-                        <li>
-                            <a href="index.php?a=1">Việt Nam</a>
-                        </li>
-                        <li>
-                            <a href="index.php?a=3">Thái Lan</a>
-                        </li>
-                        <li>
-                            <a href="index.php?a=2">Lào</a>
-                        </li>
+                    <?php
+                        include_once 'BUS/HangSanXuat_BUS.php';
+                        $XuatXu = new HangSanXuat_BUS();
+                        $ds = $XuatXu->DSXuatXu();
+                        foreach ($ds as $Xu) {
+                            echo '                        
+                                <li>
+                                    <a href="index.php?b='.$Xu->MaHangSanXuat.'">'.$Xu->TenHangSanxuat.'</a>
+                                </li> ';
+                        }
+                    ?>
                     </ul>
                 </li>
                 <li>
-                    <a href="#" class="scroll-bottom">Liên hệ</a>
+                    <a href="">Blog</a>
+                </li>
+                <li>
+                    <a href="" class="scroll-bottom">Liên hệ</a>
                 </li>
             </ul>
         </nav>
     </div>
+    
     <div class="col-3">
         <div class="icon-header">
             <div id="search" >           
@@ -76,27 +63,39 @@
                             <div class="dropdown-menu dropdown-menu-right" role="menu">
                                 <form class="form-horizontal" role="form" type="post">
                                     <div class="from-group">
-                                        <h6>Tìm kiếm:</h6>
+                                        <h6 for="filter">Tên sản phẩm:</h6>
                                         <div class="price col-12 p-0">
-                                            <input class="form-control" type="text" min=0 name="minPrice">
+                                            <input class="form-control" type="text" name="TenCay">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <h6 for="filter">Loại cây</h6>
                                         <select class="form-control" name="LoaiCay">
                                             <option value="" selected>Tất cả</option>
-                                            <option value="1">Cây tiểu cảnh</option>
-                                            <option value="2">Sen đá</option>
-                                            <option value="3">Xương rồng</option>
+                                            <!-- load ds loai cay -->
+                                            <?php
+                                                include_once 'BUS/LoaiSanPham_BUS.php';
+                                                $LoaiSP = new LoaiSanPham_BUS();
+                                                $ds = $LoaiSP->DSLoaiSanPham();
+                                                foreach ($ds as $tenLoai) {
+                                                    echo '<option value="'.$tenLoai->MaLoaiSanPham.'">'.$tenLoai->TenLoaiSanPham.'</option> ';
+                                                }
+                                            ?>
                                         </select>
                                     </div>
                                     <div class="form-group">
                                         <h6 for="filter">Hãng</h6>
                                         <select class="form-control" name = "XuatXu">
                                             <option value="" selected>Tất cả</option>
-                                            <option value="1">cayxinh.vn</option>
-                                            <option value="2">thienduongcayxanh.com</option>
-                                            <!-- <option value="3">Thái Lan</option> -->
+                                            <!-- load ds xuat xu -->
+                                            <?php
+                                                include_once 'BUS/HangSanXuat_BUS.php';
+                                                $XuatXu = new HangSanXuat_BUS();
+                                                $ds = $XuatXu->DSXuatXu();
+                                                foreach ($ds as $xuatXu) {
+                                                    echo '<option value="'.$xuatXu->MaHangSanXuat.'">'.$xuatXu->TenHangSanxuat.'</option> ';
+                                                }
+                                            ?>
                                         </select>
                                     </div>
                                     <div class="form-group row">

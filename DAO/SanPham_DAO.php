@@ -2,7 +2,17 @@
     include_once 'DB.php';
     class SanPham_DAO{
         public function LoadSanPhamByMaLoai($loaisp){
-            $truyvan = 'select TenSanPham, HinhURL, GiaSanPham, MoTa, MaSanPham, MaLoaiSanPham from sanpham where MaLoaiSanPham ='.$loaisp;
+            $truyvan = 'select TenSanPham, HinhURL, GiaSanPham, MoTa, MaSanPham, MaLoaiSanPham, MaHangSanXuat from sanpham where MaLoaiSanPham ='.$loaisp;
+
+            $db = new DB();
+            $ketQua = $db->ExcuteQuery($truyvan);
+
+            return $ketQua;
+        }
+
+        public function LoadSanPhamByMaXuatXu($MaXuatXu)
+        {
+            $truyvan = 'select TenSanPham, HinhURL, GiaSanPham, MoTa, MaSanPham, MaLoaiSanPham, MaHangSanXuat from sanpham where 	MaHangSanXuat ='.$MaXuatXu;
 
             $db = new DB();
             $ketQua = $db->ExcuteQuery($truyvan);
@@ -11,7 +21,7 @@
         }
 
         public function LoadTatCaSanPham(){
-            $truyvan = 'select TenSanPham, HinhURL, GiaSanPham, MoTa, MaSanPham, MaLoaiSanPham from sanpham';
+            $truyvan = 'select TenSanPham, HinhURL, GiaSanPham, MoTa, MaSanPham, MaLoaiSanPham, MaHangSanXuat from sanpham';
 
             $db = new DB();
             $ketQua = $db->ExcuteQuery($truyvan);
@@ -21,7 +31,7 @@
 
         public function LoadSanPhamNhieuTieuChi($where)
         {
-            $sql = 'select TenSanPham, HinhURL, GiaSanPham, MoTa, MaSanPham, MaLoaiSanPham from sanpham where '.implode('and ', $where);
+            $sql = 'select TenSanPham, HinhURL, GiaSanPham, MoTa, MaSanPham, MaLoaiSanPham, MaHangSanXuat from sanpham where '.implode('and ', $where);
 
             $db = new DB();
             $ketQua = $db->ExcuteQuery($sql);

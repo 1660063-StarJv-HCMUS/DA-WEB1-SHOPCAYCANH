@@ -12,42 +12,13 @@ class SanPham_BUS
     public function LoadSanPhamByMaLoai($maLoaiSP)
     {
 
-            $loadSP_MaLoai = new SanPham_DAO();
-
-            $result = $loadSP_MaLoai->LoadSanPhamByMaLoai($maLoaiSP);
-
-            $danhSachSanPham = array();
-
-            if ($result->num_rows > 0) {
-                // output data of each row
-                while ($row = $result->fetch_assoc()) {
-                    $sp = new SanPham();
-                    $sp->setTenSanPham($row['TenSanPham']);
-                    $sp->setHinhURL($row['HinhURL']);
-                    $sp->setGiaSanPham($row['GiaSanPham']);
-                    $sp->setMoTa($row['MoTa']);
-                    $sp->setMaSanPham($row['MaSanPham']);
-                    $sp->setMaLoaiSanPham($row['MaLoaiSanPham']);
-                    $danhSachSanPham[] = $sp;
-                }
-            }
-            return $danhSachSanPham;
-        }
-        
-
-    public function LoadTatCaSanPham()
-    {
-        $loadSP = new SanPham_DAO();
-
-        $result = $loadSP->LoadTatCaSanPham();
+        $result = $this->SP->LoadSanPhamByMaLoai($maLoaiSP);
 
         $danhSachSanPham = array();
 
-        if ($result->num_rows > 0)
-        {
-                // output data of each row
-            while($row = $result->fetch_assoc())
-            {
+        if ($result->num_rows > 0) {
+            // output data of each row
+            while ($row = $result->fetch_assoc()) {
                 $sp = new SanPham();
                 $sp->setTenSanPham($row['TenSanPham']);
                 $sp->setHinhURL($row['HinhURL']);
@@ -55,16 +26,61 @@ class SanPham_BUS
                 $sp->setMoTa($row['MoTa']);
                 $sp->setMaSanPham($row['MaSanPham']);
                 $sp->setMaLoaiSanPham($row['MaLoaiSanPham']);
+                $sp->setMaHangSanXuat($row['MaHangSanXuat']);
                 $danhSachSanPham[] = $sp;
-            }       
+            }
+        }
+        return $danhSachSanPham;
+    }
+
+    public function LoadSanPhamByMaXuatXu($MaXuatXu)
+    {
+        $result = $this->SP->LoadSanPhamByMaXuatXu($MaXuatXu);
+
+        $danhSachSanPham = array();
+
+        if ($result->num_rows > 0) {
+            // output data of each row
+            while ($row = $result->fetch_assoc()) {
+                $sp = new SanPham();
+                $sp->setTenSanPham($row['TenSanPham']);
+                $sp->setHinhURL($row['HinhURL']);
+                $sp->setGiaSanPham($row['GiaSanPham']);
+                $sp->setMoTa($row['MoTa']);
+                $sp->setMaSanPham($row['MaSanPham']);
+                $sp->setMaLoaiSanPham($row['MaLoaiSanPham']);
+                $sp->setMaHangSanXuat($row['MaHangSanXuat']);
+                $danhSachSanPham[] = $sp;
+            }
+        }
+        return $danhSachSanPham;
+    }
+
+    public function LoadTatCaSanPham()
+    {
+        $result = $this->SP->LoadTatCaSanPham();
+
+        $danhSachSanPham = array();
+
+        if ($result->num_rows > 0) {
+            // output data of each row
+            while ($row = $result->fetch_assoc()) {
+                $sp = new SanPham();
+                $sp->setTenSanPham($row['TenSanPham']);
+                $sp->setHinhURL($row['HinhURL']);
+                $sp->setGiaSanPham($row['GiaSanPham']);
+                $sp->setMoTa($row['MoTa']);
+                $sp->setMaSanPham($row['MaSanPham']);
+                $sp->setMaLoaiSanPham($row['MaLoaiSanPham']);
+                $sp->setMaHangSanXuat($row['MaHangSanXuat']);
+                $danhSachSanPham[] = $sp;
+            }
         }
         return $danhSachSanPham;
     }
     public function LoadSanPhamNhieuTieuChi($where)
     {
-        $LoadSP = new SanPham_DAO();
-
-        $kq = $LoadSP->LoadSanPhamNhieuTieuChi($where);
+        $kq = $this->SP->LoadSanPhamNhieuTieuChi($where);
 
         $danhSachSanPham = array();
 
@@ -78,6 +94,7 @@ class SanPham_BUS
                 $sp->setMoTa($row['MoTa']);
                 $sp->setMaSanPham($row['MaSanPham']);
                 $sp->setMaLoaiSanPham($row['MaLoaiSanPham']);
+                $sp->setMaHangSanXuat($row['MaHangSanXuat']);
                 $danhSachSanPham[] = $sp;
             }
         }

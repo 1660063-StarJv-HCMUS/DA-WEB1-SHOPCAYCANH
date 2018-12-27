@@ -15,8 +15,15 @@
 </head>
 <body>
     <?php
+
         $session = new Session();
         $admin = $session->getAdmin();
+        if (isset($_POST["action"])) {
+            $session->destroy();
+        }
+        if (isset($_POST["action"])) {
+            $session->destroy();
+        }
         if(!$admin)//chưa đăng nhập
         {
             //include 'GUI/modules/mDangNhap.php';

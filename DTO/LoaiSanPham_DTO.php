@@ -11,8 +11,8 @@ class LoaiSanPham{
     var $BiXoa;
     public function __construct()
     {
-        $this->MaLoaiSanPham=0;
-        $this->TenLoaiSanPham="";
-        $this->BiXoa=0;
+        $this->MaLoaiSanPham='';
+        $this->TenLoaiSanPham='';
+        $this->BiXoa='';
     }
 }

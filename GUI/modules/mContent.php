@@ -1,7 +1,9 @@
 <?php
-
 include_once __DIR__.'/../../BUS/SanPham_BUS.php';
+include_once __DIR__.'/../../BUS/LoaiSanPham_BUS.php';
+
 $filter  = array(
+    'TenCay'  => isset($_GET['TenCay']) ? $_GET['TenCay'] : false,
     'LoaiCay' => isset($_GET['LoaiCay']) ? $_GET['LoaiCay'] : false,
     'XuatXu'  => isset($_GET['XuatXu']) ? $_GET['XuatXu'] : false,
     'minPrice'=> isset($_GET['minPrice']) ? $_GET['minPrice'] : false,
@@ -10,6 +12,9 @@ $filter  = array(
 // Biến lưu trữ lọc
 $where = array();
 // Nếu có chọn lọc thì thêm điều kiện vào mảng
+if ($filter['TenCay']){
+    $where[] = "TenSanPham like '%{$filter['TenCay']}%'";
+}
 if ($filter['LoaiCay']){
     $where[] = "MaLoaiSanPham = '{$filter['LoaiCay']}'";
 }
@@ -30,24 +35,23 @@ if ($where)
     $result = $loadSP->LoadSanPhamNhieuTieuChi($where);
 }
 else {
-    $a=1;
     if(isset($_GET["a"]))
     {
         $a = $_GET["a"];
-    }
-    else {
-        $a = 0;
-    }
-
-    if($a)
-    {
         $result = $loadSP->LoadSanPhamByMaLoai($a);
     }
     else {
-        $result = $loadSP->LoadTatCaSanPham(); 
+        if(isset($_GET["b"]))
+        {
+            $b = $_GET["b"];
+            $result = $loadSP->LoadSanPhamByMaXuatXu($b);
+        }
+        else {
+            $result = $loadSP->LoadTatCaSanPham(); 
+        }
     }
 }
-$tenLoai = new SanPham_BUS();
+$tenLoai = new LoaiSanPham_BUS();
 
 foreach ($result as $loadSP) {
     echo'

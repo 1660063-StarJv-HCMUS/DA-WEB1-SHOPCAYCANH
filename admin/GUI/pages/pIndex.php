@@ -48,7 +48,7 @@
             ?>
         </div>
     </div>
-    <footer>
+    <footer role="contentinfo">
         <p>Nhóm 12: 1660063 - 1660127 - 1660151 caycanhstore &copy; 2018</p>
     </footer>
 </div>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 26, 2018 at 10:45 AM
+-- Generation Time: Dec 27, 2018 at 05:49 AM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 7.2.11
 
@@ -137,15 +137,31 @@ CREATE TABLE `sanpham` (
 --
 
 INSERT INTO `sanpham` (`MaSanPham`, `TenSanPham`, `HinhURL`, `GiaSanPham`, `NgayNhap`, `SoLuongTon`, `SoLuongBan`, `SoLuotXem`, `MoTa`, `BiXoa`, `MaLoaiSanPham`, `MaHangSanXuat`) VALUES
-(3, 'Tiểu cảnh 01', 'uKR0wgtieu-canh-1.jpg', 75000, '2018-12-05', 12, 0, 0, '', 0, 1, 1),
-(15, 'sen đá hàn quốc', 'oarpbfsen-đá-hàn-quốc-300x300.jpg', 10000, '2018-12-25', 10, 0, 0, 'sen đá hàn quốc', 0, 2, 1),
-(18, 'sen đá sừng hươu', 'obBPyaSen-đá-sừng-hươu-300x300.jpg', 75000, '2018-12-25', 10, 0, 0, 'sen đá sừng hươu', 0, 2, 1),
-(26, 'sen đá lá nhung', 'cv3RmFsen-đá-nhung.jpg', 60000, '2018-12-26', 20, 0, 0, 'sen đá lá nhung', 0, 2, 1),
+(3, 'Tiểu cảnh 01', 'tOkWwetieu-canh-1.jpg', 75000, '2018-12-05', 12, 2, 10, '', 0, 1, 1),
+(15, 'sen đá hàn quốc', 'rIYiQJsen-đá-hàn-quốc-300x300.jpg', 10000, '2018-12-25', 10, 5, 50, 'sen đá hàn quốc', 0, 2, 1),
+(18, 'sen đá sừng hươu', 'rtT92sSen-đá-sừng-hươu-300x300.jpg', 75000, '2018-12-25', 10, 5, 10, 'sen đá sừng hươu', 0, 2, 1),
+(26, 'sen đá lá nhung', 'TBg5nbsen-đá-nhung.jpg', 60000, '2018-12-26', 20, 10, 10, 'sen đá lá nhung', 0, 2, 1),
 (29, 'sen đá phật bà', 'Lhl7Nesen-phật-bà-đẹp-2-300x300.jpg', 75000, '2018-12-26', 10, 0, 0, 'sen đá phật bà', 0, 2, 1),
 (30, 'Xương rồng gymno', 'pdTkrLxuong-rong-gymno.jpg', 75000, '2018-12-26', 10, 0, 0, 'xương rồng gymno', 0, 3, 1),
-(31, 'Xương rồng thần long', 'GqBRDhxuong-rong-than-long.jpg', 100000, '2018-12-26', 20, 0, 0, 'xương rồng thần long', 0, 3, 1),
+(31, 'Xương rồng thần long', 'USRAOyxuong-rong-than-long.jpg', 100000, '2018-12-26', 20, 10, 20, 'xương rồng thần long', 0, 3, 1),
 (32, 'Tiểu cảnh 3', 'IFBzJstieu-canh-3.jpg', 200000, '2018-12-26', 5, 0, 0, 'Tiểu cảnh trang trí góc làm việc', 0, 1, 2),
-(33, 'Tiểu cảnh 25', 'PySbaMtieu-canh-25.jpg', 1750000, '2018-12-26', 10, 0, 0, 'Tiểu cảnh trang trí góc làm việc', 0, 1, 1);
+(33, 'Tiểu cảnh 25', 'PySbaMtieu-canh-25.jpg', 1750000, '2018-12-26', 10, 0, 0, 'Tiểu cảnh trang trí góc làm việc', 0, 1, 1),
+(40, 'Tiểu cảnh 17', 'iBfkY8tieu-canh-17.jpg', 125000, '2018-12-26', 10, 0, 0, 'tiểu cảnh trang trí văn phòng', 0, 1, 1),
+(41, 'Xương rồng giống mới', 'meqLHKxuong-rong-giong-moi.jpg', 65000, '2018-12-26', 12, 0, 0, 'xương rồng giống mới', 0, 3, 1),
+(42, 'Xương rồng núi', 'qny0YNxuong-rong-nui.jpg', 65000, '2018-12-26', 10, 0, 0, 'Xương rồng núi', 0, 3, 1),
+(46, 'Sen đá chuỗi', 'no5gh2sen-đá-chuỗi-ngọc-300x300.jpg', 69000, '2018-12-26', 12, 0, 0, 'sen đá chuỗi', 0, 2, 1),
+(47, 'Sen đá móng rồng xanh', 'QEZo7SSen-đá-móng-rồng-xanh-300x300.jpg', 65000, '2018-12-26', 12, 0, 0, 'Sen đá móng rồng xanh', 0, 2, 1),
+(48, 'Sen đá cỏ ngọc', 'cvlmKRsen-đá-cỏ-ngọc.jpg', 65000, '2018-12-26', 25, 0, 0, 'Sen đá cỏ ngọc', 0, 2, 1),
+(49, 'Xương rồng tròn', 'ZSWwImxuong-rong-tron.png', 75000, '2018-12-27', 20, 5, 10, 'Xương rồng tròn', 0, 3, 1),
+(50, 'Tiểu cảnh 21', 'w073Jxtieu-canh-21.jpg', 110000, '2018-12-27', 20, 0, 0, 'tiểu cảnh trang trí góc làm việc', 0, 1, 1),
+(51, 'Tiểu cảnh 23', 'FvH5nrtieu-canh-23.jpg', 200000, '2018-12-27', 10, 0, 0, 'Tiểu cảnh trang trí góc làm việc', 0, 1, 1),
+(52, 'Tiểu cảnh 14', 'eLO0XItieu-canh-14.jpg', 150000, '2018-12-27', 20, 0, 0, 'Tiểu cảnh trang trí góc làm việc', 0, 1, 1),
+(53, 'Tiểu cảnh số 6', '91Qeyntieu-canh-6.jpg', 100000, '2018-12-27', 20, 0, 0, 'tiểu cảnh trang trí góc làm việc', 0, 1, 1),
+(54, 'Tiểu cảnh 7', 'ux5B1Dtieu-canh-7.jpg', 75000, '2018-12-27', 30, 0, 0, 'Tiểu cảnh trang trí góc làm việc', 0, 1, 1),
+(55, 'Sen đá nâu', 'Eog8YSsen-da-nau.png', 90000, '2018-12-27', 10, 0, 0, 'sen đá nâu', 0, 2, 1),
+(56, 'Sen ngọc', 'h9Asgmsen-ngoc.jpg', 75000, '2018-12-27', 20, 0, 0, 'sen ngọc', 0, 2, 1),
+(57, 'Xương rồng bụi', 'Y4eAXlxuong-rong-bui.jpg', 55000, '2018-12-27', 20, 0, 0, 'xương rồng bụi', 0, 3, 1),
+(58, 'Tiểu cảnh 18', 'sXcWzAtieu-canh-18.jpg', 155000, '2018-12-27', 10, 0, 0, 'Tiểu cảnh trang trí góc làm việc', 0, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -175,8 +191,7 @@ INSERT INTO `taikhoan` (`MaTaiKhoan`, `TenDangNhap`, `MatKhau`, `TenHienThi`, `D
 (4, 'haha1', '123', 'haha', 'ho chi minh', '01234556789', 'ahaha@gmail.com', 0, 1),
 (6, 'admin', '123', 'Minh Chiến', 'Hồ Chí Minh', '021313', 'midfsadf@gmail.com', 0, 1),
 (7, 'superadmin', '123', 'Chiến', 'Gia Lai', '0399115999', 'thanhcong.hahaha@gmail.com', 0, 1),
-(8, 'thanhhai', '123', 'Thanh Hải', 'Đồng Nai', '1234123421', 'hahhahaha', 0, 1),
-(9, 'superadmin1', '123456789', 'Minh Chiến', '135B Trần Hưng Đạo', '0399115999', 'thisisadmin@gmail.com', 0, 1);
+(8, 'thanhhai', '123', 'Thanh Hải', 'Đồng Nai', '1234123421', 'hahhahaha', 0, 1);
 
 -- --------------------------------------------------------
 
@@ -255,25 +270,25 @@ ALTER TABLE `tinhtrang`
 -- AUTO_INCREMENT for table `hangsanxuat`
 --
 ALTER TABLE `hangsanxuat`
-  MODIFY `MaHangSanXuat` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `MaHangSanXuat` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `loaisanpham`
 --
 ALTER TABLE `loaisanpham`
-  MODIFY `MaLoaiSanPham` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `MaLoaiSanPham` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `sanpham`
 --
 ALTER TABLE `sanpham`
-  MODIFY `MaSanPham` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+  MODIFY `MaSanPham` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
 
 --
 -- AUTO_INCREMENT for table `taikhoan`
 --
 ALTER TABLE `taikhoan`
-  MODIFY `MaTaiKhoan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
+  MODIFY `MaTaiKhoan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- Constraints for dumped tables

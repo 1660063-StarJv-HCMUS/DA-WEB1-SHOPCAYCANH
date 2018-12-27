@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 27, 2018 at 05:49 AM
+-- Generation Time: Dec 27, 2018 at 02:34 PM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 7.2.11
 
@@ -36,6 +36,15 @@ CREATE TABLE `chitietdonhang` (
   `MaSanPham` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `chitietdonhang`
+--
+
+INSERT INTO `chitietdonhang` (`MaChiTietDonDatHang`, `SoLuong`, `GiaBan`, `MaDonDatHang`, `MaSanPham`) VALUES
+('DHCT00001', 1, 60000, 'DH000001', 26),
+('DHCT00002', 2, 75000, 'DH000002', 29),
+('DHCT00003', 8, 60000, 'DH00003', 26);
+
 -- --------------------------------------------------------
 
 --
@@ -49,6 +58,15 @@ CREATE TABLE `donhang` (
   `MaTaiKhoan` int(11) NOT NULL,
   `MaTinhTrang` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `donhang`
+--
+
+INSERT INTO `donhang` (`MaDonHang`, `NgayLap`, `TongThanhTien`, `MaTaiKhoan`, `MaTinhTrang`) VALUES
+('DH000001', '2018-12-27', 60000, 7, 2),
+('DH000002', '2018-12-27', 150000, 6, 1),
+('DH00003', '2018-12-27', 480000, 10, 2);
 
 -- --------------------------------------------------------
 
@@ -138,7 +156,7 @@ CREATE TABLE `sanpham` (
 
 INSERT INTO `sanpham` (`MaSanPham`, `TenSanPham`, `HinhURL`, `GiaSanPham`, `NgayNhap`, `SoLuongTon`, `SoLuongBan`, `SoLuotXem`, `MoTa`, `BiXoa`, `MaLoaiSanPham`, `MaHangSanXuat`) VALUES
 (3, 'Tiểu cảnh 01', 'tOkWwetieu-canh-1.jpg', 75000, '2018-12-05', 12, 2, 10, '', 0, 1, 1),
-(15, 'sen đá hàn quốc', 'rIYiQJsen-đá-hàn-quốc-300x300.jpg', 10000, '2018-12-25', 10, 5, 50, 'sen đá hàn quốc', 0, 2, 1),
+(15, 'sen đá hàn quốc', 'rIYiQJsen-đá-hàn-quốc-300x300.jpg', 100000, '2018-12-25', 10, 5, 50, 'sen đá hàn quốc', 0, 2, 1),
 (18, 'sen đá sừng hươu', 'rtT92sSen-đá-sừng-hươu-300x300.jpg', 75000, '2018-12-25', 10, 5, 10, 'sen đá sừng hươu', 0, 2, 1),
 (26, 'sen đá lá nhung', 'TBg5nbsen-đá-nhung.jpg', 60000, '2018-12-26', 20, 10, 10, 'sen đá lá nhung', 0, 2, 1),
 (29, 'sen đá phật bà', 'Lhl7Nesen-phật-bà-đẹp-2-300x300.jpg', 75000, '2018-12-26', 10, 0, 0, 'sen đá phật bà', 0, 2, 1),
@@ -191,7 +209,12 @@ INSERT INTO `taikhoan` (`MaTaiKhoan`, `TenDangNhap`, `MatKhau`, `TenHienThi`, `D
 (4, 'haha1', '123', 'haha', 'ho chi minh', '01234556789', 'ahaha@gmail.com', 0, 1),
 (6, 'admin', '123', 'Minh Chiến', 'Hồ Chí Minh', '021313', 'midfsadf@gmail.com', 0, 1),
 (7, 'superadmin', '123', 'Chiến', 'Gia Lai', '0399115999', 'thanhcong.hahaha@gmail.com', 0, 1),
-(8, 'thanhhai', '123', 'Thanh Hải', 'Đồng Nai', '1234123421', 'hahhahaha', 0, 1);
+(8, 'thanhhai', '123', 'Thanh Hải', 'Đồng Nai', '1234123421', 'hahhahaha@gmail.com', 0, 1),
+(9, 'huudung123', '123456789', 'huudung123', 'Hồ Chí Minh', '0123689564', 'huudung123@gmail.com', 0, 1),
+(10, 'obama23', '0bama', 'Obama', 'Hồ Chí Minh', '0956441332', 'obamavietnam@gmail.com', 0, 1),
+(11, 'mrtrump', 'lantram123', 'Đô Lan Trăm', 'Hồ Chí Minh', '031564498', 'donaltrump@gmail.com', 0, 1),
+(12, 'ronaldo', 'ronaldo1', 'Ronaldo', 'Vĩnh Long', '0832431245', 'ronaldonumber1@gmail.con', 0, 1),
+(13, 'messi', 'messi123', 'Lê Ô La', 'Cà Mau', '0123455643', 'messi2134@gmail.com', 0, 1);
 
 -- --------------------------------------------------------
 
@@ -203,6 +226,15 @@ CREATE TABLE `tinhtrang` (
   `MaTinhTrang` int(11) NOT NULL,
   `TenTinhTrang` varchar(45) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `tinhtrang`
+--
+
+INSERT INTO `tinhtrang` (`MaTinhTrang`, `TenTinhTrang`) VALUES
+(1, 'Đã giao'),
+(2, 'Đang giao'),
+(3, 'Hủy');
 
 --
 -- Indexes for dumped tables
@@ -276,7 +308,7 @@ ALTER TABLE `hangsanxuat`
 -- AUTO_INCREMENT for table `loaisanpham`
 --
 ALTER TABLE `loaisanpham`
-  MODIFY `MaLoaiSanPham` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `MaLoaiSanPham` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `sanpham`
@@ -288,7 +320,7 @@ ALTER TABLE `sanpham`
 -- AUTO_INCREMENT for table `taikhoan`
 --
 ALTER TABLE `taikhoan`
-  MODIFY `MaTaiKhoan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `MaTaiKhoan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- Constraints for dumped tables

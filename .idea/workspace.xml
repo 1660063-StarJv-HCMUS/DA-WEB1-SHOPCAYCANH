@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="60a66cda-ef4f-40e1-8896-c1972c235766" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/admin/GUI/modules/ThemXoaSuaHangSanPham.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/modules/ThemXoaSuaHangSanPham.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/modules/ThemXoaSuaLoaiSanPham.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/modules/ThemXoaSuaLoaiSanPham.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/modules/ThemXoaSuaSanPham.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/modules/ThemXoaSuaSanPham.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/modules/ThemXoaSuaTaiKhoan.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/modules/ThemXoaSuaTaiKhoan.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/pages/pDanhSachHangSanPham.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/pages/pDanhSachHangSanPham.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/pages/pDanhSachLoaiSanPham.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/pages/pDanhSachLoaiSanPham.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/pages/pDanhSachTaiKhoan.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/pages/pDanhSachTaiKhoan.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/GUI/pages/pDashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/GUI/pages/pDashboard.php" afterDir="false" />
-    </list>
+    <list default="true" id="60a66cda-ef4f-40e1-8896-c1972c235766" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,8 +68,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/GUI/pages/pDashboard.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="57" column="12" lean-forward="true" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
+            <state relative-caret-position="2268">
+              <caret line="84" column="13" lean-forward="true" selection-start-line="84" selection-start-column="13" selection-end-line="84" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -194,7 +185,7 @@
       <server host="localhost" id="f3dd1b48-8a1d-4c55-952b-637e4cdfefe4" name="localhost" port="8080" />
     </servers>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
@@ -336,16 +327,15 @@
       <workItem from="1545730201505" duration="23763000" />
       <workItem from="1545784402784" duration="29883000" />
       <workItem from="1545851448280" duration="314000" />
-      <workItem from="1545885440372" duration="263000" />
+      <workItem from="1545885440372" duration="1458000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="232925000" />
+    <option name="totallyTimeSpent" value="234120000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2753404" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -668,8 +658,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/GUI/pages/pDashboard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="57" column="12" lean-forward="true" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
+        <state relative-caret-position="2268">
+          <caret line="84" column="13" lean-forward="true" selection-start-line="84" selection-start-column="13" selection-end-line="84" selection-end-column="13" />
         </state>
       </provider>
     </entry>

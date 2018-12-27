@@ -19,7 +19,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
-                    <a class="btn btn-success my-cart-checkout" href="index.php?a=4" role="button"> Thanh Toán</a>
+                    <a class="btn btn-success my-cart-checkout" href="index.php?p=4" role="button"> Thanh Toán</a>
                 </div>
             </div>
         </div>

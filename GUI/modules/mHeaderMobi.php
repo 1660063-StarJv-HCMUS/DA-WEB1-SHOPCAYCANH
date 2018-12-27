@@ -50,7 +50,7 @@
                                                 foreach ($ds as $xuatXu) {
                                                     echo '                        
                                                         <li>
-                                                            <a href="index.php?b='.$xuatXu->MaHangSanXuat.'">'.$xuatXu->TenHangSanxuat.'</a>
+                                                            <a href="index.php?b='.$xuatXu->MaHangSanXuat.'">'.$xuatXu->TenHangSanXuat.'</a>
                                                         </li> ';
                                                 }
                                             ?>
@@ -111,7 +111,7 @@
                         $XuatXu = new HangSanXuat_BUS();
                         $ds = $XuatXu->DSXuatXu();
                         foreach ($ds as $xuatXu) {
-                            echo '<a class="dropdown-item" href="index.php?b='.$xuatXu->MaHangSanXuat.'">'.$xuatXu->TenHangSanxuat.'</a> ';
+                            echo '<a class="dropdown-item" href="index.php?b='.$xuatXu->MaHangSanXuat.'">'.$xuatXu->TenHangSanXuat.'</a> ';
                         }
                     ?>
                     </div>

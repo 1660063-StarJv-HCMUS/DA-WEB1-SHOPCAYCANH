@@ -115,5 +115,6 @@ include 'GUI/modules/mChiTietDonHang.php';
     <script src="GUI/js/form.js"></script>
     <script src="GUI/js/cart.js"></script>
     <script src="GUI/js/CheckOut.js"></script>
+    <script src="GUI/js/chiTietDonHang.js"></script>
 </body>
 </html>

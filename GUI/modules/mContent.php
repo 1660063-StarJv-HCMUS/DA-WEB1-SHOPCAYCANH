@@ -61,7 +61,7 @@ foreach ($result as $loadSP) {
                 <h5 class="card-title" style="color:#056526; font-style: normal">'.$loadSP->getTenSanPham().'</h5>
                 <h6 class="card-subtitle mb-2 text-muted" style="font-size:0.9rem">'.$tenLoai->getTenLoaiSanPham($loadSP->getMaLoaiSanPham()).'</h6>
                 <div class="price-wrap h5">
-                    <span>'.$loadSP->getGiaSanPham().' VNĐ</span> <del class="float-right" style="color: #999;">190.000 VNĐ</del>
+                    <span>'.$loadSP->getGiaSanPham().' VNĐ</span> <del class="float-right" style="color: #999;">300000 VNĐ</del>
                 </div> <!-- price-wrap.// -->               
                 <button type="button" class="btn btn-primary float-right btnDetails" data-toggle="modal"
                         data-target="#details" data-price="'.$loadSP->getGiaSanPham().'" data-price_discount="190000" data-detail="'.$loadSP->getMoTa().'"

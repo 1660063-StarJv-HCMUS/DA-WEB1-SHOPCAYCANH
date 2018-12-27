@@ -104,4 +104,14 @@ class SanPham_BUS
     {
         return $this->SP->getTenLoaiSanPham($MaLoai);
     }
+
+    public function getUlrSanPham($MaSanPham)
+    {
+        return $this->SP->getUlrSanPham($MaSanPham);
+    }
+
+    public function getTenSanPham($MaSanPham)
+    {
+        return $this->SP->getTenSanPham($MaSanPham);
+    }
 }

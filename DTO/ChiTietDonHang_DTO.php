@@ -1,5 +1,5 @@
 <?php
-class DonHang
+class ChiTietDonHang
 {
     var $MaChiTietDonDatHang;
     var $SoLuong;
@@ -15,3 +15,4 @@ class DonHang
         $this->MaSanPham = 0;
     }
 }
+?>

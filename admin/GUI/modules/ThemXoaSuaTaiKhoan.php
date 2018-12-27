@@ -41,7 +41,7 @@
 </div>
 
 <?php
-
+/////////////////////thêm tài khoản
 if(isset($_POST['tenHienThi']) && isset($_POST['diaChi']) && isset($_POST['dienThoai']) && isset($_POST['tenDangNhap']) && isset($_POST['matKhau'])) {
 
     if ($_POST['tenHienThi'] == "" || $_POST['diaChi'] == "" || $_POST['dienThoai'] == "" || $_POST['tenDangNhap'] == "" || $_POST['matKhau'] == "") {
@@ -74,12 +74,12 @@ if(isset($_POST['tenHienThi']) && isset($_POST['diaChi']) && isset($_POST['dienT
 else{
 
 }
-
 ?>
 
 <?php
 include_once __DIR__ . '/../../BUS/TaiKhoan_BUS.php';
-include_once __DIR__.'/../../DTO/SanPham_DTO.php';
+include_once __DIR__.'/../../DTO/TaiKhoan_DTO.php';
+//////////////////////////sửa tài khoản
 
 if(isset($_POST['maTaiKhoanEdit'])||isset($_POST['tenDangNhapEdit']) || isset($_POST['matKhauEdit']) ||isset($_POST['tenHienThiEdit']) ||isset($_POST['soDienThoaiEdit']) ||isset($_POST['emaiEdit']) ||isset($_POST['diaChiEdit'])||isset($_POST['loaiTaiKhoanEdit'])){
 
@@ -88,22 +88,17 @@ if(isset($_POST['maTaiKhoanEdit'])||isset($_POST['tenDangNhapEdit']) || isset($_
     }
     else{
         $tkUpdateBUS = new TaiKhoanBUS();
-        if ($tkUpdateBUS->CheckTaiKhoanTonTai($_POST['tenDangNhapEdit']) == true){
+        $tkUpdate = new TaiKhoan();
+        $tkUpdate->MaTaiKhoan = $_POST['maTaiKhoanEdit'];
+        $tkUpdate->TenDangNhap = $_POST['tenDangNhapEdit'];
+        $tkUpdate->MatKhau = $_POST['matKhauEdit'];
+        $tkUpdate->TenHienThi = $_POST['tenHienThiEdit'];
+        $tkUpdate->DienThoai = $_POST['soDienThoaiEdit'];
+        $tkUpdate->Email = $_POST['emaiEdit'];
+        $tkUpdate->DiaChi = $_POST['diaChiEdit'];
+        $tkUpdate->MaLoaiTaiKhoan = $_POST['loaiTaiKhoanEdit'];
 
-        }
-        else {
-            $tkUpdate = new TaiKhoan();
-            $tkUpdate->MaTaiKhoan = $_POST['maTaiKhoanEdit'];
-            $tkUpdate->TenDangNhap = $_POST['tenDangNhapEdit'];
-            $tkUpdate->MatKhau = $_POST['matKhauEdit'];
-            $tkUpdate->TenHienThi = $_POST['tenHienThiEdit'];
-            $tkUpdate->DienThoai = $_POST['soDienThoaiEdit'];
-            $tkUpdate->Email = $_POST['emaiEdit'];
-            $tkUpdate->DiaChi = $_POST['diaChiEdit'];
-            $tkUpdate->MaLoaiTaiKhoan = $_POST['loaiTaiKhoanEdit'];
-
-            $tkUpdateBUS->ChinhSua($tkUpdate);
-        }
+        $tkUpdateBUS->ChinhSua($tkUpdate);
     }
 }
 ?>

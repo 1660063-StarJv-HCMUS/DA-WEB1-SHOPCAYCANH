@@ -25,7 +25,7 @@
 
         <div class="form-group">
             <span>Mật khẩu </span>
-            <input type="text" name="matKhau" class="form-control" id="matKhau" placeholder="Mật khẩu">
+            <input type="password" name="matKhau" class="form-control" id="matKhau" placeholder="Mật khẩu">
         </div>
 
         <div class="form-group">

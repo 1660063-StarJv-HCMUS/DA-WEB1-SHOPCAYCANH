@@ -6,7 +6,7 @@
  */
 
 //Thông tin chung
-$_DOMAIN = 'http://localhost:8080/web1/DA-WEB1-SHOPCAYCANH/admin';
+$_DOMAIN = 'http://localhost:8080/Web-đồ%20án/admin';
 
 $_DOMAIN_trang_mua_sam = 'www.google.com';
 date_default_timezone_set('Asia/Ho_Chi_Minh');//khởi tạo giờ địa phương
